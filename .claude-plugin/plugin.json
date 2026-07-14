@@ -1,0 +1,10 @@
+{
+  "name": "pixellab-forge",
+  "description": "PixelLab MCP 위에 얹는 비용 절감 워크플로 + 재사용 캐시 레이어(하이브리드 전역/프로젝트 캐시·생성 전 조회·PreToolUse 경고 훅).",
+  "version": "0.1.0",
+  "keywords": ["pixellab", "pixel-art", "assets", "cache", "cost-optimization"],
+  "author": {
+    "name": "v0o0v"
+  },
+  "license": "MIT"
+}

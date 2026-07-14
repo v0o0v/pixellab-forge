@@ -1,0 +1,14 @@
+{
+  "name": "pixellab-forge",
+  "description": "PixelLab MCP 비용 절감 워크플로 + 재사용 캐시 플러그인 배포 카탈로그.",
+  "owner": {
+    "name": "v0o0v"
+  },
+  "plugins": [
+    {
+      "name": "pixellab-forge",
+      "source": "./",
+      "description": "PixelLab MCP 비용 절감 워크플로 + 재사용 캐시(하이브리드 전역/프로젝트) 플러그인. 생성 전 유사 이미지 조회로 generation 비용 0."
+    }
+  ]
+}
