@@ -8,3 +8,7 @@ Thumbs.db
 # 런타임 산출물(플러그인 자체에는 커밋 안 함 — 소비 프로젝트에서만 생성)
 log/
 generations.log
+
+# PixelLab MCP 설정(project scope). API 키가 들어있고, git 에 올리면 공개 유출 + 플러그인 번들로
+# 글로벌 활성화되므로 절대 커밋 금지 — pixellab-forge 작업 디렉터리에서만 로컬로 활성.
+.mcp.json
