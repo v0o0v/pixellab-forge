@@ -1,0 +1,2277 @@
+{
+  "_doc": "PixelLab 재사용 캐시 대장",
+  "version": 2,
+  "reuseThreshold": 0.6,
+  "entries": [
+    {
+      "id": "eq_workspace_C",
+      "prompt": "a simple wooden office desk with a small computer monitor",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "workspace",
+        "grade:C",
+        "simple",
+        "wooden",
+        "office",
+        "desk",
+        "computer",
+        "monitor"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 0,
+      "sprites": [
+        "item_workspace_01",
+        "item_workspace_02",
+        "item_workspace_03",
+        "item_workspace_04"
+      ],
+      "files": [
+        "eq_workspace_C.png"
+      ],
+      "contentHash": "9c12c5448284de9a9e3c8d60f8575f95c125f9db6ef4d0e2bb68a4de8ca0d1f6",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_workspace_B",
+      "prompt": "a modern office desk with dual computer monitors and keyboard",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "workspace",
+        "grade:B",
+        "modern",
+        "office",
+        "desk",
+        "dual",
+        "computer",
+        "monitors",
+        "keyboard"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 1,
+      "sprites": [
+        "item_workspace_05",
+        "item_workspace_06",
+        "item_workspace_07"
+      ],
+      "files": [
+        "eq_workspace_B.png"
+      ],
+      "contentHash": "5c0aee8ab68ce57b244ac5a9ced7fb970efe1ddc4f78a5297ef90f1ec0392556",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_workspace_A",
+      "prompt": "a sleek standing desk with a glowing blue widescreen monitor",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "workspace",
+        "grade:A",
+        "sleek",
+        "standing",
+        "desk",
+        "glowing",
+        "blue",
+        "widescreen",
+        "monitor"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 2,
+      "sprites": [
+        "item_workspace_08",
+        "item_workspace_09",
+        "item_workspace_10"
+      ],
+      "files": [
+        "eq_workspace_A.png"
+      ],
+      "contentHash": "1ab1a32da2dd6c37dd9359e4a1fc25ca62a8050da2e9a9cca2c8018298a0236d",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_workspace_S",
+      "prompt": "a high-tech workstation with floating blue holographic screens",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "workspace",
+        "grade:S",
+        "high",
+        "tech",
+        "workstation",
+        "floating",
+        "blue",
+        "holographic",
+        "screens"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 3,
+      "sprites": [
+        "item_workspace_11",
+        "item_workspace_12"
+      ],
+      "files": [
+        "eq_workspace_S.png"
+      ],
+      "contentHash": "41fad9de922ee72d74707b0be44c7d24e506cb5b0cf2fa5bcbbc75b17bfe7b57",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_workspace_SS",
+      "prompt": "an ornate futuristic command desk glowing with blue holographic displays",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "workspace",
+        "grade:SS",
+        "ornate",
+        "futuristic",
+        "command",
+        "desk",
+        "glowing",
+        "blue",
+        "holographic",
+        "displays"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 4,
+      "sprites": [
+        "item_workspace_13"
+      ],
+      "files": [
+        "eq_workspace_SS.png"
+      ],
+      "contentHash": "f297668f1ec22ddefa8af6861552b8b7a2f91b28c53fad6dc4c8c06146ed1f58",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_executive_C",
+      "prompt": "a brown leather executive briefcase",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "executive",
+        "grade:C",
+        "brown",
+        "leather",
+        "briefcase"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 5,
+      "sprites": [
+        "item_executive_01",
+        "item_executive_02",
+        "item_executive_03",
+        "item_executive_04"
+      ],
+      "files": [
+        "eq_executive_C.png"
+      ],
+      "contentHash": "c35445d27f6d1bca37a17621ba03b457675fd9933607d82bc6c1ed0d93184274",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_executive_B",
+      "prompt": "a black executive briefcase with shiny brass latches",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "executive",
+        "grade:B",
+        "black",
+        "briefcase",
+        "shiny",
+        "brass",
+        "latches"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 6,
+      "sprites": [
+        "item_executive_05",
+        "item_executive_06",
+        "item_executive_07"
+      ],
+      "files": [
+        "eq_executive_B.png"
+      ],
+      "contentHash": "482d81b40b1f1d5427e1ffb31a6b52e429e70caca764ce02d2e1ea39da1c7f3e",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_executive_A",
+      "prompt": "a golden executive briefcase with gold trim",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "executive",
+        "grade:A",
+        "golden",
+        "briefcase",
+        "gold",
+        "trim"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 7,
+      "sprites": [
+        "item_executive_08",
+        "item_executive_09"
+      ],
+      "files": [
+        "eq_executive_A.png"
+      ],
+      "contentHash": "b269af8941950c45e065e579db85e735e08b17560e18168fa1bd636ea1ee1ee3",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_executive_S",
+      "prompt": "a luxurious gold briefcase overflowing with cash and a gemstone latch",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "executive",
+        "grade:S",
+        "luxurious",
+        "gold",
+        "briefcase",
+        "overflowing",
+        "cash",
+        "gemstone",
+        "latch"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 8,
+      "sprites": [
+        "item_executive_10",
+        "item_executive_11"
+      ],
+      "files": [
+        "eq_executive_S.png"
+      ],
+      "contentHash": "6d432967095f39ea7c7d829a6d91546add07f7d5955da20fe3f146b8fd61fdd9",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_executive_SS",
+      "prompt": "an ornate golden briefcase radiating light with a diamond lock",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "executive",
+        "grade:SS",
+        "ornate",
+        "golden",
+        "briefcase",
+        "radiating",
+        "light",
+        "diamond",
+        "lock"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 9,
+      "sprites": [
+        "item_executive_12"
+      ],
+      "files": [
+        "eq_executive_SS.png"
+      ],
+      "contentHash": "322be22b30f3e9323eb2b165a673acc01fd5d9a06acabe21554c3be38bcdecfa",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "hero_midas_pen",
+      "prompt": "a golden fountain pen dripping molten gold, radiating golden light",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "executive",
+        "grade:SSS",
+        "golden",
+        "fountain",
+        "pen",
+        "dripping",
+        "molten",
+        "gold",
+        "radiating",
+        "light"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 10,
+      "sprites": [
+        "item_midas_pen"
+      ],
+      "files": [
+        "hero_midas_pen.png"
+      ],
+      "contentHash": "cf35e12324aa5d7dd9b180efe99e0707981d14314b78571d9039ed2723afa27c",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_publicity_C",
+      "prompt": "a simple red handheld megaphone",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "publicity",
+        "grade:C",
+        "simple",
+        "red",
+        "handheld",
+        "megaphone"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 11,
+      "sprites": [
+        "item_publicity_01",
+        "item_publicity_02",
+        "item_publicity_03"
+      ],
+      "files": [
+        "eq_publicity_C.png"
+      ],
+      "contentHash": "cb059325f08f9a3acc1cce8688a87f54c371ae2ec459982b0315e786976a0d41",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_publicity_B",
+      "prompt": "a pink megaphone emitting sound waves",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "publicity",
+        "grade:B",
+        "pink",
+        "megaphone",
+        "emitting",
+        "sound",
+        "waves"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 12,
+      "sprites": [
+        "item_publicity_04",
+        "item_publicity_05",
+        "item_publicity_06"
+      ],
+      "files": [
+        "eq_publicity_B.png"
+      ],
+      "contentHash": "b3f02af1af40eb4819ac4d458a95ca9aee9805c5681b7fead1e976b022b64d5a",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_publicity_A",
+      "prompt": "a glossy magenta megaphone broadcasting bright sound waves",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "publicity",
+        "grade:A",
+        "glossy",
+        "magenta",
+        "megaphone",
+        "broadcasting",
+        "bright",
+        "sound",
+        "waves"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 13,
+      "sprites": [
+        "item_publicity_07",
+        "item_publicity_08",
+        "item_publicity_09"
+      ],
+      "files": [
+        "eq_publicity_A.png"
+      ],
+      "contentHash": "47e2f199148e483122d445bbc1ab310fc988aa0d4b0245cfd2b840ee6aee3538",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_publicity_S",
+      "prompt": "a golden megaphone broadcasting sparkling sound waves",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "publicity",
+        "grade:S",
+        "golden",
+        "megaphone",
+        "broadcasting",
+        "sparkling",
+        "sound",
+        "waves"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 14,
+      "sprites": [
+        "item_publicity_10",
+        "item_publicity_11"
+      ],
+      "files": [
+        "eq_publicity_S.png"
+      ],
+      "contentHash": "394484d87cf2a795c3a5154e7073ece9d1e8009aa2994d81466b6ff69825032b",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_publicity_SS",
+      "prompt": "an ornate glowing pink and gold megaphone with radiant broadcast waves",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "publicity",
+        "grade:SS",
+        "ornate",
+        "glowing",
+        "pink",
+        "gold",
+        "megaphone",
+        "radiant",
+        "broadcast",
+        "waves"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 15,
+      "sprites": [
+        "item_publicity_12"
+      ],
+      "files": [
+        "eq_publicity_SS.png"
+      ],
+      "contentHash": "7ec9919426553c7f9c5f9b8c11f9886997a6afaefd19947feedb8b59d73a023a",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_lab_C",
+      "prompt": "a glass laboratory flask with purple liquid",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "lab",
+        "grade:C",
+        "glass",
+        "laboratory",
+        "flask",
+        "purple",
+        "liquid"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 16,
+      "sprites": [
+        "item_lab_01",
+        "item_lab_02",
+        "item_lab_03",
+        "item_lab_04"
+      ],
+      "files": [
+        "eq_lab_C.png"
+      ],
+      "contentHash": "010c5cd8c86680f621e707d2d3f3d1ad02eb9e9f37fc6eefcb9c4ab6edfd35fb",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_lab_B",
+      "prompt": "an erlenmeyer flask bubbling with purple potion",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "lab",
+        "grade:B",
+        "erlenmeyer",
+        "flask",
+        "bubbling",
+        "purple",
+        "potion"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 17,
+      "sprites": [
+        "item_lab_05",
+        "item_lab_06",
+        "item_lab_07"
+      ],
+      "files": [
+        "eq_lab_B.png"
+      ],
+      "contentHash": "c46ca1c02a2c0457e1ec4b5b31ec14d3d077f4cf2b699ea987f3d5a8b0d641cb",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_lab_A",
+      "prompt": "an ornate lab flask glowing with violet elixir and bubbles",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "lab",
+        "grade:A",
+        "ornate",
+        "flask",
+        "glowing",
+        "violet",
+        "elixir",
+        "bubbles"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 18,
+      "sprites": [
+        "item_lab_08",
+        "item_lab_09",
+        "item_lab_10"
+      ],
+      "files": [
+        "eq_lab_A.png"
+      ],
+      "contentHash": "dea02d44cb77361c52819d62e4db5d82b38e1219aae9c6104c0e28323b749336",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_lab_S",
+      "prompt": "a crystalline flask swirling with magical purple energy",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "lab",
+        "grade:S",
+        "crystalline",
+        "flask",
+        "swirling",
+        "magical",
+        "purple",
+        "energy"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 19,
+      "sprites": [
+        "item_lab_11",
+        "item_lab_12"
+      ],
+      "files": [
+        "eq_lab_S.png"
+      ],
+      "contentHash": "c6f7dc3341c9656d50fa4ddbb12dffefb419443d4a5334a1f8e46a7f63afb83a",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_lab_SS",
+      "prompt": "a legendary alchemy flask on a golden stand radiating purple light",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "lab",
+        "grade:SS",
+        "legendary",
+        "alchemy",
+        "flask",
+        "golden",
+        "stand",
+        "radiating",
+        "purple",
+        "light"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 20,
+      "sprites": [
+        "item_lab_13"
+      ],
+      "files": [
+        "eq_lab_SS.png"
+      ],
+      "contentHash": "baffac97125fd8420ea9778ba493bba2bd6ca028228f22f870afd4fb055f5c9f",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_vault_C",
+      "prompt": "a small steel safe with a combination dial",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "vault",
+        "grade:C",
+        "steel",
+        "safe",
+        "combination",
+        "dial"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 21,
+      "sprites": [
+        "item_vault_01",
+        "item_vault_02",
+        "item_vault_03",
+        "item_vault_04"
+      ],
+      "files": [
+        "eq_vault_C.png"
+      ],
+      "contentHash": "372399b9b787b9597b1321e7ff6280e4df5fb2a8db20cb67b7155a9fb90fcd67",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_vault_B",
+      "prompt": "a green iron vault with a few gold coins",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "vault",
+        "grade:B",
+        "green",
+        "iron",
+        "gold",
+        "coins"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 22,
+      "sprites": [
+        "item_vault_05",
+        "item_vault_06",
+        "item_vault_07"
+      ],
+      "files": [
+        "eq_vault_B.png"
+      ],
+      "contentHash": "abbddc50dee590aaf203aec3e3f2009a273c0714250e794be8bb8c32e6d5a55b",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_vault_A",
+      "prompt": "a sturdy bank vault door with stacks of gold coins",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "vault",
+        "grade:A",
+        "sturdy",
+        "bank",
+        "door",
+        "stacks",
+        "gold",
+        "coins"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 23,
+      "sprites": [
+        "item_vault_08",
+        "item_vault_09"
+      ],
+      "files": [
+        "eq_vault_A.png"
+      ],
+      "contentHash": "c83a00b1dbfd6bf95bc5b7d7d5177871f3944e21ece148f6bed0d04bed6bd6bf",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_vault_S",
+      "prompt": "a reinforced emerald vault stacked with glowing gold coins",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "vault",
+        "grade:S",
+        "reinforced",
+        "emerald",
+        "stacked",
+        "glowing",
+        "gold",
+        "coins"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 24,
+      "sprites": [
+        "item_vault_10",
+        "item_vault_11"
+      ],
+      "files": [
+        "eq_vault_S.png"
+      ],
+      "contentHash": "1cb404f488ce717ea2ddb3f795827520d6a10f1e6c2db6446dec6af55321cb0d",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_vault_SS",
+      "prompt": "an ornate golden vault overflowing with treasure, glowing green",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "vault",
+        "grade:SS",
+        "ornate",
+        "golden",
+        "overflowing",
+        "treasure",
+        "glowing",
+        "green"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 25,
+      "sprites": [
+        "item_vault_12"
+      ],
+      "files": [
+        "eq_vault_SS.png"
+      ],
+      "contentHash": "c2af9c56d5a448438b6c712e15590b988d7ec7bcc1c4294987bc4b6785596b86",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_culture_C",
+      "prompt": "a ceramic coffee mug with rising steam",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "culture",
+        "grade:C",
+        "ceramic",
+        "coffee",
+        "mug",
+        "rising",
+        "steam"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 26,
+      "sprites": [
+        "item_culture_01",
+        "item_culture_02",
+        "item_culture_03",
+        "item_culture_04"
+      ],
+      "files": [
+        "eq_culture_C.png"
+      ],
+      "contentHash": "067dcedb9594dabbc5a80ce41d8e29727ce721b0ff014a8c4a434565baaa65de",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_culture_B",
+      "prompt": "a cozy orange coffee cup with latte art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "culture",
+        "grade:B",
+        "cozy",
+        "orange",
+        "coffee",
+        "cup",
+        "latte",
+        "art"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 27,
+      "sprites": [
+        "item_culture_05",
+        "item_culture_06",
+        "item_culture_07"
+      ],
+      "files": [
+        "eq_culture_B.png"
+      ],
+      "contentHash": "7c64a64675998d476f8ca6e61e92d5353774166dfc65e11c110bbc8379d7e2ce",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_culture_A",
+      "prompt": "a golden trophy mug with a warm glow",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "culture",
+        "grade:A",
+        "golden",
+        "trophy",
+        "mug",
+        "warm",
+        "glow"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 28,
+      "sprites": [
+        "item_culture_08",
+        "item_culture_09"
+      ],
+      "files": [
+        "eq_culture_A.png"
+      ],
+      "contentHash": "90e2df3328e5bdf43deebd5a7dff60e99b53ced6dd7a9a84061163dcab83e147",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_culture_S",
+      "prompt": "an ornate golden chalice with a warm orange glow",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "culture",
+        "grade:S",
+        "ornate",
+        "golden",
+        "chalice",
+        "warm",
+        "orange",
+        "glow"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 29,
+      "sprites": [
+        "item_culture_10",
+        "item_culture_11"
+      ],
+      "files": [
+        "eq_culture_S.png"
+      ],
+      "contentHash": "50042b409db0f80fe5e04b88e09ba2b31faf8236f41341813bc58af7043ace7d",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_culture_SS",
+      "prompt": "a radiant golden goblet with a glowing warm aura",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "culture",
+        "grade:SS",
+        "radiant",
+        "golden",
+        "goblet",
+        "glowing",
+        "warm",
+        "aura"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 30,
+      "sprites": [
+        "item_culture_12"
+      ],
+      "files": [
+        "eq_culture_SS.png"
+      ],
+      "contentHash": "69dee5d15020ebce79dc1bf8ef78c1a2ca469d757b867ea96be7e16350c293cc",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_fortune_C",
+      "prompt": "a green four-leaf clover",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "fortune",
+        "grade:C",
+        "green",
+        "four",
+        "leaf",
+        "clover"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 31,
+      "sprites": [
+        "item_fortune_01",
+        "item_fortune_02",
+        "item_fortune_03"
+      ],
+      "files": [
+        "eq_fortune_C.png"
+      ],
+      "contentHash": "aac382250b6b6835ab14f771dc349a7c2ee714901b7817090ab3699b8735acef",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_fortune_B",
+      "prompt": "a lucky golden horseshoe with a green clover",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "fortune",
+        "grade:B",
+        "lucky",
+        "golden",
+        "horseshoe",
+        "green",
+        "clover"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 32,
+      "sprites": [
+        "item_fortune_04",
+        "item_fortune_05",
+        "item_fortune_06",
+        "item_fortune_07"
+      ],
+      "files": [
+        "eq_fortune_B.png"
+      ],
+      "contentHash": "6d7ef62514ae47467bbb8fcb051840879be0a9e2dd5e68ea09c883131706e4c0",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_fortune_A",
+      "prompt": "a pair of teal dice with sparkles",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "fortune",
+        "grade:A",
+        "teal",
+        "dice",
+        "sparkles"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 33,
+      "sprites": [
+        "item_fortune_08",
+        "item_fortune_09",
+        "item_fortune_10"
+      ],
+      "files": [
+        "eq_fortune_A.png"
+      ],
+      "contentHash": "3c15fcdfc411247fbe3445191688a2453f352da3fd4e41154e2e366a25b88a6d",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_fortune_S",
+      "prompt": "a golden lucky charm with a glowing green clover",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "fortune",
+        "grade:S",
+        "golden",
+        "lucky",
+        "charm",
+        "glowing",
+        "green",
+        "clover"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 34,
+      "sprites": [
+        "item_fortune_11"
+      ],
+      "files": [
+        "eq_fortune_S.png"
+      ],
+      "contentHash": "a9d1754ef7a2d311bee96f1a2b0f5123113420543286b929f5996086c144f524",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_fortune_SS",
+      "prompt": "a radiant jade fortune charm with a sparkling aura",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "fortune",
+        "grade:SS",
+        "radiant",
+        "jade",
+        "charm",
+        "sparkling",
+        "aura"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 35,
+      "sprites": [
+        "item_fortune_12"
+      ],
+      "files": [
+        "eq_fortune_SS.png"
+      ],
+      "contentHash": "46336a86fc18ad0e03ec627f8cae0e43c7ac320dd9a375aab868edcf10581401",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "hero_goddess_dice",
+      "prompt": "a pair of glowing celestial dice with a divine golden aura",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "fortune",
+        "grade:SSS",
+        "glowing",
+        "celestial",
+        "dice",
+        "divine",
+        "golden",
+        "aura"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 36,
+      "sprites": [
+        "item_goddess_dice"
+      ],
+      "files": [
+        "hero_goddess_dice.png"
+      ],
+      "contentHash": "3a7a9b777416497bae6aa678b412f0b43b84464e186e37024039435e69fda1d3",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_legacy_C",
+      "prompt": "a rolled parchment scroll",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "legacy",
+        "grade:C",
+        "rolled",
+        "parchment",
+        "scroll"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 37,
+      "sprites": [
+        "item_legacy_01",
+        "item_legacy_02",
+        "item_legacy_03",
+        "item_legacy_04"
+      ],
+      "files": [
+        "eq_legacy_C.png"
+      ],
+      "contentHash": "bbe389a027076803dc8b3fca0cdc4a13e403396a48e6a8c27804f4e0397afa79",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_legacy_B",
+      "prompt": "an aged scroll sealed with red wax",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "legacy",
+        "grade:B",
+        "aged",
+        "scroll",
+        "sealed",
+        "red",
+        "wax"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 38,
+      "sprites": [
+        "item_legacy_05",
+        "item_legacy_06",
+        "item_legacy_07"
+      ],
+      "files": [
+        "eq_legacy_B.png"
+      ],
+      "contentHash": "6c299a7ea04c189b4b1e8bc0e895ee186c88cc287391110ea5563c289a563304",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_legacy_A",
+      "prompt": "an ornate scroll tied with a golden ribbon",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "legacy",
+        "grade:A",
+        "ornate",
+        "scroll",
+        "tied",
+        "golden",
+        "ribbon"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 39,
+      "sprites": [
+        "item_legacy_08",
+        "item_legacy_09"
+      ],
+      "files": [
+        "eq_legacy_A.png"
+      ],
+      "contentHash": "5af837313558a1d6e8b51cb30e0f897f70fa793c89d4b0238a6bfa297dd810d1",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_legacy_S",
+      "prompt": "an ancient tome with a golden clasp",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "legacy",
+        "grade:S",
+        "ancient",
+        "tome",
+        "golden",
+        "clasp"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 40,
+      "sprites": [
+        "item_legacy_10"
+      ],
+      "files": [
+        "eq_legacy_S.png"
+      ],
+      "contentHash": "b9f3208176b56f7e50127715f192ff1fffe1a65ebe2d3e852daebc0ed82bb237",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "eq_legacy_SS",
+      "prompt": "a legendary glowing manuscript with a golden seal",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "legacy",
+        "grade:SS",
+        "legendary",
+        "glowing",
+        "manuscript",
+        "golden",
+        "seal"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 41,
+      "sprites": [
+        "item_legacy_11"
+      ],
+      "files": [
+        "eq_legacy_SS.png"
+      ],
+      "contentHash": "f05b00d5c5dd985ae50ee11ce030bf3b18e9e5410dc4f6365eee7aacce7ccb52",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "hero_founder_memo",
+      "prompt": "an ancient leather-bound founder's memoir with a glowing golden seal",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "equipment",
+        "legacy",
+        "grade:SSS",
+        "ancient",
+        "leather",
+        "bound",
+        "founder",
+        "memoir",
+        "glowing",
+        "golden",
+        "seal"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 42,
+      "sprites": [
+        "item_founder_memo"
+      ],
+      "files": [
+        "hero_founder_memo.png"
+      ],
+      "contentHash": "dfc0a1d0e37018894c46dfcf298964a702cecfd0000534f81db0d2a981a133c4",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_energy_drink",
+      "prompt": "a red energy drink can with a lightning bolt symbol",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "booster",
+        "red",
+        "energy",
+        "drink",
+        "can",
+        "lightning",
+        "bolt",
+        "symbol"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 43,
+      "sprites": [
+        "item_cons_energy_drink"
+      ],
+      "files": [
+        "cons_energy_drink.png"
+      ],
+      "contentHash": "c3e724c7acfd53befd036f4ca40a1a2177ba37e67479a71be8b831906cd82314",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_viral_kit",
+      "prompt": "a smartphone showing a viral trending chart going up",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "booster",
+        "smartphone",
+        "showing",
+        "viral",
+        "trending",
+        "chart",
+        "going"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 44,
+      "sprites": [
+        "item_cons_viral_kit"
+      ],
+      "files": [
+        "cons_viral_kit.png"
+      ],
+      "contentHash": "10ecf24e08a759f9b0732fead86c056315dd2d1dd9fd3c44d14d2a525a50c740",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_power_save",
+      "prompt": "a glowing green battery, power saving",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "booster",
+        "glowing",
+        "green",
+        "battery",
+        "power",
+        "saving"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 45,
+      "sprites": [
+        "item_cons_power_save"
+      ],
+      "files": [
+        "cons_power_save.png"
+      ],
+      "contentHash": "5d7c1f0b4ced3d264c43331533a26576fb3db54144089a0c2a3adca31ed87a55",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_quality_workshop",
+      "prompt": "a golden hammer and a gear, crafting tools",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "booster",
+        "golden",
+        "hammer",
+        "gear",
+        "crafting",
+        "tools"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 46,
+      "sprites": [
+        "item_cons_quality_workshop"
+      ],
+      "files": [
+        "cons_quality_workshop.png"
+      ],
+      "contentHash": "f7ac0ad5d3b81547584230dfc197fddb185700d0b4bb43ec0809155b31871a69",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_innovation_seminar",
+      "prompt": "a bright yellow lightbulb bursting with idea sparks",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "booster",
+        "bright",
+        "yellow",
+        "lightbulb",
+        "bursting",
+        "idea",
+        "sparks"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 47,
+      "sprites": [
+        "item_cons_innovation_seminar"
+      ],
+      "files": [
+        "cons_innovation_seminar.png"
+      ],
+      "contentHash": "5fa43ee0a944bc7f420a0a2aac047946d883508c8189c905f760c9aa99716e0f",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_premium_coffee",
+      "prompt": "a premium coffee cup with a golden glowing aroma",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "booster",
+        "premium",
+        "coffee",
+        "cup",
+        "golden",
+        "glowing",
+        "aroma"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 48,
+      "sprites": [
+        "item_cons_premium_coffee"
+      ],
+      "files": [
+        "cons_premium_coffee.png"
+      ],
+      "contentHash": "2479602419d1c14132e551abd06c09f77c21fc0112be45c784b4c8c7879e1572",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_research_note",
+      "prompt": "an open notebook with a pencil and formulas",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "resource",
+        "open",
+        "notebook",
+        "pencil",
+        "formulas"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 49,
+      "sprites": [
+        "item_cons_research_note"
+      ],
+      "files": [
+        "cons_research_note.png"
+      ],
+      "contentHash": "5dd1bcf8377ff1fdbc9ea1914b58598e816cd08e52d678727d56d7ca0b42e857",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_training_book",
+      "prompt": "a stack of colorful training books",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "resource",
+        "stack",
+        "colorful",
+        "training",
+        "books"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 50,
+      "sprites": [
+        "item_cons_training_book"
+      ],
+      "files": [
+        "cons_training_book.png"
+      ],
+      "contentHash": "b6d8cc0484833b52badfbc6bbe75c6c44ff2f028061e685e1d9ef52e22ee1f97",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_subsidy_voucher",
+      "prompt": "a cash voucher coupon with a dollar sign",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "resource",
+        "cash",
+        "voucher",
+        "coupon",
+        "dollar",
+        "sign"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 51,
+      "sprites": [
+        "item_cons_subsidy_voucher"
+      ],
+      "files": [
+        "cons_subsidy_voucher.png"
+      ],
+      "contentHash": "5e372e26a9231a2e9192470e36650a4d2c35799dfcef7d478cb8bbe439b713cf",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_market_report",
+      "prompt": "a rolled market report chart with an upward arrow",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "resource",
+        "rolled",
+        "market",
+        "report",
+        "chart",
+        "upward",
+        "arrow"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 52,
+      "sprites": [
+        "item_cons_market_report"
+      ],
+      "files": [
+        "cons_market_report.png"
+      ],
+      "contentHash": "9dd48b35892636b54f43612bbd2f3c6f5151b651d086aad22c38ff2b69fca3f5",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_emp_training",
+      "prompt": "a silver whistle and a small dumbbell",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "growth",
+        "silver",
+        "whistle",
+        "dumbbell"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 53,
+      "sprites": [
+        "item_cons_emp_training"
+      ],
+      "files": [
+        "cons_emp_training.png"
+      ],
+      "contentHash": "af070b0c33421735cb84b4a704a3056b56ce5a48cff4ea109ab660fd4f82137b",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_potential_supplement",
+      "prompt": "a glowing blue vitamin capsule pill",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "growth",
+        "glowing",
+        "blue",
+        "vitamin",
+        "capsule",
+        "pill"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 54,
+      "sprites": [
+        "item_cons_potential_supplement"
+      ],
+      "files": [
+        "cons_potential_supplement.png"
+      ],
+      "contentHash": "92474bec113ee1b7108633d2c57186ce5a5271415e9949adb76437981cb22370",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_memoir",
+      "prompt": "an open memoir book with a soft glow",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "growth",
+        "open",
+        "memoir",
+        "book",
+        "soft",
+        "glow"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 55,
+      "sprites": [
+        "item_cons_memoir"
+      ],
+      "files": [
+        "cons_memoir.png"
+      ],
+      "contentHash": "363d0bceeb83854760cecbc91602693349cbcbf2105bc27b8f023def89ab73ef",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_loyalty_cake",
+      "prompt": "a slice of celebration cake with a cherry",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "growth",
+        "slice",
+        "celebration",
+        "cake",
+        "cherry"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 56,
+      "sprites": [
+        "item_cons_loyalty_cake"
+      ],
+      "files": [
+        "cons_loyalty_cake.png"
+      ],
+      "contentHash": "a85c014ad27f2871a4da50973fb52ba2ab1201bd7d095d3069ae5b099d0de751",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_awaken_shard",
+      "prompt": "a glowing cyan crystal shard",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "growth",
+        "glowing",
+        "cyan",
+        "crystal",
+        "shard"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 57,
+      "sprites": [
+        "item_cons_awaken_shard"
+      ],
+      "files": [
+        "cons_awaken_shard.png"
+      ],
+      "contentHash": "aa7a4c69b536a9faf375491e354277d89499f69c96b6913b2a379a3870ec2fb2",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_fusion_catalyst",
+      "prompt": "a bubbling catalyst vial with a swirling glow",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "manip",
+        "bubbling",
+        "catalyst",
+        "vial",
+        "swirling",
+        "glow"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 58,
+      "sprites": [
+        "item_cons_fusion_catalyst"
+      ],
+      "files": [
+        "cons_fusion_catalyst.png"
+      ],
+      "contentHash": "333db33c1f9ea061c18bb63b0bd2d0eb24f9df2bcbdd570c1a0e663d5b785414",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_protect_charm",
+      "prompt": "a protective amulet shaped like a shield charm",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "manip",
+        "protective",
+        "amulet",
+        "shaped",
+        "like",
+        "shield",
+        "charm"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 59,
+      "sprites": [
+        "item_cons_protect_charm"
+      ],
+      "files": [
+        "cons_protect_charm.png"
+      ],
+      "contentHash": "c0d2f32316324c5114e7b9ce007bfdf63f79fab258358e40981bd8ce8e75a13e",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_reroll_ticket",
+      "prompt": "a golden ticket with circular refresh arrows",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "manip",
+        "golden",
+        "ticket",
+        "circular",
+        "refresh",
+        "arrows"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 60,
+      "sprites": [
+        "item_cons_reroll_ticket"
+      ],
+      "files": [
+        "cons_reroll_ticket.png"
+      ],
+      "contentHash": "133a64d31daee5d930a145b32f45275b18460f9d19e181436ba9a17cf895c4ef",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_headhunter_invite",
+      "prompt": "a sealed envelope invitation with a gold star",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "manip",
+        "sealed",
+        "envelope",
+        "invitation",
+        "gold",
+        "star"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 61,
+      "sprites": [
+        "item_cons_headhunter_invite"
+      ],
+      "files": [
+        "cons_headhunter_invite.png"
+      ],
+      "contentHash": "1f8d7f87dc98d3dcf13691acc4e0f24826e9878e764b779c9cff4e6b81a10b98",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    },
+    {
+      "id": "cons_scout_card",
+      "prompt": "an ID scout card with a magnifying glass",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "consumable",
+        "manip",
+        "scout",
+        "card",
+        "magnifying",
+        "glass"
+      ],
+      "pixellabObjectId": "ef58722e-3685-4224-8e33-47039915756e",
+      "frameIndex": 62,
+      "sprites": [
+        "item_cons_scout_card"
+      ],
+      "files": [
+        "cons_scout_card.png"
+      ],
+      "contentHash": "996ff0a3205bc247e5c3096ddf68b595a85a9ea6ae742448f1c9e7a2ab657a1b",
+      "createdAt": "2026-07-14",
+      "scope": "global",
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      }
+    }
+  ],
+  "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
+}
