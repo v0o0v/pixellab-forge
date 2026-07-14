@@ -1,6 +1,6 @@
 # pixellab-forge 사용 예시
 
-아래 예시는 셸에서 직접 CLI 를 호출하는 흐름이다. 플러그인 안(스킬/훅)에서는 경로를 `${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-cache.mjs` 로 쓴다. 무npm — `node` 만 있으면 된다.
+아래 예시는 셸에서 직접 CLI 를 호출하는 흐름이다. 플러그인 안(스킬/훅)에서는 경로를 `${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-cache.mjs` 로 쓴다. `find`/`add` 는 검색 인덱스 백엔드(`better-sqlite3`)를 쓰므로 최초 1회 `node scripts/pixellab-cache.mjs setup` 이 필요하다(그 외엔 `node` 만 있으면 된다).
 
 ## 0) 캐시 초기화 / 설정 확인
 
