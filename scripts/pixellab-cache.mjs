@@ -32,12 +32,20 @@
  */
 import {
   readFileSync, writeFileSync, existsSync, mkdirSync, copyFileSync,
-  readdirSync, statSync, rmSync, mkdtempSync,
+  readdirSync, statSync, rmSync, mkdtempSync, utimesSync,
 } from 'fs';
 import { fileURLToPath, pathToFileURL } from 'url';
 import path from 'path';
 import os from 'os';
 import crypto from 'crypto';
+import { spawnSync } from 'child_process';
+import { createRequire } from 'module';
+import {
+  ensureFresh, getCandidates, rebuild as rebuildIndex, upsertOne, removeIds,
+  closeAll, BackendUnavailableError, allIds,
+} from './pixellab-index.mjs';
+
+export { BackendUnavailableError } from './pixellab-index.mjs';
 
 export const REUSE_THRESHOLD = 0.6;
 
@@ -49,6 +57,13 @@ const STOPWORDS = new Set('a an the with and or of for to in on at is are be as 
 // ── 어휘 유사도(원본 로직 유지) ────────────────────────────────────────────
 export function tokenize(s) {
   return (s || '').toLowerCase().split(/[^a-z0-9]+/).filter((w) => w && w.length > 1 && !STOPWORDS.has(w));
+}
+// 태그 전용 토큰화(FTS 인덱스/질의 정렬용, 계획 §9.3 MAJ-1):
+//   - STOPWORD 미적용(`dark`,`outline` 등 의미있는 태그 보존).
+//   - `[^a-z0-9]` 제거(FTS 특수문자 주입 차단 + `grade:C` → ['grade','c'] 분해).
+//   - 길이 1 이상 유지(단일 문자 태그 토큰도 색인).
+export function tokenizeTag(s) {
+  return String(s == null ? '' : s).toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length >= 1);
 }
 function jaccard(aArr, bArr) {
   const a = new Set(aArr), b = new Set(bArr);
@@ -140,12 +155,52 @@ export function loadMergedEntries(roots) {
   return merged;
 }
 
-export function findMatches(query, roots, opts = {}) {
+// 현 알고리즘 보존 — 회귀 등가(ground truth) 기준. 전량 로드 + 전 항목 선형 score().
+// (검색 핫패스는 findMatches 가 담당하고, 이건 셀프테스트 e/k 회귀 비교 및 폴백 참조용.)
+export function findMatchesLinear(query, roots, opts = {}) {
   const top = opts.top || 5;
   const styleStrict = !!opts.styleStrict;
   let entries = loadMergedEntries(roots);
   if (styleStrict) entries = entries.filter((e) => styleCompatible(query, e));
   const ranked = entries.map((e) => {
+    let s = score(query, e);
+    if (query.contentHash && e.contentHash && e.contentHash === query.contentHash) s = 1; // 정확 중복
+    return { e, s };
+  }).sort((x, y) => y.s - x.s).slice(0, top);
+  return ranked;
+}
+
+// 검색 핫패스: FTS5 온디스크 역색인으로 후보를 매칭-집합으로 추린 뒤, 기존 score() 로만 재랭킹.
+// - AC-2: loadMergedEntries(전량 파싱) 미호출. 신선한 인덱스에서 index.json 미독(stat/sha 만).
+// - 후보 = 각 root(project→global) 매칭-집합 병합·dedup(project 우선) → styleStrict 필터 → score()+contentHash=1.
+// - 백엔드 부재 시 BackendUnavailableError 전파(CLI 는 잡아 명확 에러, 훅은 잡아 degrade).
+// - opts.allowRebuild: CLI=true(기본, stale/부재 시 rebuild), 훅=false(rebuild 금지, 부재 시 skip).
+export function findMatches(query, roots, opts = {}) {
+  const top = opts.top || 5;
+  const styleStrict = !!opts.styleStrict;
+  const allowRebuild = opts.allowRebuild ?? true;
+  const kMax = opts.candidateK || Number(process.env.PIXELLAB_CANDIDATE_K) || 5000;
+  const collect = (root, scope) => {
+    // 원본(index.json)도 인덱스(.sqlite)도 없는 root 는 부작용 없이 건너뛴다(빈 project 캐시에 파일 생성 방지).
+    if (!existsSync(path.join(root, 'index.json')) && !existsSync(path.join(root, 'index.sqlite'))) return { cands: [], ids: [] };
+    const fr = ensureFresh(root, { allowRebuild }); // 백엔드 부재 시 throw
+    if (!fr.fresh) return { cands: [], ids: [] }; // 훅(allowRebuild:false)에서 stale/부재 → 후보 조회 skip
+    const cands = getCandidates(root, query, kMax).map((e) => ({ ...e, scope }));
+    // project 는 전체 id 도 필요(override 억제용 — 아래 참조). global 은 후보만 필요.
+    const ids = scope === 'project' ? allIds(root) : [];
+    return { cands, ids };
+  };
+  const proj = collect(roots.project, 'project');
+  const glob = collect(roots.global, 'global');
+  // dedup: findMatchesLinear(loadMergedEntries) 와 동일 의미 — "project 전체 id" 로 global 을 억제한다(project 우선).
+  // project override 가 질의 토큰과 안 겹쳐 후보(proj.cands)에 없더라도, 그 id 의 global 원본은
+  // 부활시키지 않는다(억제만 — HIGH 회귀: 후보 id 로만 seen 을 채우면 override 미매칭 시 global 이 부활한다).
+  const seen = new Set(proj.ids);
+  const candidates = proj.cands.slice();
+  for (const e of glob.cands) if (!seen.has(e.id)) candidates.push(e);
+  let ents = candidates;
+  if (styleStrict) ents = ents.filter((e) => styleCompatible(query, e));
+  const ranked = ents.map((e) => {
     let s = score(query, e);
     if (query.contentHash && e.contentHash && e.contentHash === query.contentHash) s = 1; // 정확 중복
     return { e, s };
@@ -263,10 +318,22 @@ function cmdFind(args) {
     console.error('사용법: find "<설명>" [--tags a,b] [--view sidescroller] [--size 42] [--tool ...] [--file ref.png] [--style-strict] [--top N]');
     process.exit(1);
   }
-  const ranked = findMatches(query, roots, { top: Number(args.top || 5), styleStrict: args['style-strict'] === 'true' });
+  let ranked;
+  try {
+    ranked = findMatches(query, roots, { top: Number(args.top || 5), styleStrict: args['style-strict'] === 'true' });
+  } catch (e) {
+    if (e instanceof BackendUnavailableError) { console.error(backendHint()); process.exit(1); }
+    throw e;
+  }
   console.log(`질의: "${query.prompt}"${query.tags.length ? ' tags=[' + query.tags.join(',') + ']' : ''}${query.view ? ' view=' + query.view : ''}${query.size ? ' size=' + query.size : ''}`);
   console.log('─'.repeat(60));
-  if (ranked.length === 0) { console.log('캐시가 비어 있음 → 신규 생성 필요(생성 후 add 로 등록)'); return; }
+  if (ranked.length === 0) {
+    // 후보 매칭 0건(질의 토큰과 겹치는 항목 없음) = 판정상 "신규 생성"과 등가.
+    console.log('🆕 신규 생성 권장: 질의와 겹치는 캐시 후보 없음 (충분히 유사한 캐시 없음)');
+    console.log('   생성 후 반드시 add 로 등록:');
+    console.log(`   node "<plugin>/scripts/pixellab-cache.mjs" add --id <새id> --prompt "${query.prompt}" --file <생성png> [--scope global|project]`);
+    return;
+  }
   for (const { e, s } of ranked) {
     const abs = absImagePath(e, roots);
     console.log(`${s.toFixed(2)}  [${e.scope}]  ${e.id}  {${(e.tags || []).slice(0, 6).join(', ')}}`);
@@ -312,6 +379,13 @@ function cmdAdd(args) {
   const roots = resolveRoots();
   const scope = args.scope === 'project' ? 'project' : 'global'; // 기본 global(전역 라이브러리)
   const root = scope === 'project' ? roots.project : roots.global;
+  // add 는 백엔드 필수(CLI 계약). ensureFresh 로 (add 前) index.json 과 동기화 — 이후 upsertOne 이 O(1) 증분.
+  try {
+    ensureFresh(root, { allowRebuild: true });
+  } catch (e) {
+    if (e instanceof BackendUnavailableError) { console.error(backendHint()); process.exit(1); }
+    throw e;
+  }
   const res = addEntry(root, {
     id: args.id,
     prompt: args.prompt,
@@ -334,6 +408,7 @@ function cmdAdd(args) {
     },
     createdAt: (args.date && args.date !== 'true') ? args.date : undefined,
   });
+  upsertOne(root, res.entry); // O(1) 증분 갱신 + meta 시그니처 재동기화(다음 find 가 rebuild 안 하도록)
   console.log(`등록[${scope}]: ${args.id} → ${path.join(root, 'images', args.id + '.png')} (해당 scope 총 ${res.total}개)`);
   if (res.duplicateOf) console.log(`⚠️ 동일 contentHash 기존 항목 존재: ${res.duplicateOf} (정확 중복 — 재사용 검토)`);
 }
@@ -345,9 +420,14 @@ function cmdPrune() {
     const { images } = rootPaths(root);
     const idx = loadIndex(root);
     const before = idx.entries.length;
+    const removedIds = idx.entries.filter((e) => !existsSync(path.join(images, entryFile(e)))).map((e) => e.id);
     idx.entries = idx.entries.filter((e) => existsSync(path.join(images, entryFile(e))));
     const removed = before - idx.entries.length;
-    if (removed > 0) saveIndex(root, idx);
+    if (removed > 0) {
+      saveIndex(root, idx);
+      // 인덱스에서도 제거 id 만 증분 삭제(§9.7). 백엔드 부재면 index.json 이 진실 — 다음 find 가 rebuild.
+      try { removeIds(root, removedIds); } catch (e) { if (!(e instanceof BackendUnavailableError)) throw e; }
+    }
     totalRemoved += removed;
     let bytes = 0;
     if (existsSync(images)) for (const f of readdirSync(images)) { try { bytes += statSync(path.join(images, f)).size; } catch { /* skip */ } }
@@ -355,6 +435,56 @@ function cmdPrune() {
     console.log(`[${name}] 항목 ${idx.entries.length}개(정리 ${removed}), images ${(bytes / 1024).toFixed(1)} KB — ${root}`);
   }
   console.log(`합계: 정리 ${totalRemoved}개, 총 용량 ${(totalBytes / 1024).toFixed(1)} KB`);
+}
+
+// ── 재사용 인덱스 백엔드(better-sqlite3) 배선 ────────────────────────────────
+function backendHint() {
+  const cli = path.join(PLUGIN_ROOT, 'scripts', 'pixellab-cache.mjs');
+  return [
+    'better-sqlite3(재사용 인덱스 백엔드)가 설치되어 있지 않습니다.',
+    `  setup 실행:  node "${cli}" setup`,
+    `  수동 설치:   cd "${PLUGIN_ROOT}" && npm install`,
+  ].join('\n');
+}
+
+// setup — better-sqlite3 설치 보장. 자동 npm install 은 이 명령에서만(find/add/훅 은 절대 자동설치 X, §OQ4).
+function cmdSetup() {
+  const require = createRequire(import.meta.url);
+  try {
+    require.resolve('better-sqlite3');
+    console.log('better-sqlite3 이미 설치됨.');
+    // FTS5/동작 스모크
+    try {
+      rebuildIndex(resolveRoots().global);
+      console.log('전역 인덱스 rebuild 확인 완료(FTS5 동작).');
+    } catch (e) { console.log(`(인덱스 rebuild 스모크 생략: ${e.message})`); }
+    process.exit(0);
+  } catch { /* 미설치 → 아래에서 설치 시도 */ }
+  console.log(`better-sqlite3 미설치 → npm install 실행 (${PLUGIN_ROOT}) ...`);
+  const r = spawnSync('npm', ['install', '--omit=dev'], { cwd: PLUGIN_ROOT, stdio: 'inherit', shell: process.platform === 'win32' });
+  if (r.status === 0) {
+    console.log('설치 완료. 이제 find/add 가 재사용 인덱스를 사용합니다.');
+    process.exit(0);
+  }
+  console.error('자동 설치 실패.');
+  console.error(`수동 설치: cd "${PLUGIN_ROOT}" && npm install`);
+  console.error('(prebuild 부재 플랫폼이면 빌드 툴체인[python/C++ toolchain]이 필요할 수 있습니다.)');
+  process.exit(1);
+}
+
+// rebuild | reindex — 두 root 인덱스를 index.json 전량으로 재구성.
+function cmdRebuild() {
+  const roots = resolveRoots();
+  try {
+    for (const [name, root] of [['global', roots.global], ['project', roots.project]]) {
+      if (!existsSync(rootPaths(root).index)) { console.log(`${name.padEnd(8)} (index.json 없음 — 건너뜀) ${root}`); continue; }
+      rebuildIndex(root);
+      console.log(`${name.padEnd(8)} 인덱스 재구성 완료 (${loadIndex(root).entries.length}개) ${path.join(root, 'index.sqlite')}`);
+    }
+  } catch (e) {
+    if (e instanceof BackendUnavailableError) { console.error(backendHint()); process.exit(1); }
+    throw e;
+  }
 }
 
 // ── 셀프테스트(결정적, os.tmpdir 격리) ──────────────────────────────────────
@@ -369,13 +499,30 @@ function selftest() {
   const pngB = path.join(tmp, 'b.png');
   writeFileSync(pngA, SAMPLE_PNG_A);
   writeFileSync(pngB, Buffer.concat([SAMPLE_PNG_A, Buffer.from([0x42])])); // 다른 바이트 → 다른 해시
+  // 서브루트 격리(케이스 간 오염 방지) + 고유 PNG(고유 contentHash) 생성기.
+  let pngSeq = 0;
+  const subRoots = (name) => ({ global: path.join(tmp, name, 'global'), project: path.join(tmp, name, 'project') });
+  const mkPng = () => { const p = path.join(tmp, `p${pngSeq++}.png`); writeFileSync(p, Buffer.concat([SAMPLE_PNG_A, Buffer.from([pngSeq & 0xff, (pngSeq >> 8) & 0xff])])); return p; };
+  // findMatches ≡ findMatchesLinear 등가 비교(계획 AC-1: score>0.10 후보집합·순서·판정·best 일치).
+  const equiv = (query, r) => {
+    const a = findMatches(query, r, { top: 999 });
+    const b = findMatchesLinear(query, r, { top: 999 });
+    const key = (arr) => arr.filter((x) => x.s > 0.10).map((x) => `${x.e.scope}:${x.e.id}:${x.s.toFixed(6)}`);
+    const ka = JSON.stringify(key(a)), kb = JSON.stringify(key(b));
+    const decA = !!(a.length && a[0].s >= REUSE_THRESHOLD), decB = !!(b.length && b[0].s >= REUSE_THRESHOLD);
+    const bestA = a.length ? `${a[0].e.id}:${a[0].s.toFixed(6)}` : 'none';
+    const bestB = b.length ? `${b[0].e.id}:${b[0].s.toFixed(6)}` : 'none';
+    // best 비교는 s>0.10 일 때만(≤0.10 near-zero best 는 등가 범위 밖 — 스타일보정 바닥).
+    const bestEq = ((a[0] && a[0].s > 0.10) || (b[0] && b[0].s > 0.10)) ? (bestA === bestB) : true;
+    return { setEq: ka === kb, decEq: decA === decB, bestEq, bestA, bestB, ka, kb };
+  };
   try {
     addEntry(roots.global, {
       scope: 'global', id: 'eq_workspace_C',
       prompt: 'a simple wooden office desk with a small computer monitor',
       file: pngA, tags: ['equipment', 'desk'], view: 'sidescroller', size: 42, tool: 'create_1_direction_object',
     });
-    // (a) 유사 설명 → ≥ 0.6 재사용
+    // (a) 유사 설명 → ≥ 0.6 재사용 (FTS 경로)
     const rA = findMatches({ prompt: 'a wooden desk with a monitor', tags: [] }, roots, {});
     ok('a) 유사설명 재사용(≥0.6)', rA.length && rA[0].s >= REUSE_THRESHOLD, `score=${rA[0] && rA[0].s.toFixed(3)}`);
     // (b) 무관 설명 → < 0.6 신규
@@ -384,7 +531,7 @@ function selftest() {
     // (c) 동일 파일 재add → contentHash 로 정확 중복 감지
     const dupRes = addEntry(roots.global, { scope: 'global', id: 'eq_workspace_C_copy', prompt: 'another desk variant', file: pngA });
     ok('c1) 재add 정확중복 감지', dupRes.duplicateOf === 'eq_workspace_C', `duplicateOf=${dupRes.duplicateOf}`);
-    // (c2) find --file(=contentHash) → score 1.0
+    // (c2) find --file(=contentHash) → score 1.0 (무관 prompt 라도 hash 후보 강제 편입)
     const rC = findMatches({ prompt: 'totally unrelated text here', contentHash: hashFile(pngA) }, roots, {});
     ok('c2) find(hash) 정확중복 score=1.0', rC.length && rC[0].s === 1, `score=${rC[0] && rC[0].s}`);
     // (d) 하이브리드: 같은 id 가 project·global 양쪽 → project 우선
@@ -392,7 +539,127 @@ function selftest() {
     addEntry(roots.project, { scope: 'project', id: 'dup', prompt: 'project version of dup', file: pngB });
     const dupEntries = loadMergedEntries(roots).filter((e) => e.id === 'dup');
     ok('d) 하이브리드 project 우선', dupEntries.length === 1 && dupEntries[0].scope === 'project', `scopes=[${dupEntries.map((e) => e.scope).join(',')}]`);
+
+    // (e) 회귀 등가: findMatches ≡ findMatchesLinear (다양한 항목 + 질의 배터리)
+    const rE = subRoots('e');
+    addEntry(rE.global, { scope: 'global', id: 'desk', prompt: 'a simple wooden office desk with a small computer monitor', file: mkPng(), tags: ['equipment', 'desk'], view: 'sidescroller', size: 42 });
+    addEntry(rE.global, { scope: 'global', id: 'sword', prompt: 'a sharp steel sword with a leather grip', file: mkPng(), tags: ['weapon', 'sword'], view: 'sidescroller', size: 42 });
+    addEntry(rE.global, { scope: 'global', id: 'chair', prompt: 'a wooden office chair with wheels', file: mkPng(), tags: ['equipment', 'chair'], view: 'sidescroller', size: 42 });
+    addEntry(rE.project, { scope: 'project', id: 'desk', prompt: 'a modern glass office desk with a monitor', file: mkPng(), tags: ['equipment', 'desk'], view: 'sidescroller', size: 42 }); // project override
+    const battery = [
+      { prompt: 'a wooden desk with a monitor', tags: [] },
+      { prompt: 'a steel sword', tags: [] },
+      { prompt: 'office chair wooden', tags: ['equipment'] },
+      { prompt: '', tags: ['desk'] },
+      { prompt: 'nonexistent gibberish qwxz', tags: [] },
+      { prompt: 'a wooden office desk', tags: ['equipment', 'desk'], view: 'sidescroller', size: 42 },
+    ];
+    let eAll = true, eDetail = `${battery.length} 질의 등가`;
+    for (const q of battery) {
+      const c = equiv(q, rE);
+      if (!(c.setEq && c.decEq && c.bestEq)) { eAll = false; eDetail = `q="${q.prompt}"|set${c.setEq}dec${c.decEq}best${c.bestEq}|fm=${c.ka}|lin=${c.kb}`; break; }
+    }
+    ok('e) 회귀 등가(findMatches≡findMatchesLinear)', eAll, eDetail);
+
+    // (f) db 삭제 → 다음 find 자동 rebuild
+    const rF = subRoots('f');
+    addEntry(rF.global, { scope: 'global', id: 'desk', prompt: 'a wooden office desk', file: mkPng(), tags: ['desk'] });
+    findMatches({ prompt: 'wooden desk', tags: [] }, rF, {}); // 최초 build
+    closeAll();
+    for (const suf of ['', '-wal', '-shm']) { try { rmSync(path.join(rF.global, 'index.sqlite' + suf), { force: true }); } catch { /* ignore */ } }
+    const frF = ensureFresh(rF.global, { allowRebuild: true });
+    const rf2 = findMatches({ prompt: 'wooden desk', tags: [] }, rF, {});
+    ok('f) db 삭제 후 자동 rebuild', frF.rebuilt === true && rf2.length && rf2[0].e.id === 'desk', `rebuilt=${frF.rebuilt}`);
+
+    // (g) staleness: 내용변경 → rebuild, git mtime churn(내용 동일) → rebuild 생략
+    const rG = subRoots('g');
+    addEntry(rG.global, { scope: 'global', id: 'a', prompt: 'a wooden office desk', file: mkPng(), tags: ['desk'] });
+    ensureFresh(rG.global, { allowRebuild: true });
+    const frG1 = ensureFresh(rG.global, { allowRebuild: true }); // 이미 신선
+    addEntry(rG.global, { scope: 'global', id: 'b', prompt: 'a steel sword blade', file: mkPng(), tags: ['sword'] }); // index.json 내용 변경(직접 addEntry — db 미갱신)
+    const frG2 = ensureFresh(rG.global, { allowRebuild: true }); // 내용 변경 → rebuild
+    const idxPathG = path.join(rG.global, 'index.json');
+    const future = new Date(Date.now() + 5000);
+    utimesSync(idxPathG, future, future); // mtime 만 변경(내용/ sha 동일)
+    const frG3 = ensureFresh(rG.global, { allowRebuild: true }); // churn → rebuild 생략
+    ok('g) staleness(내용변경 rebuild / mtime churn 생략)',
+      frG1.rebuilt === false && frG2.rebuilt === true && frG3.rebuilt === false && frG3.reason === 'mtime-churn',
+      `fr1=${frG1.rebuilt} fr2=${frG2.rebuilt} fr3=${frG3.rebuilt}/${frG3.reason}`);
+
+    // (h) 증분: cmdAdd 흐름(ensureFresh→addEntry→upsertOne) 후 find 가 rebuild 미발생 + 신항목 검색
+    const rH = subRoots('h');
+    addEntry(rH.global, { scope: 'global', id: 'a', prompt: 'a wooden office desk', file: mkPng(), tags: ['desk'] });
+    ensureFresh(rH.global, { allowRebuild: true }); // build
+    ensureFresh(rH.global, { allowRebuild: true }); // (cmdAdd 前 동기화)
+    const resH = addEntry(rH.global, { scope: 'global', id: 'b', prompt: 'a steel sword blade', file: mkPng(), tags: ['sword'] });
+    upsertOne(rH.global, resH.entry);
+    const frH = ensureFresh(rH.global, { allowRebuild: true }); // rebuild 미발생 기대
+    const rh = findMatches({ prompt: 'steel sword', tags: [] }, rH, {});
+    ok('h) 증분 upsert 후 rebuild 미발생 + 신항목 검색',
+      frH.rebuilt === false && rh.length && rh[0].e.id === 'b',
+      `rebuilt=${frH.rebuilt} best=${rh[0] && rh[0].e.id}`);
+
+    // (i) 훅 degrade: 백엔드 부재/정상 모두 exit 0 (자식 프로세스로 cache-guard 실행)
+    const cacheGuard = path.join(PLUGIN_ROOT, 'scripts', 'cache-guard.mjs');
+    const payload = JSON.stringify({ tool_name: 'mcp__pixellab__create_character', tool_input: { description: 'a wooden office desk' } });
+    const rI = subRoots('i');
+    addEntry(rI.global, { scope: 'global', id: 'desk', prompt: 'a wooden office desk', file: mkPng(), tags: ['desk'] });
+    findMatches({ prompt: 'wooden desk', tags: [] }, rI, {}); // db 신선하게
+    closeAll(); // 자식이 같은 db 파일 열기 전에 부모 핸들 해제
+    const envBase = { ...process.env, PIXELLAB_CACHE_GLOBAL: rI.global, PIXELLAB_CACHE_PROJECT: rI.project };
+    const p1 = spawnSync(process.execPath, [cacheGuard], { input: payload, encoding: 'utf8', env: { ...envBase, PIXELLAB_FORCE_NO_BACKEND: '1' } });
+    const p2 = spawnSync(process.execPath, [cacheGuard], { input: payload, encoding: 'utf8', env: envBase });
+    ok('i) 훅 degrade 항상 exit 0(백엔드 부재/정상)', p1.status === 0 && p2.status === 0, `noBackend=${p1.status} backend=${p2.status}`);
+
+    // (j) N>K_MAX 절단 경고 + 후보 ≤ K_MAX
+    const rJ = subRoots('j');
+    for (let i = 0; i < 6; i++) addEntry(rJ.global, { scope: 'global', id: 'sw' + i, prompt: `a steel sword number ${i}`, file: mkPng(), tags: ['sword'] });
+    ensureFresh(rJ.global, { allowRebuild: true });
+    let warnedJ = false;
+    const origWrite = process.stderr.write.bind(process.stderr);
+    process.stderr.write = (s) => { if (String(s).includes('K_MAX')) warnedJ = true; return true; };
+    let candJ;
+    try { candJ = getCandidates(rJ.global, { prompt: 'steel sword', tags: ['sword'] }, 3); }
+    finally { process.stderr.write = origWrite; }
+    ok('j) N>K_MAX 절단 경고', warnedJ && candJ.length <= 3, `warned=${warnedJ} cand=${candJ && candJ.length}`);
+
+    // (k) STOPWORD 태그(dark) 등가 + 포착 (tokenizeTag 로 후보에 포함)
+    const rK = subRoots('k');
+    addEntry(rK.global, { scope: 'global', id: 'darkitem', prompt: 'zzz totally distinct qwxyz descriptor', file: mkPng(), tags: ['dark', 'outline'] });
+    addEntry(rK.global, { scope: 'global', id: 'other', prompt: 'a bright sunny meadow', file: mkPng(), tags: ['nature'] });
+    ensureFresh(rK.global, { allowRebuild: true });
+    const qK = { prompt: 'unrelated words here', tags: ['dark'] };
+    const cK = equiv(qK, rK);
+    const fmK = findMatches(qK, rK, { top: 5 });
+    const hasDark = fmK.some((x) => x.e.id === 'darkitem');
+    ok('k) STOPWORD 태그(dark) 등가+포착', cK.setEq && cK.decEq && cK.bestEq && hasDark, `set${cK.setEq} best=${cK.bestA}/${cK.bestB} hasDark=${hasDark}`);
+
+    // (l) 태그 특수문자 주입 안전(크래시 없음)
+    const rL = subRoots('l');
+    addEntry(rL.global, { scope: 'global', id: 'foo', prompt: 'a foo bar widget', file: mkPng(), tags: ['foo', 'bar'] });
+    ensureFresh(rL.global, { allowRebuild: true });
+    let crashedL = false, resL;
+    try { resL = findMatches({ prompt: 'widget', tags: ['foo"bar*', 'baz)OR(qux', '*'] }, rL, { top: 5 }); }
+    catch { crashedL = true; }
+    ok('l) 태그 특수문자 주입 안전', !crashedL && Array.isArray(resL), `crashed=${crashedL} n=${resL && resL.length}`);
+
+    // (m) 회귀(HIGH): project override 가 질의 토큰과 안 겹쳐도 global 원본이 부활하면 안 됨(project 우선 억제).
+    // 재현: global "hero"=질의와 정확히 겹침(높은 score), project override "hero"=질의와 전혀 안 겹침(낮은 score).
+    // 버그였던 동작: seen 을 "project 후보(질의 매칭)id" 로만 채우면 project override 가 후보에 안 뜨므로
+    // seen 이 비어 global "hero" 가 그대로 부활 → project 우선 의미 붕괴. 고친 동작: seen = project 전체 id.
+    const rM = subRoots('m');
+    addEntry(rM.global, { scope: 'global', id: 'hero', prompt: 'a brave knight with a shining sword and shield armor', file: mkPng(), tags: [] });
+    addEntry(rM.project, { scope: 'project', id: 'hero', prompt: 'zzz custom reskinned totally different mage wizard qwxyz', file: mkPng(), tags: [] });
+    const qM = { prompt: 'a brave knight with a shining sword and shield armor', tags: [] };
+    const cM = equiv(qM, rM);
+    const fmM = findMatches(qM, rM, { top: 5 });
+    const noGlobalRevival = !fmM.some((x) => x.e.scope === 'global' && x.e.id === 'hero');
+    const isNewDecision = !(fmM.length && fmM[0].s >= REUSE_THRESHOLD);
+    ok('m) project override 비매칭 억제(회귀)',
+      cM.setEq && cM.decEq && cM.bestEq && noGlobalRevival && isNewDecision,
+      `set${cM.setEq} dec${cM.decEq} best=${cM.bestA}/${cM.bestB} noGlobalRevival=${noGlobalRevival} newDecision=${isNewDecision}`);
   } finally {
+    try { closeAll(); } catch { /* ignore */ }
     try { rmSync(tmp, { recursive: true, force: true }); } catch { /* ignore */ }
   }
   let passed = 0;
@@ -419,8 +686,10 @@ function main() {
     case 'add': return cmdAdd(args);
     case 'config': return cmdConfig();
     case 'prune': return cmdPrune();
+    case 'setup': return cmdSetup();
+    case 'rebuild': case 'reindex': return cmdRebuild();
     default:
-      console.log('PixelLab Forge 재사용 캐시. 명령: init | find | add | list | get | config | prune | test');
+      console.log('PixelLab Forge 재사용 캐시. 명령: init | find | add | list | get | config | prune | setup | rebuild | test');
       console.log('  node scripts/pixellab-cache.mjs find "a wooden office desk" --view sidescroller --size 42');
       console.log('  node scripts/pixellab-cache.mjs add --id my_id --prompt "..." --file path.png --scope global --tags a,b --size 42 --view sidescroller');
       console.log('  node scripts/pixellab-cache.mjs config');

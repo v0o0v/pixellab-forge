@@ -1,6 +1,12 @@
 # Node
 node_modules/
 
+# 파생 SQLite FTS5 인덱스(index.json+PNG 원본으로부터 재빌드 가능 — 절대 커밋 금지)
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+library/index.sqlite*
+
 # OS
 .DS_Store
 Thumbs.db

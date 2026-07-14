@@ -18,7 +18,7 @@ import { appendFileSync, mkdirSync } from 'fs';
 import path from 'path';
 import os from 'os';
 import { fileURLToPath } from 'url';
-import { resolveRoots, findMatches, absImagePath, REUSE_THRESHOLD } from './pixellab-cache.mjs';
+import { resolveRoots, findMatches, absImagePath, REUSE_THRESHOLD, BackendUnavailableError } from './pixellab-cache.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -86,10 +86,21 @@ async function run() {
   } catch { /* 로깅 실패는 무시 */ }
 
   // 캐시 조회 → 최고 매치 경고(비차단).
+  // 훅은 rebuild 금지(allowRebuild:false) — 신선 인덱스일 때만 후보 조회, 부재/stale/백엔드부재 시 skip.
   let warned = false;
+  let backendWarned = false;
   for (const desc of descriptions) {
     let ranked;
-    try { ranked = findMatches({ prompt: desc, tags: [] }, roots, { top: 1 }); } catch { continue; }
+    try {
+      ranked = findMatches({ prompt: desc, tags: [] }, roots, { top: 1, allowRebuild: false });
+    } catch (e) {
+      // 백엔드(better-sqlite3) 미설치 → 1회만 setup 힌트, 비차단. 그 외 예외도 흡수(생성 미차단).
+      if (e instanceof BackendUnavailableError && !backendWarned) {
+        process.stderr.write('⚠️ [pixellab-forge] 재사용 인덱스 백엔드(better-sqlite3) 미설치 — 후보 조회 건너뜀(생성은 계속). setup: node "<plugin>/scripts/pixellab-cache.mjs" setup\n');
+        backendWarned = true;
+      }
+      continue;
+    }
     if (ranked.length && ranked[0].s >= REUSE_THRESHOLD) {
       const best = ranked[0];
       const abs = absImagePath(best.e, roots);
