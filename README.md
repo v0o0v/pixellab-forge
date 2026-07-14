@@ -50,13 +50,13 @@ claude plugin validate ./
 
 | 계층 | 기본 경로 | 오버라이드 env | 성격 |
 |---|---|---|---|
-| global | `${CLAUDE_PLUGIN_DATA}/cache` (없으면 `~/.pixellab-forge/cache`) | `PIXELLAB_CACHE_GLOBAL` | 여러 프로젝트가 공유하는 기본 라이브러리 |
+| global | `~/.pixellab-forge/cache` (고정 canonical) | `PIXELLAB_CACHE_GLOBAL` | standalone·설치형이 공유하는 기본 라이브러리 |
 | project | `${CLAUDE_PROJECT_DIR}/.pixellab-cache` (없으면 `<cwd>/.pixellab-cache`) | `PIXELLAB_CACHE_PROJECT` | 현재 프로젝트 로컬 오버라이드 |
 
 각 계층은 `index.json`(메타 대장) + `images/<id>.png`(원본)로 구성된다.
 
 - **프로젝트 로컬 캐시(`.pixellab-cache/`)는 커밋 대상**(기본) — 팀이 같은 재사용 자산을 공유.
-- **전역 캐시는 `${CLAUDE_PLUGIN_DATA}` 하위**라 커밋되지 않고 플러그인 업데이트에도 유지된다.
+- **전역 캐시는 `~/.pixellab-forge/cache` 고정**(커밋 대상 아님) — standalone 실행과 설치형 플러그인이 **같은 라이브러리**를 공유한다. 위치를 바꾸려면 `PIXELLAB_CACHE_GLOBAL` 로만 오버라이드.
 
 해석된 경로는 언제든 확인:
 

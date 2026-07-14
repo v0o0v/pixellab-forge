@@ -71,7 +71,7 @@ node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-cache.mjs" add \
 
 - `--scope` **기본 global**(전역 공유 라이브러리에 쌓는다). 이 프로젝트에서만 오버라이드할 땐 `--scope project`.
 - **라이선스 메타(`--license --author --source`)** 를 가능하면 항상 채운다(재사용/재배포 안전).
-- 프로젝트 로컬 캐시(`.pixellab-cache/`)는 **커밋 대상**(기본). 전역 캐시는 `${CLAUDE_PLUGIN_DATA}` 하위라 커밋되지 않는다.
+- 프로젝트 로컬 캐시(`.pixellab-cache/`)는 **커밋 대상**(기본). 전역 캐시는 `~/.pixellab-forge/cache` 고정이라 커밋되지 않고 standalone·설치형이 공유한다.
 
 ## 주의
 

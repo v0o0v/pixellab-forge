@@ -11,7 +11,7 @@
  *   find 는 project → global 순으로 둘 다 조회하고, id 중복 시 project 를 우선한다.
  *
  * 루트 해석(환경변수):
- *   global  = PIXELLAB_CACHE_GLOBAL  || (CLAUDE_PLUGIN_DATA ? <그것>/cache : <homedir>/.pixellab-forge/cache)
+ *   global  = PIXELLAB_CACHE_GLOBAL  || <homedir>/.pixellab-forge/cache  (고정 canonical — standalone·설치형 공유)
  *   project = PIXELLAB_CACHE_PROJECT || (CLAUDE_PROJECT_DIR ? <그것>/.pixellab-cache : <cwd>/.pixellab-cache)
  *   각 루트에 index.json(메타 대장) + images/(PNG 원본).
  *
@@ -93,9 +93,11 @@ function styleCompatible(query, entry) {
 
 // ── 캐시 루트 해석/입출력 ───────────────────────────────────────────────────
 export function resolveRoots(env = process.env) {
+  // 전역 캐시는 고정 canonical 경로 — standalone 실행이든 설치형 플러그인이든 같은 공유 라이브러리를 본다.
+  // (CLAUDE_PLUGIN_DATA 는 플러그인 설치 id 별로 달라져 라이브러리가 갈라지므로 캐시 위치로는 쓰지 않는다.
+  //  위치를 바꾸려면 PIXELLAB_CACHE_GLOBAL 로만 오버라이드.)
   const global = env.PIXELLAB_CACHE_GLOBAL
-    || (env.CLAUDE_PLUGIN_DATA ? path.join(env.CLAUDE_PLUGIN_DATA, 'cache')
-      : path.join(os.homedir(), '.pixellab-forge', 'cache'));
+    || path.join(os.homedir(), '.pixellab-forge', 'cache');
   const project = env.PIXELLAB_CACHE_PROJECT
     || (env.CLAUDE_PROJECT_DIR ? path.join(env.CLAUDE_PROJECT_DIR, '.pixellab-cache')
       : path.join(process.cwd(), '.pixellab-cache'));
