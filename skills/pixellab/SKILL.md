@@ -32,11 +32,11 @@ node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-cache.mjs" <명령>
 node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-cache.mjs" find "<원하는 이미지 영문 설명>" [--tags a,b] [--view sidescroller] [--size 42] [--tool create_1_direction_object] [--style-strict] [--top 5]
 ```
 
-- **재사용 권장(최고 score ≥ 0.7)**: 출력된 **파일 절대경로**를 그대로 쓰거나 대상 위치로 복사한다. **PixelLab 호출 금지**(비용 0). `--file <참조png>` 를 주면 동일 바이트(contentHash)일 때 score=1.0 정확 중복으로 뜬다.
-- **신규 생성 권장(score < 0.7)**: 그때만 생성 대상(miss)으로 표시한다.
+- **재사용 권장(최고 score ≥ 0.6)**: 출력된 **파일 절대경로**를 그대로 쓰거나 대상 위치로 복사한다. **PixelLab 호출 금지**(비용 0). `--file <참조png>` 를 주면 동일 바이트(contentHash)일 때 score=1.0 정확 중복으로 뜬다.
+- **신규 생성 권장(score < 0.6)**: 그때만 생성 대상(miss)으로 표시한다.
 - 스타일이 중요하면 `--view/--size/--tool` 를 함께 줘 스코어를 보정하고, 호환 안 되는 항목을 배제하려면 `--style-strict`.
 
-REUSE_THRESHOLD = **0.7**. 이는 후보 추천이지 정확 매칭이 아니므로, 채택 전 `get <id>` 로 원본 메타/경로를 확인한다.
+REUSE_THRESHOLD = **0.6**. 이는 후보 추천이지 정확 매칭이 아니므로, 채택 전 `get <id>` 로 원본 메타/경로를 확인한다.
 
 ## 4) miss 만 한 배치로 생성
 

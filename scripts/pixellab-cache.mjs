@@ -25,7 +25,7 @@
  *   prune                             파일 없는 항목 정리 + 용량 리포트
  *   test | --selftest                 결정적 셀프테스트
  *
- * 재사용 판정: 유사도 score ∈ [0,1]. 임계값 REUSE_THRESHOLD=0.7 이상이면 "재사용 권장".
+ * 재사용 판정: 유사도 score ∈ [0,1]. 임계값 REUSE_THRESHOLD=0.6 이상이면 "재사용 권장".
  *   score = 0.5×(prompt 대칭 Jaccard) + 0.5×(질의 포함도). 질의에 태그가 있으면 0.7×prompt+0.3×태그겹침.
  *   view/size/tool 일치 소폭 보정. --file 로 준 이미지의 contentHash 가 캐시와 같으면 score=1.0(정확 중복).
  *   (임베딩 없이 결정적 어휘 유사도 — 무npm. 정확 매칭이 아니라 후보 추천이다.)
@@ -39,7 +39,7 @@ import path from 'path';
 import os from 'os';
 import crypto from 'crypto';
 
-export const REUSE_THRESHOLD = 0.7;
+export const REUSE_THRESHOLD = 0.6;
 
 const STOPWORDS = new Set('a an the with and or of for to in on at is are be as by from into over under single centered object icon pixel art game rpg inventory transparent background clean vibrant bold dark outline'.split(/\s+/));
 
@@ -370,12 +370,12 @@ function selftest() {
       prompt: 'a simple wooden office desk with a small computer monitor',
       file: pngA, tags: ['equipment', 'desk'], view: 'sidescroller', size: 42, tool: 'create_1_direction_object',
     });
-    // (a) 유사 설명 → ≥ 0.7 재사용
+    // (a) 유사 설명 → ≥ 0.6 재사용
     const rA = findMatches({ prompt: 'a wooden desk with a monitor', tags: [] }, roots, {});
-    ok('a) 유사설명 재사용(≥0.7)', rA.length && rA[0].s >= REUSE_THRESHOLD, `score=${rA[0] && rA[0].s.toFixed(3)}`);
-    // (b) 무관 설명 → < 0.7 신규
+    ok('a) 유사설명 재사용(≥0.6)', rA.length && rA[0].s >= REUSE_THRESHOLD, `score=${rA[0] && rA[0].s.toFixed(3)}`);
+    // (b) 무관 설명 → < 0.6 신규
     const rB = findMatches({ prompt: 'a steel sword and shield', tags: [] }, roots, {});
-    ok('b) 무관설명 신규(<0.7)', !rB.length || rB[0].s < REUSE_THRESHOLD, `score=${rB[0] ? rB[0].s.toFixed(3) : 'none'}`);
+    ok('b) 무관설명 신규(<0.6)', !rB.length || rB[0].s < REUSE_THRESHOLD, `score=${rB[0] ? rB[0].s.toFixed(3) : 'none'}`);
     // (c) 동일 파일 재add → contentHash 로 정확 중복 감지
     const dupRes = addEntry(roots.global, { scope: 'global', id: 'eq_workspace_C_copy', prompt: 'another desk variant', file: pngA });
     ok('c1) 재add 정확중복 감지', dupRes.duplicateOf === 'eq_workspace_C', `duplicateOf=${dupRes.duplicateOf}`);

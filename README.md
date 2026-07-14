@@ -8,7 +8,7 @@
 
 ## 무엇을 하나
 
-1. PixelLab 로 이미지를 만들기 **전에** 재사용 캐시를 조회한다(`find`). 유사도 score ≥ **0.7** 이면 그 파일을 재사용(비용 0).
+1. PixelLab 로 이미지를 만들기 **전에** 재사용 캐시를 조회한다(`find`). 유사도 score ≥ **0.6** 이면 그 파일을 재사용(비용 0).
 2. 정말 없을 때만(miss) PixelLab 로 생성하고, 생성분을 캐시에 **등록**(`add`)해 다음부터 재사용한다.
 3. **스킬 지침** + **PreToolUse 훅**이 이 워크플로를 유도한다. 훅은 기본 **비차단(warn)** — 유사 캐시가 있으면 경고만 하고 생성을 막지 않는다.
 
@@ -71,7 +71,7 @@ node scripts/pixellab-cache.mjs config
 | 명령 | 설명 |
 |---|---|
 | `init` | 두 캐시 루트(`index.json` + `images/`) 생성 |
-| `find "<설명>" [옵션]` | 유사 이미지 조회 → 재사용(≥0.7)/신규(<0.7) 판정 |
+| `find "<설명>" [옵션]` | 유사 이미지 조회 → 재사용(≥0.6)/신규(<0.6) 판정 |
 | `add --id --prompt --file [옵션]` | 캐시 등록(파일 복사 + 메타 append). `--scope` 기본 **global** |
 | `list [--tags a,b] [--scope ...]` | 목록(scope 표기) |
 | `get <id>` | 단일 항목 메타 + 이미지 절대경로 |
@@ -92,7 +92,7 @@ node scripts/pixellab-cache.mjs config
 ## 유사도 / 임계값
 
 - `score ∈ [0,1]` = `0.5×(prompt 대칭 Jaccard) + 0.5×(질의 포함도)`. 질의에 태그가 있으면 `0.7×prompt + 0.3×태그겹침`. view/size/tool 일치 소폭 보정.
-- **REUSE_THRESHOLD = 0.7**. 최고 score 가 이 이상이면 "재사용 권장 + 파일 절대경로", 미만이면 "신규 생성 권장 + 생성 후 add 안내".
+- **REUSE_THRESHOLD = 0.6**. 최고 score 가 이 이상이면 "재사용 권장 + 파일 절대경로", 미만이면 "신규 생성 권장 + 생성 후 add 안내".
 - 임베딩 없는 결정적 어휘 유사도(무npm). 정확 매칭이 아니라 **후보 추천**이다.
 
 ## 훅 동작(PreToolUse, 비차단)
@@ -100,7 +100,7 @@ node scripts/pixellab-cache.mjs config
 `hooks/hooks.json` 이 `mcp__pixellab__(create|animate).*` 호출 직전에 `scripts/cache-guard.mjs` 를 실행한다.
 
 - tool_input 의 `description/prompt/item_descriptions` 를 뽑아 `find` 로직으로 조회.
-- 최고 score ≥ 0.7 매치가 있으면 **경고(stderr)** — 재사용 후보 경로 안내. **차단하지 않는다(exit 0)**.
+- 최고 score ≥ 0.6 매치가 있으면 **경고(stderr)** — 재사용 후보 경로 안내. **차단하지 않는다(exit 0)**.
 - `PIXELLAB_GUARD_STRICT=1` 이면 강한 경고 문구(그래도 기본 비차단 — 차단은 오탐 위험이라 문서로만 안내).
 - generation 사용 추정 로그를 `${CLAUDE_PLUGIN_DATA}/log/generations.log`(없으면 `os.tmpdir()` 폴백)에 append. 어떤 예외도 tool 실행을 막지 않는다.
 

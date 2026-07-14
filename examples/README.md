@@ -12,7 +12,7 @@ node scripts/pixellab-cache.mjs init
 node scripts/pixellab-cache.mjs config
 ```
 
-`config` 는 해석된 global/project 루트와 임계값(0.7)을 출력한다. 특정 위치로 바꾸려면 env 로 오버라이드:
+`config` 는 해석된 global/project 루트와 임계값(0.6)을 출력한다. 특정 위치로 바꾸려면 env 로 오버라이드:
 
 ```
 PIXELLAB_CACHE_GLOBAL=/data/forge-global PIXELLAB_CACHE_PROJECT=./.pixellab-cache node scripts/pixellab-cache.mjs config
@@ -26,8 +26,8 @@ PIXELLAB_CACHE_GLOBAL=/data/forge-global PIXELLAB_CACHE_PROJECT=./.pixellab-cach
 node scripts/pixellab-cache.mjs find "a wooden desk with a monitor" --view sidescroller --size 42
 ```
 
-- 최고 score ≥ 0.7 → **재사용 권장**: 출력된 절대경로 PNG 를 그대로 쓰거나 대상 위치로 복사(비용 0).
-- < 0.7 → **신규 생성 권장**: 이때만 PixelLab 로 생성.
+- 최고 score ≥ 0.6 → **재사용 권장**: 출력된 절대경로 PNG 를 그대로 쓰거나 대상 위치로 복사(비용 0).
+- < 0.6 → **신규 생성 권장**: 이때만 PixelLab 로 생성.
 
 태그·스타일을 함께 주면 정밀해진다:
 
@@ -78,7 +78,7 @@ node scripts/pixellab-cache.mjs prune
 node scripts/pixellab-cache.mjs test
 ```
 
-임시 디렉터리에 격리 실행 후 정리한다. 유사설명 재사용(≥0.7)·무관설명 신규(<0.7)·contentHash 정확중복·하이브리드 project 우선을 검증하고 PASS/FAIL 을 출력한다.
+임시 디렉터리에 격리 실행 후 정리한다. 유사설명 재사용(≥0.6)·무관설명 신규(<0.6)·contentHash 정확중복·하이브리드 project 우선을 검증하고 PASS/FAIL 을 출력한다.
 
 ## 6) 기존 캐시 임포트(선택)
 
