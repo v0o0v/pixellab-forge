@@ -10570,6 +10570,1116 @@
       "contentHash": "64d0838703547440b3c01d70451460c3aaf134891dee445dec00a4518df3bfdb",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_ship_fighter_cyan",
+      "prompt": "top-down cyan sci-fi fighter ship, blue thrusters",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "topdown",
+        "ship",
+        "player",
+        "scifi",
+        "cyan"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_ship_fighter_cyan.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:3a10c2a9-55ae-41ce-9741-b6e269b15f01"
+      },
+      "contentHash": "610565cb70f9715a05ab7963be5e626fa9b185f416c88b91bc448bbc47d03e95",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_charger_ram",
+      "prompt": "top-down red armored spiked ram assault vehicle, volcanic",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "topdown",
+        "enemy",
+        "charger",
+        "volcanic",
+        "red"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_enemy_charger_ram.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:3a10c2a9-55ae-41ce-9741-b6e269b15f01"
+      },
+      "contentHash": "0871f445000a12c0486ecab2e5d97531e9dd459fc1a2602cebded9f670bda902",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_mortar_tank",
+      "prompt": "top-down orange artillery mortar tank machine",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "topdown",
+        "enemy",
+        "mortar",
+        "artillery",
+        "orange"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_enemy_mortar_tank.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:3a10c2a9-55ae-41ce-9741-b6e269b15f01"
+      },
+      "contentHash": "a58c679c563e152362af2e20cd9fffca9e9439b4dbfe433f91ce900441f89cfe",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_lavaspring",
+      "prompt": "top-down volcanic lava geyser turret, molten crimson core",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "topdown",
+        "enemy",
+        "lava",
+        "volcanic",
+        "turret"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_enemy_lavaspring.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:3a10c2a9-55ae-41ce-9741-b6e269b15f01"
+      },
+      "contentHash": "3a290613e5c5cd12d6928551e9eef4217199df89b992c079a8b2626c607f5de6",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_support_drone",
+      "prompt": "top-down teal repair support drone with rotors",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "topdown",
+        "enemy",
+        "drone",
+        "support",
+        "teal"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_enemy_support_drone.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:3a10c2a9-55ae-41ce-9741-b6e269b15f01"
+      },
+      "contentHash": "da3c6be90cbb8f13f6b4f67d3ca1e8f2afb615dd26a483825ccee93fd259f29f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_gem_xp_green",
+      "prompt": "small glowing green faceted experience crystal gem",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "gem",
+        "xp",
+        "crystal",
+        "green",
+        "pickup"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_gem_xp_green.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:3a10c2a9-55ae-41ce-9741-b6e269b15f01"
+      },
+      "contentHash": "c71424b55a6b371e56ffff5c8eaa35c7eb3b47a8a2fd9acbf8b9a8512e736dba",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_fx_explosion",
+      "prompt": "fiery orange explosion burst radial flames top-down",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "fx",
+        "explosion",
+        "fire",
+        "effect"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_fx_explosion.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:3a10c2a9-55ae-41ce-9741-b6e269b15f01"
+      },
+      "contentHash": "45180cb52c46a7e82df242ca883b6ae268a99f8d7d182adbf06d6f3e691b8a32",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_fx_parachute",
+      "prompt": "tiny cartoon pilot parachute ejection, comedic",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "fx",
+        "parachute",
+        "eject",
+        "comedic"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_fx_parachute.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:3a10c2a9-55ae-41ce-9741-b6e269b15f01"
+      },
+      "contentHash": "7577dd08f94c318f8574b34339d6ba01926995b49c334167fbb0ad34222efeb4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_boss_lava_fortress",
+      "prompt": "top-down volcanic fortress siege tank boss, molten lava cracks, dark iron",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "topdown",
+        "boss",
+        "fortress",
+        "volcanic",
+        "tank"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_boss_lava_fortress.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:e11b08cb-2493-409d-9885-d53d1571df61"
+      },
+      "contentHash": "139b9ba2a486f142889ab033eca2410960e8d779a28b4ada191895dcdee1df72",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_berdan_charger",
+      "prompt": "insectoid darting larva charger",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "6bcbe462-c49b-42c9-9fbd-6621af21c3b6",
+      "frameIndex": 0,
+      "files": [
+        "pb_berdan_charger.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "e8a721f1a7771f96aef6f4e2c8ae80611003379396b39ea64ec31e046a3f1a82",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_berdan_gunner",
+      "prompt": "insectoid spitting soldier",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "2f478a74-2665-43bd-be64-4e31cb97edf4",
+      "frameIndex": 0,
+      "files": [
+        "pb_berdan_gunner.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "c942acaab17c3c7485f723605b51a63c6920722e66046cd2bd0d0ae1126b8ecd",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_berdan_special",
+      "prompt": "rooted acid gland organism",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "56bb04ad-1458-4ddb-9d70-a5688781f726",
+      "frameIndex": 0,
+      "files": [
+        "pb_berdan_special.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "ae950f144213d1ab13983aaea658899274d9b6ebf54d8678f33d1e7f69d0434b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_berdan_support",
+      "prompt": "insectoid nurse drone",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "8eca4af7-4bef-463f-b465-6bd21d26334a",
+      "frameIndex": 0,
+      "files": [
+        "pb_berdan_support.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "2bea3c33277857f134bbafd87b5bf9ae3d02f09d297f965db12f8891d55b82d3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_berdan_elite_gunner",
+      "prompt": "armored insectoid sentinel elite gunner",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "88317f14-d6c5-4125-bc0c-0d2664016dad",
+      "frameIndex": 0,
+      "files": [
+        "pb_berdan_elite_gunner.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "03867999d944c5b4d03fe0cfe19c6999d9a7ad18b0d7fe4cac380409cb4d9d76",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_berdan_elite_charger",
+      "prompt": "bloated insect brood-mother elite charger",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "2baa2d4b-abfe-471c-8d74-79782f0de7b3",
+      "frameIndex": 0,
+      "files": [
+        "pb_berdan_elite_charger.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "f2026fbde9a47ae66620c6a68cd15102eef1c4941f4af4e21372f10d66524cd5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_niflheim_charger",
+      "prompt": "spectral phantom interceptor",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "a17b03d4-5187-4afc-8a24-e718a301bc28",
+      "frameIndex": 0,
+      "files": [
+        "pb_niflheim_charger.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "49e4c2c3c809afb8390710fc55cbb8802ff8627cdf02d220eff0fa6fd26d9c82",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_niflheim_gunner",
+      "prompt": "ghostly frost gunner warship",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "aa677de3-7b45-4cf4-86b6-460f9068abba",
+      "frameIndex": 0,
+      "files": [
+        "pb_niflheim_gunner.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "32692cd96b50f94f137011ee7e56f7f56ca1b966ed24bffe044c84ed9bb24940",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_niflheim_special",
+      "prompt": "rime fissure ice crystal",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "67c2bb5d-5873-478d-83ef-e8d5af805786",
+      "frameIndex": 0,
+      "files": [
+        "pb_niflheim_special.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "723c71f230f0db1f7dc56b682ceadb4596bce7bf1034cd41650ecaccdb10140f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_niflheim_support",
+      "prompt": "spectral cryo tender support",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "0bc5f3e9-b5dd-43d9-ac7b-63969fdb31a4",
+      "frameIndex": 0,
+      "files": [
+        "pb_niflheim_support.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "d7216a7c536bd8efd18c5d3b92652ebf0878e39af327f3f461fff476dcc55767",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_niflheim_elite_gunner",
+      "prompt": "frost sentinel elite warship gunner",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "82afca75-6fa6-4ef2-b7b4-3f57cfc4759d",
+      "frameIndex": 0,
+      "files": [
+        "pb_niflheim_elite_gunner.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "e4bdd928c20080ddfe7dd0c582c51c1b6ebef7d713fea29cbdd262b211a57c13",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_niflheim_elite_charger",
+      "prompt": "large spectral carrier mothership elite charger",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "a78893fb-c51c-4b23-a64b-a22625e1f02b",
+      "frameIndex": 0,
+      "files": [
+        "pb_niflheim_elite_charger.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "399a94e8be4c721eacdf098698c6df0aeeaa177fdf35f3530a1b557fcd0f4dae",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_arke_charger",
+      "prompt": "ancient crusher golem construct",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "70622ea9-950c-4c0a-943e-d4b93bf506e4",
+      "frameIndex": 0,
+      "files": [
+        "pb_arke_charger.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "45d5aef35fcc41dc8c5c3de80bb275e03f9bee68595c3e15b582bb6c971b0060",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_arke_gunner",
+      "prompt": "ancient precision turret",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fb04e24a-e961-4ae8-a8f2-b8c7c7a12431",
+      "frameIndex": 0,
+      "files": [
+        "pb_arke_gunner.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "fb577a2a67889f7d0f6e995c2c8f0da5dbe202b0405e90c0d3b8b83e1a7592cf",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_arke_special",
+      "prompt": "ancient grinding totem construct",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "7e75632d-911d-4364-a66b-42278cdcb2d3",
+      "frameIndex": 0,
+      "files": [
+        "pb_arke_special.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "62068e0edc774782e86031a33e555f2709ae7fd68fcb0f41e4a0e0303c3174ec",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_arke_support",
+      "prompt": "ancient restoration droid",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "34c81b34-399d-4f82-bd01-b5d0dd46f257",
+      "frameIndex": 0,
+      "files": [
+        "pb_arke_support.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "ac508f437f870a240a34afb0d45718361e3b6b2923f8b3f76ee1f5a01fca14eb",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_arke_elite_gunner",
+      "prompt": "ancient guardian battery elite gunner",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "c4dbc554-e954-45cf-8534-2e64da59b731",
+      "frameIndex": 0,
+      "files": [
+        "pb_arke_elite_gunner.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "774aa6cebf29ad1c9c9d1a5668efa0940d2bf213de2e6223f25608d16fef8b3b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_arke_elite_charger",
+      "prompt": "massive ancient breaker charger",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "7ad76df7-bca2-4dbc-824d-b6159cf9137b",
+      "frameIndex": 0,
+      "files": [
+        "pb_arke_elite_charger.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "e1d1ad80af0c2b67ac003682dffe4428c347d8f72317082392ebdeff03b21392",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_boss_berdan",
+      "prompt": "colossal insectoid swarm queen boss",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "8cf99236-939e-433f-98e2-b74e31ba8dfc",
+      "frameIndex": 0,
+      "files": [
+        "pb_boss_berdan.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "5667bcd6f63a699857dc1837069fceb8f12880fceff7cba339aa2c5bf9770eab",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_boss_niflheim",
+      "prompt": "ghostly capital flagship boss",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "690787c9-a4cb-4f99-9d96-940aa04d9fe0",
+      "frameIndex": 0,
+      "files": [
+        "pb_boss_niflheim.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "2d1e6feebc8271cb4c53ad4da6ea0ff1fa8df4f7e3eb7eca7d9453a6ddd2a165",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_boss_arke",
+      "prompt": "ancient guardian obelisk boss",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "57e9bb6f-cfc3-41da-aa76-79dd789b4c0c",
+      "frameIndex": 0,
+      "files": [
+        "pb_boss_arke.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "d21bdb253280ad5c3084bd0576389d4b5d077423d90c7a4090134be0dd0cec33",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_loot",
+      "prompt": "glowing loot beacon container",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "7a08adaf-7229-4e92-b493-8523d6ea2b92",
+      "frameIndex": 0,
+      "files": [
+        "pb_loot.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "5e9deff1d9b000e2a7620797bd97e4a7d657c1cdd912580b0784eb4a194e617d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_supply",
+      "prompt": "supply drop pod crate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "8db15b38-0189-4557-a1ba-14e6762b9a16",
+      "frameIndex": 0,
+      "files": [
+        "pb_supply.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "9dc75603d5998a3b3b99f0b3ac777409a54ceb23ff61ddc29563eb3637598ef9",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_wall",
+      "prompt": "sci-fi metal barrier wall",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "42a91c3d-5e5e-4277-bb26-854946c6d2b7",
+      "frameIndex": 0,
+      "files": [
+        "pb_wall.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "051922c9c792a340ba7fa319c8a2b5c7ac7f2600b187ce76e0c9960c9f77c933",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_destructible",
+      "prompt": "destructible rock boulder",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "8f88663d-8942-4e6f-93ab-69e1809f95fd",
+      "frameIndex": 0,
+      "files": [
+        "pb_destructible.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "4c37640bbe51f29cb6650acab603cb9c1a158fb41e97b4123bf4e2d4dea6f171",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_magnet_emitter",
+      "prompt": "magnetic field emitter device",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "9d2ce551-d40c-42e0-add0-664b160dcfc7",
+      "frameIndex": 0,
+      "files": [
+        "pb_magnet_emitter.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "4d0b26eca5a6c0a3e6b34e64a0feb685b4f564aa992293c3a6c147b00104f9a1",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_bomb_device",
+      "prompt": "unstable bomb device sphere",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "cfea3f1e-bdb1-4171-95f2-401e51689d8d",
+      "frameIndex": 0,
+      "files": [
+        "pb_bomb_device.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "3facf5e1933e7f2e08a4079828684452926eb4d9def644372d0874339c7f2f77",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_turret_pickup",
+      "prompt": "deployable auto-turret pickup",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "shmup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "c79d0a62-150f-45c1-8141-4c4ee61066e1",
+      "frameIndex": 0,
+      "files": [
+        "pb_turret_pickup.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "fd3cd50d6be4161cf2afef3d8295ea17eb914197a308cb0c950fd977db69a0fc",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_tileset_kargon",
+      "prompt": "dark desaturated basalt volcanic rock transitioning to dark grey cooled lava field with faint dull orange cracks, top-down Wang autotile tileset",
+      "style": {
+        "size": 32,
+        "view": "top-down",
+        "tool": "create_topdown_tileset"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "tileset"
+      ],
+      "assetType": "tileset",
+      "pixellabObjectId": "81ddeb91-2486-4f82-8566-90978642b575",
+      "files": [
+        "pb_tileset_kargon.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "ddce471418487b7b500b98d8eb4779e2eac06252d24da1027084c5f1a8f2ee21",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_tileset_berdan",
+      "prompt": "dark desaturated olive-green chitin ground transitioning to organic insect hive membrane cells, muted amber-green, top-down Wang autotile tileset",
+      "style": {
+        "size": 32,
+        "view": "top-down",
+        "tool": "create_topdown_tileset"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "tileset"
+      ],
+      "assetType": "tileset",
+      "pixellabObjectId": "1a643f1e-8286-435a-802e-8884cd1d702f",
+      "files": [
+        "pb_tileset_berdan.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "f2051196638fcf4c25a93e56290a8c7de1d830498f797fd718b719ca9f3a74d6",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_tileset_niflheim",
+      "prompt": "dark desaturated frozen basalt rock transitioning to pale ice snowfield with faint cracks, pastel blue-white, top-down Wang autotile tileset",
+      "style": {
+        "size": 32,
+        "view": "top-down",
+        "tool": "create_topdown_tileset"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "tileset"
+      ],
+      "assetType": "tileset",
+      "pixellabObjectId": "cf1a0727-219a-49e2-bcbc-f8f422bb5eab",
+      "files": [
+        "pb_tileset_niflheim.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "3840d8e35c3ac9e9e104441ee7ecd14d88022b3df95202bf3ba50109750e484d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_tileset_arke",
+      "prompt": "dark weathered bronze-stone floor transitioning to ancient machine floor plates with faint glowing rune lines, muted bronze, top-down Wang autotile tileset",
+      "style": {
+        "size": 32,
+        "view": "top-down",
+        "tool": "create_topdown_tileset"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "tileset"
+      ],
+      "assetType": "tileset",
+      "pixellabObjectId": "bd4122b0-96ff-4a77-86fc-22784c938e82",
+      "files": [
+        "pb_tileset_arke.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "23e76982057a7f6edccaf07c94d679fd4afeefd6c131de07ff99fa3896a3e8d1",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
