@@ -11876,6 +11876,38 @@
       "contentHash": "c24e11576538e3a335043bc5bb7d22a4785d4b1e90edf62aeb2394dda24ed808",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_map_kargon_arena",
+      "prompt": "top-down volcanic planet terrain map of Kargon: dark desaturated basalt and cooled black lava rock field with glowing orange-red molten lava cracks radiating from a central node, rock border, corner lava vents, game arena battlefield ground",
+      "style": {
+        "size": 400,
+        "view": "top-down",
+        "tool": "create_map_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "map",
+        "kargon",
+        "volcanic",
+        "arena",
+        "background",
+        "spike"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "aa6fddbb-c8b7-4063-a4d1-419921ac7af9",
+      "files": [
+        "pb_map_kargon_arena.png"
+      ],
+      "license": {
+        "license": "PixelLab ToS",
+        "author": "PixelLab",
+        "source": "https://api.pixellab.ai/mcp/map-objects/aa6fddbb-c8b7-4063-a4d1-419921ac7af9"
+      },
+      "contentHash": "ed29e283fdf49fcb3c93f500ccc0f0f08b2cfe917e5adbfdf0a3591d9f6cdba7",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
