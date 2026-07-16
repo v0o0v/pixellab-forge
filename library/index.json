@@ -11680,6 +11680,202 @@
       "contentHash": "23e76982057a7f6edccaf07c94d679fd4afeefd6c131de07ff99fa3896a3e8d1",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_ui_bld_hangar",
+      "prompt": "sci-fi hangar building, wide garage with open bay door and small wrench sign, cyan lights, dark space-base palette",
+      "style": {
+        "size": 64,
+        "view": "side",
+        "tool": "create_map_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "building",
+        "base"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "c840908d-27fb-4230-86b7-6e8e3b86902c",
+      "files": [
+        "pb_ui_bld_hangar.png"
+      ],
+      "license": {
+        "license": "PixelLab ToS",
+        "author": "PixelLab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "628fdb228be7a8a283366d139f46be10c38a1e28861e39395665bbd4084bead0",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_bld_research",
+      "prompt": "sci-fi research laboratory, glass dome building with glowing orange flask sign, dark space-base palette",
+      "style": {
+        "size": 64,
+        "view": "side",
+        "tool": "create_map_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "building",
+        "base"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "b066cb77-5960-4975-8659-cda332671501",
+      "files": [
+        "pb_ui_bld_research.png"
+      ],
+      "license": {
+        "license": "PixelLab ToS",
+        "author": "PixelLab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "1ab25e93591de3d8021c0f539ce8a9e1dd6a25e7e6a92c1cbe74ef106e099bf7",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_bld_refinery",
+      "prompt": "sci-fi ore refinery building with smelter chimney and glowing yellow molten vat, dark space-base palette",
+      "style": {
+        "size": 64,
+        "view": "side",
+        "tool": "create_map_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "building",
+        "base"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "738579c9-d483-4e19-b06e-3d52a9ecc6bd",
+      "files": [
+        "pb_ui_bld_refinery.png"
+      ],
+      "license": {
+        "license": "PixelLab ToS",
+        "author": "PixelLab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "15e169f8c563d5e88bbd1af88f2f7d58179d4b8f32ed150d822594c0bc4f60ec",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_bld_defense",
+      "prompt": "sci-fi defense command bunker, armored fortress with green energy shield dome, dark space-base palette",
+      "style": {
+        "size": 64,
+        "view": "side",
+        "tool": "create_map_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "building",
+        "base"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "eca0ceba-1248-4fbb-a787-dc70ca453db1",
+      "files": [
+        "pb_ui_bld_defense.png"
+      ],
+      "license": {
+        "license": "PixelLab ToS",
+        "author": "PixelLab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "b49048a703c91bf4b111df5e2a19037fe3df303b017978274f01a356c74b1a04",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_bld_control",
+      "prompt": "sci-fi control tower, tall tower with purple radar antenna dish on top, blinking lights, dark space-base palette",
+      "style": {
+        "size": 64,
+        "view": "side",
+        "tool": "create_map_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "building",
+        "base"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "618672a2-0121-4b5c-8350-b8f81bf365c3",
+      "files": [
+        "pb_ui_bld_control.png"
+      ],
+      "license": {
+        "license": "PixelLab ToS",
+        "author": "PixelLab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "93ede85d76653b29ebf8b6755e5398fd5b47702fcf43e9ee303c15330fe6f45b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_lock",
+      "prompt": "closed metal padlock icon, steel body with subtle cyan rim light, game UI icon",
+      "style": {
+        "size": 32,
+        "view": "side",
+        "tool": "create_map_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "icon",
+        "lock"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "e7d6b36f-1cf8-437e-b696-6ee9dc746f58",
+      "files": [
+        "pb_ui_lock.png"
+      ],
+      "license": {
+        "license": "PixelLab ToS",
+        "author": "PixelLab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "c2c1cc3390542111ad5e497d629a37e2595398285e6066111b680b79cd9e5626",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_unlock",
+      "prompt": "open unlocked metal padlock icon, shackle swung open, steel body with subtle cyan rim light, game UI icon",
+      "style": {
+        "size": 32,
+        "view": "side",
+        "tool": "create_map_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "icon",
+        "lock"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "e2aa37b0-ef48-4d74-bfb8-46ffce0fae20",
+      "files": [
+        "pb_ui_unlock.png"
+      ],
+      "license": {
+        "license": "PixelLab ToS",
+        "author": "PixelLab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "c24e11576538e3a335043bc5bb7d22a4785d4b1e90edf62aeb2394dda24ed808",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
