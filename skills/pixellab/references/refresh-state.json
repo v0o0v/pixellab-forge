@@ -1,0 +1,10 @@
+{
+  "_doc": "PixelLab 문서 학습(증류) 신선도 상태. scripts/refresh-check.mjs 가 읽고 판정한다. 재학습 완료 시 'refresh-check.mjs mark' 로 갱신.",
+  "lastCollectedAt": "2026-07-17",
+  "intervalDays": 30,
+  "sources": [
+    "https://api.pixellab.ai/mcp/docs",
+    "https://api.pixellab.ai/v2/openapi.json",
+    "https://www.pixellab.ai/docs/getting-started"
+  ]
+}
