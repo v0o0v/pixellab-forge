@@ -94,19 +94,24 @@ node scripts/pixellab-cache.mjs config
 | `rebuild` / `reindex` | `index.json` 전량으로 SQLite FTS5 인덱스 재구성 |
 | `test` | 결정적 셀프테스트(PASS/FAIL) |
 
-`find` 옵션: `--tags a,b` `--view sidescroller` `--size 42` `--tool create_1_direction_object` `--file <참조png>`(contentHash 정확 중복→1.0) `--style-strict`(호환 안 되는 항목 제외) `--top N`.
+`find` 옵션: `--tags a,b` `--view sidescroller` `--size 42` `--tool create_1_direction_object` `--anchor <스타일앵커>` `--file <참조png>`(contentHash 정확 중복→1.0) `--style-strict`(호환 안 되는 항목 제외 — 앵커 불일치 포함) `--top N`.
 
-`add` 옵션: `--scope global|project` `--tags` `--size` `--view` `--tool` `--type(object|character|tile|tileset|ui|other)` `--object-id` `--frame` `--sprites s1,s2` `--palette` `--outline` `--license` `--author` `--source` `--date`.
+`add` 옵션: `--scope global|project` `--tags` `--size` `--view` `--tool` `--anchor` `--type(object|character|tile|tileset|ui|other)` `--object-id` `--frame` `--sprites s1,s2` `--palette` `--outline` `--license` `--author` `--source` `--date`.
+
+### 스타일 앵커 / 검수 도구
+
+- **스타일 앵커**: 게임당 하나, `refs/<앵커이름>/` 의 참조 이미지 묶음을 매 생성 호출 `style_images` 로 투입해 스타일을 고정한다. `refs/` 는 **gitignore**(상용 게임 레퍼런스 원본 가능 — 재배포 금지, [ADR-0001](docs/adr/0001-style-anchor-refs-gitignore.md)). 캐시에는 `--anchor <이름>` 으로 이름만 기록.
+- **컨택트시트**: `node scripts/contact-sheet.mjs <후보png들|디렉터리> --open` — review 팩 후보를 격자 HTML(base64 자기완결)로 만들어 브라우저 검수. 셀 번호는 0-based 로 `select_object_frames` 에 그대로 사용.
 
 ### 메타 스키마(v2)
 
-각 항목: `id, prompt, style{size,view,palette,outline,tool}, tags[], assetType, pixellabObjectId, frameIndex, files[], license{license,author,source}, contentHash(PNG sha256), createdAt, scope`.
+각 항목: `id, prompt, style{size,view,palette,outline,tool,anchor}, tags[], assetType, pixellabObjectId, frameIndex, files[], license{license,author,source}, contentHash(PNG sha256), createdAt, scope`.
 
 - **contentHash**: `add` 시 PNG 바이트의 sha256 저장. `find --file` 로 준 이미지와 해시가 같으면 score=**1.0**(정확 중복).
 
 ## 유사도 / 임계값
 
-- `score ∈ [0,1]` = `0.5×(prompt 대칭 Jaccard) + 0.5×(질의 포함도)`. 질의에 태그가 있으면 `0.7×prompt + 0.3×태그겹침`. view/size/tool 일치 소폭 보정.
+- `score ∈ [0,1]` = `0.5×(prompt 대칭 Jaccard) + 0.5×(질의 포함도)`. 질의에 태그가 있으면 `0.7×prompt + 0.3×태그겹침`. view/size/tool/anchor 일치 소폭 보정.
 - **REUSE_THRESHOLD = 0.6**. 최고 score 가 이 이상이면 "재사용 권장 + 파일 절대경로", 미만이면 "신규 생성 권장 + 생성 후 add 안내".
 - 임베딩 없는 결정적 어휘 유사도(무네트워크). 정확 매칭이 아니라 **후보 추천**이다. 검색은 SQLite FTS5 로 후보만 추리고, 판정 점수는 이 `score()` 가 그대로 계산한다(가속해도 판정 의미 불변).
 

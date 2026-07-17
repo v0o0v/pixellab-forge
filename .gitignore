@@ -7,6 +7,10 @@ node_modules/
 *.sqlite-shm
 library/index.sqlite*
 
+# 스타일 앵커 원본(상용 게임 레퍼런스 가능 — 재배포 금지, 절대 커밋 금지. ADR-0001)
+refs/*
+!refs/README.md
+
 # OS
 .DS_Store
 Thumbs.db
