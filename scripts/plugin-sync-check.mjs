@@ -16,7 +16,7 @@
  * 명령: check(기본) | test(오프라인 셀프테스트)
  * env(테스트용): PIXELLAB_PLUGINS_DIR(플러그인 레지스트리 디렉터리), PIXELLAB_FORCE_PLUGIN_ROOT
  */
-import { readFileSync, existsSync, writeFileSync, mkdtempSync, rmSync, mkdirSync } from 'fs';
+import { readFileSync, existsSync, writeFileSync, mkdtempSync, rmSync, mkdirSync, realpathSync } from 'fs';
 import path from 'path';
 import os from 'os';
 import { spawnSync } from 'child_process';
@@ -122,5 +122,6 @@ function main() {
   return cmdCheck();
 }
 
-const isMain = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+// 정션/심링크 경유 실행 지원: ESM 의 import.meta.url 은 실경로라 argv[1] 도 실경로로 비교해야 한다.
+const isMain = process.argv[1] && (() => { try { return import.meta.url === pathToFileURL(realpathSync(process.argv[1])).href; } catch { return false; } })();
 if (isMain) main();
