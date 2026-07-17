@@ -25,7 +25,16 @@ node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-cache.mjs" <명령>
 - 플러그인 루트 참조는 `${CLAUDE_PLUGIN_ROOT}` 를 우선 쓴다. 훅/스킬 실행 맥락에서 이 변수가 안 잡히면 `${CLAUDE_SKILL_DIR}/../../scripts/pixellab-cache.mjs` 로 대체한다(이 SKILL.md 기준 스킬 디렉터리의 상위 2단계가 플러그인 루트다). 정확한 변수는 https://code.claude.com/docs/en/skills.md 참고.
 - 캐시는 **하이브리드**다: 전역(global)이 공유 기본 라이브러리, 프로젝트 로컬(project)이 오버라이드. `find` 는 project→global 둘 다 조회한다. 해석된 경로는 `... config` 로 확인.
 
-## 1) 전제 — PixelLab MCP 연결 확인
+## 1) 전제 — 재학습 게이트 + PixelLab MCP 연결 확인
+
+**재학습 게이트(스킬 발동 시 1회)**: 먼저 문서 학습 신선도를 확인한다:
+
+```
+node "${CLAUDE_PLUGIN_ROOT}/scripts/refresh-check.mjs"
+```
+
+- `FRESH` → 그대로 진행.
+- `STALE`/`UNKNOWN` → 사용자에게 "문서 학습이 N일 지나 세션 마무리에 재학습하겠다"고 알리고 **원 작업을 먼저 진행**한다. 원 작업 완료 후 같은 세션 마무리에 **재학습 프로토콜**(`references/pixellab-mcp-guide.md` §10)을 수행한다 — 소스 fetch → 스키마 대조 → 가이드 갱신 → `refresh-check.mjs mark` → 브랜치→PR→머지(문서 재학습 PR 한정 자동 진행, 2026-07-17 사용자 상시 승인. 코드 변경이 섞이면 머지 전 사용자 확인).
 
 먼저 PixelLab MCP 가 연결돼 있는지 확인한다(`mcp__pixellab__*` 도구 가용 여부, 또는 `get_balance`/`list_projects` 로 확인). **미연결이면** 사용자에게 PixelLab MCP 연결을 안내하고 생성 단계는 중단한다(캐시 조회/등록은 연결 없이도 가능). 단, API 토큰이 잡히면(`node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-api.mjs" balance` 로 확인) **REST API 폴백을 사용자에게 제안**할 수 있다 — 임의로 진행하지 말고 물어본다. 우아한 실패: 연결이 없다고 임의로 대체 이미지를 만들지 않는다.
 
@@ -124,4 +133,5 @@ node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-cache.mjs" add \
 - **앵커 원본 유출 금지**: `refs/` 의 이미지는 상용 게임 레퍼런스일 수 있다 — `library/`·게임 리포·캐시 등 git 에 올라가는 어디로도 복사하지 않는다(ADR-0001).
 - **비용 원칙 요약**: 재사용 우선 → miss 는 최소 size 로 한 배치에 몰아서 → 생성분은 즉시 add.
 - **정확성 원칙 요약**: 애매하면 자체 생성 대신 질문 → 앵커로 스타일 고정 → 말로 안 좁혀지면 프로브 → 히어로 에셋은 사용자 검수.
+- **세션 마무리 체크리스트**: ① 생성분 캐시 add 완료 ② (전역 규칙) 캐시↔리포 `library/` 동기화 ③ **재학습 게이트가 STALE 이었으면 재학습 프로토콜(가이드 §10) 수행 + `refresh-check.mjs mark`**.
 - 참고: `${CLAUDE_PLUGIN_ROOT}/README.md`, `${CLAUDE_PLUGIN_ROOT}/examples/README.md`.

@@ -133,3 +133,22 @@ node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-api.mjs" job <job_id> --save-images
 - **토큰**: `PIXELLAB_SECRET` env → `.mcp.json`(`mcpServers.pixellab.headers.Authorization`) 순으로 헬퍼가 알아서 읽는다. **curl 로 직접 조립 금지** — 토큰이 명령줄/로그에 남는다. 헬퍼는 토큰 값을 어떤 출력에도 찍지 않는다.
 - **비용**: MCP 와 같은 계정 크레딧을 쓴다(USD 종량 — 예: 64px 이미지 ≈ $0.008, Pro 256px ≈ $0.095). **Pro 엔드포인트·대량 배치는 실행 전 예상 비용을 사용자에게 고지하고 동의받는다**(MCP `confirm_cost` 와 같은 정신 — API 에는 자동 게이트가 없으므로 스킬 규칙으로 지킨다). 시작 전 `balance` 로 잔액 확인.
 - **산출물 처리**: API 로 만든 이미지도 동일하게 캐시에 `add` 한다(§비용 원칙). 스타일 앵커 규칙(§refs)도 동일 적용.
+
+## 10) 재학습 프로토콜 — 30일마다 이 문서를 다시 증류한다
+
+이 문서는 스냅샷이다. PixelLab 문서·스키마는 자주 갱신되므로 **마지막 수집일에서 30일이 지나면 재학습**한다. 신선도 판정은 `refresh-state.json` 기반:
+
+```
+node "${CLAUDE_PLUGIN_ROOT}/scripts/refresh-check.mjs"        # FRESH | STALE | UNKNOWN
+```
+
+**실행 시점**: 스킬 발동 시 게이트에서 STALE/UNKNOWN 이 뜨면 사용자에게 알리고, **원 작업(생성)을 먼저 끝낸 뒤 같은 세션 마무리에** 수행한다(사용자를 기다리게 하지 않는다).
+
+**절차** (2026-07-17 최초 수집과 동일 방법):
+
+1. **수집**: `refresh-state.json` 의 `sources` 를 fetch — ① `https://api.pixellab.ai/mcp/docs`(AI 어시스턴트 가이드) ② `https://api.pixellab.ai/v2/openapi.json`(엔드포인트/파라미터 — curl 로 내려받아 스크립트로 추출) ③ 필요 시 `pixellab.ai/docs` 신규 페이지.
+2. **대조 검증**: 문서 주장을 **실제 MCP 도구 스키마**(ToolSearch 로 로드)와 대조한다. 충돌하면 스키마가 이긴다 — 이 원칙 덕에 낡은 웹 문서에 오염되지 않는다.
+3. **갱신**: 이 문서(`pixellab-mcp-guide.md`)에서 달라진 부분만 고친다(도구/모드/비용/실수 목록/API 엔드포인트 표). 머리말의 수집일도 갱신. 범위 원칙 유지: MCP+API 자동화 지식만, 웹 에디터 UI 제외.
+4. **기록**: `node "${CLAUDE_PLUGIN_ROOT}/scripts/refresh-check.mjs" mark` (수집일 갱신).
+5. **동기화**: 브랜치 `docs/pixellab-relearn-<YYYYMM>` → PR → **머지까지 자동 진행** — 사용자(v0o0v)가 2026-07-17 "문서 재학습 PR 한정 자동 진행" 상시 승인. 단 **스크립트/코드 변경이 섞이면 예외** — 그때는 머지 전 사용자 확인.
+6. 변경 요지(달라진 것 몇 줄)를 사용자에게 보고한다. 변경이 전혀 없어도 mark + 동기화는 수행한다(다음 30일 카운트 리셋).

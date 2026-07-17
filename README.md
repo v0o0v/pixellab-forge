@@ -94,6 +94,8 @@ node scripts/pixellab-cache.mjs config
 | `rebuild` / `reindex` | `index.json` 전량으로 SQLite FTS5 인덱스 재구성 |
 | `test` | 결정적 셀프테스트(PASS/FAIL) |
 
+문서 재학습 게이트(`scripts/refresh-check.mjs`): 스킬 발동 시 마지막 학습일(`skills/pixellab/references/refresh-state.json`)에서 30일 경과 여부를 판정 — `check`(기본) | `mark [--date]` | `test`. STALE 이면 재학습 프로토콜(가이드 §10)을 세션 마무리에 수행한다. 생성 훅(cache-guard)도 STALE 시 경고를 낸다.
+
 REST API 헬퍼(`scripts/pixellab-api.mjs`): MCP 에 없는 기능(인페인팅·이미지→픽셀아트·배경제거·회전 등)이나 대량 배치가 필요할 때 — `balance` | `call </경로> [--json ...] [--poll] [--save-images dir]` | `job <id>` | `test`(오프라인). 토큰은 `PIXELLAB_SECRET` env → `.mcp.json` 순으로 자동 해석(값 미출력). 판단 규칙은 `skills/pixellab/references/pixellab-mcp-guide.md` §9.
 
 `find` 옵션: `--tags a,b` `--view sidescroller` `--size 42` `--tool create_1_direction_object` `--anchor <스타일앵커>` `--file <참조png>`(contentHash 정확 중복→1.0) `--style-strict`(호환 안 되는 항목 제외 — 앵커 불일치 포함) `--top N`.

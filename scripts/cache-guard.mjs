@@ -19,6 +19,7 @@ import path from 'path';
 import os from 'os';
 import { fileURLToPath } from 'url';
 import { resolveRoots, findMatches, absImagePath, REUSE_THRESHOLD, BackendUnavailableError } from './pixellab-cache.mjs';
+import { readState, evaluate } from './refresh-check.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -76,6 +77,15 @@ async function run() {
   const descriptions = collectDescriptions(input);
   const strict = process.env.PIXELLAB_GUARD_STRICT === '1';
   const roots = resolveRoots();
+
+  // 문서 학습 신선도 경고(비차단) — 스킬이 발동 안 된 생성 경로에서도 재학습 필요를 알린다.
+  try {
+    const d = new Date();
+    const fr = evaluate(readState(), Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
+    if (fr.status !== 'FRESH') {
+      process.stderr.write(`📚 [pixellab-forge] 문서 학습 ${fr.status === 'STALE' ? fr.days + '일 경과(임계 ' + fr.interval + '일)' : '기록 없음'} — 재학습 프로토콜(references/pixellab-mcp-guide.md §10)을 세션 마무리에 수행하세요.\n`);
+    }
+  } catch { /* 신선도 확인 실패는 무시(생성 미차단) */ }
 
   // generation 사용 추정 로그(타임스탬프 없이 — Date 미사용. 도구/설명 요약만).
   try {
