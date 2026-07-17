@@ -27,7 +27,7 @@
  *
  * 재사용 판정: 유사도 score ∈ [0,1]. 임계값 REUSE_THRESHOLD=0.6 이상이면 "재사용 권장".
  *   score = 0.5×(prompt 대칭 Jaccard) + 0.5×(질의 포함도). 질의에 태그가 있으면 0.7×prompt+0.3×태그겹침.
- *   view/size/tool 일치 소폭 보정. --file 로 준 이미지의 contentHash 가 캐시와 같으면 score=1.0(정확 중복).
+ *   view/size/tool/anchor(스타일 앵커) 일치 소폭 보정. --file 로 준 이미지의 contentHash 가 캐시와 같으면 score=1.0(정확 중복).
  *   (임베딩 없이 결정적 어휘 유사도 — 무npm. 정확 매칭이 아니라 후보 추천이다.)
  */
 import {
@@ -82,6 +82,7 @@ function blendSim(aArr, bArr) { return 0.5 * jaccard(aArr, bArr) + 0.5 * overlap
 
 // ── 메타 스키마 v2 접근자(v1 하위호환) ─────────────────────────────────────
 export function entryView(e) { return (e.style && e.style.view) != null ? e.style.view : e.view; }
+export function entryAnchor(e) { return (e.style && e.style.anchor) != null ? e.style.anchor : e.anchor; }
 export function entrySize(e) { return (e.style && e.style.size) != null ? e.style.size : e.size; }
 export function entryTool(e) { return (e.style && e.style.tool) != null ? e.style.tool : e.tool; }
 export function entryFile(e) { return (e.files && e.files[0]) || e.file || (e.id + '.png'); }
@@ -98,14 +99,18 @@ export function score(query, entry) {
   if (query.view && ev) s += (query.view === ev) ? 0.05 : -0.05;
   if (query.size && es != null) s += (Math.abs(Number(query.size) - Number(es)) <= 8) ? 0.03 : -0.03;
   if (query.tool && et) s += (query.tool === et) ? 0.02 : -0.02;
+  // 스타일 앵커: 같은 앵커로 만든 세트끼리 어울린다 — 일치 가산/불일치 감산(배제는 --style-strict).
+  const ea = entryAnchor(entry);
+  if (query.anchor && ea) s += (query.anchor === ea) ? 0.05 : -0.05;
   return Math.max(0, Math.min(1, s));
 }
 
 function styleCompatible(query, entry) {
-  const ev = entryView(entry), es = entrySize(entry), et = entryTool(entry);
+  const ev = entryView(entry), es = entrySize(entry), et = entryTool(entry), ea = entryAnchor(entry);
   if (query.view && ev && query.view !== ev) return false;
   if (query.tool && et && query.tool !== et) return false;
   if (query.size && es != null && Math.abs(Number(query.size) - Number(es)) > 16) return false;
+  if (query.anchor && ea && query.anchor !== ea) return false;
   return true;
 }
 
@@ -239,6 +244,7 @@ export function addEntry(root, opts) {
       palette: opts.palette || undefined,
       outline: opts.outline || undefined,
       tool: opts.tool || undefined,
+      anchor: opts.anchor || undefined,
     }),
     tags: opts.tags || [],
     assetType: opts.assetType || undefined,
@@ -312,10 +318,11 @@ function cmdFind(args) {
     view: args.view && args.view !== 'true' ? args.view : undefined,
     size: args.size && args.size !== 'true' ? Number(args.size) : undefined,
     tool: args.tool && args.tool !== 'true' ? args.tool : undefined,
+    anchor: args.anchor && args.anchor !== 'true' ? args.anchor : undefined,
     contentHash: (args.file && args.file !== 'true' && existsSync(args.file)) ? hashFile(args.file) : undefined,
   };
   if (!query.prompt && query.tags.length === 0 && !query.contentHash) {
-    console.error('사용법: find "<설명>" [--tags a,b] [--view sidescroller] [--size 42] [--tool ...] [--file ref.png] [--style-strict] [--top N]');
+    console.error('사용법: find "<설명>" [--tags a,b] [--view sidescroller] [--size 42] [--tool ...] [--anchor <앵커이름>] [--file ref.png] [--style-strict] [--top N]');
     process.exit(1);
   }
   let ranked;
@@ -325,7 +332,7 @@ function cmdFind(args) {
     if (e instanceof BackendUnavailableError) { console.error(backendHint()); process.exit(1); }
     throw e;
   }
-  console.log(`질의: "${query.prompt}"${query.tags.length ? ' tags=[' + query.tags.join(',') + ']' : ''}${query.view ? ' view=' + query.view : ''}${query.size ? ' size=' + query.size : ''}`);
+  console.log(`질의: "${query.prompt}"${query.tags.length ? ' tags=[' + query.tags.join(',') + ']' : ''}${query.view ? ' view=' + query.view : ''}${query.size ? ' size=' + query.size : ''}${query.anchor ? ' anchor=' + query.anchor : ''}`);
   console.log('─'.repeat(60));
   if (ranked.length === 0) {
     // 후보 매칭 0건(질의 토큰과 겹치는 항목 없음) = 판정상 "신규 생성"과 등가.
@@ -395,6 +402,7 @@ function cmdAdd(args) {
     size: (args.size && args.size !== 'true') ? Number(args.size) : undefined,
     view: (args.view && args.view !== 'true') ? args.view : undefined,
     tool: (args.tool && args.tool !== 'true') ? args.tool : 'create_1_direction_object',
+    anchor: (args.anchor && args.anchor !== 'true') ? args.anchor : undefined,
     palette: (args.palette && args.palette !== 'true') ? args.palette : undefined,
     outline: (args.outline && args.outline !== 'true') ? args.outline : undefined,
     assetType: (args.type && args.type !== 'true') ? args.type : undefined,
@@ -658,6 +666,22 @@ function selftest() {
     ok('m) project override 비매칭 억제(회귀)',
       cM.setEq && cM.decEq && cM.bestEq && noGlobalRevival && isNewDecision,
       `set${cM.setEq} dec${cM.decEq} best=${cM.bestA}/${cM.bestB} noGlobalRevival=${noGlobalRevival} newDecision=${isNewDecision}`);
+
+    // (n) 스타일 앵커: add(--anchor) 왕복 + 일치 가산/불일치 감산 + --style-strict 배제 + 등가
+    const rN = subRoots('n');
+    addEntry(rN.global, { scope: 'global', id: 'orb_a', prompt: 'a glowing magic orb with sparks', file: mkPng(), tags: [], anchor: 'game-alpha' });
+    addEntry(rN.global, { scope: 'global', id: 'orb_b', prompt: 'a glowing magic orb with sparks', file: mkPng(), tags: [], anchor: 'game-beta' });
+    ensureFresh(rN.global, { allowRebuild: true });
+    const roundTrip = entryAnchor(loadIndex(rN.global).entries.find((e) => e.id === 'orb_a')) === 'game-alpha';
+    const qN = { prompt: 'a glowing magic orb with sparks', tags: [], anchor: 'game-alpha' };
+    const fmN = findMatches(qN, rN, { top: 5 });
+    const boosted = fmN.length >= 2 && fmN[0].e.id === 'orb_a' && fmN[0].s > fmN[1].s; // 같은 prompt → 앵커 보정만으로 순위 갈림
+    const fmNs = findMatches(qN, rN, { top: 5, styleStrict: true });
+    const strictExcluded = fmNs.length === 1 && fmNs[0].e.id === 'orb_a';
+    const cN = equiv(qN, rN);
+    ok('n) 스타일 앵커(왕복+보정+strict 배제+등가)',
+      roundTrip && boosted && strictExcluded && cN.setEq && cN.decEq && cN.bestEq,
+      `roundTrip=${roundTrip} boosted=${boosted} strict=${strictExcluded} set${cN.setEq}dec${cN.decEq}best${cN.bestEq}`);
   } finally {
     try { closeAll(); } catch { /* ignore */ }
     try { rmSync(tmp, { recursive: true, force: true }); } catch { /* ignore */ }
@@ -690,8 +714,8 @@ function main() {
     case 'rebuild': case 'reindex': return cmdRebuild();
     default:
       console.log('PixelLab Forge 재사용 캐시. 명령: init | find | add | list | get | config | prune | setup | rebuild | test');
-      console.log('  node scripts/pixellab-cache.mjs find "a wooden office desk" --view sidescroller --size 42');
-      console.log('  node scripts/pixellab-cache.mjs add --id my_id --prompt "..." --file path.png --scope global --tags a,b --size 42 --view sidescroller');
+      console.log('  node scripts/pixellab-cache.mjs find "a wooden office desk" --view sidescroller --size 42 --anchor my-game');
+      console.log('  node scripts/pixellab-cache.mjs add --id my_id --prompt "..." --file path.png --scope global --tags a,b --size 42 --view sidescroller --anchor my-game');
       console.log('  node scripts/pixellab-cache.mjs config');
       console.log(`  임계값 REUSE_THRESHOLD = ${REUSE_THRESHOLD}`);
   }
