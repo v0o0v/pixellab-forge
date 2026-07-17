@@ -94,6 +94,8 @@ node scripts/pixellab-cache.mjs config
 | `rebuild` / `reindex` | `index.json` 전량으로 SQLite FTS5 인덱스 재구성 |
 | `test` | 결정적 셀프테스트(PASS/FAIL) |
 
+REST API 헬퍼(`scripts/pixellab-api.mjs`): MCP 에 없는 기능(인페인팅·이미지→픽셀아트·배경제거·회전 등)이나 대량 배치가 필요할 때 — `balance` | `call </경로> [--json ...] [--poll] [--save-images dir]` | `job <id>` | `test`(오프라인). 토큰은 `PIXELLAB_SECRET` env → `.mcp.json` 순으로 자동 해석(값 미출력). 판단 규칙은 `skills/pixellab/references/pixellab-mcp-guide.md` §9.
+
 `find` 옵션: `--tags a,b` `--view sidescroller` `--size 42` `--tool create_1_direction_object` `--anchor <스타일앵커>` `--file <참조png>`(contentHash 정확 중복→1.0) `--style-strict`(호환 안 되는 항목 제외 — 앵커 불일치 포함) `--top N`.
 
 `add` 옵션: `--scope global|project` `--tags` `--size` `--view` `--tool` `--anchor` `--type(object|character|tile|tileset|ui|other)` `--object-id` `--frame` `--sprites s1,s2` `--palette` `--outline` `--license` `--author` `--source` `--date`.
@@ -136,7 +138,7 @@ node scripts/import-existing.mjs --from <기존캐시디렉터리> --scope globa
 ## 문서
 
 - 스킬 지침: `skills/pixellab/SKILL.md`
-- PixelLab MCP 실전 가이드(공식 문서 증류본, 2026-07-17 수집): `skills/pixellab/references/pixellab-mcp-guide.md`
+- PixelLab MCP + REST API 실전 가이드(공식 문서·OpenAPI 스펙 증류본, 2026-07-17 수집): `skills/pixellab/references/pixellab-mcp-guide.md`
 - 사용 예시: `examples/README.md`
 - 관련 문서: [plugins-reference](https://code.claude.com/docs/en/plugins-reference.md), [skills](https://code.claude.com/docs/en/skills.md), [plugin-marketplaces](https://code.claude.com/docs/en/plugin-marketplaces.md)
 
