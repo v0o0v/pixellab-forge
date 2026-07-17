@@ -94,6 +94,8 @@ node scripts/pixellab-cache.mjs config
 | `rebuild` / `reindex` | `index.json` 전량으로 SQLite FTS5 인덱스 재구성 |
 | `test` | 결정적 셀프테스트(PASS/FAIL) |
 
+설치 동기화 게이트(`scripts/plugin-sync-check.mjs`): 마켓플레이스 설치 사본은 설치 시점 스냅샷이라 소스 리포 변경이 자동 반영되지 않는다 — 스킬 발동 시 설치 사본 commit ↔ 리포 HEAD 를 비교해 STALE 이면 `claude plugin marketplace update pixellab-forge` + `claude plugin update pixellab-forge@pixellab-forge` 를 자동 실행한다(적용은 새 세션부터).
+
 문서 재학습 게이트(`scripts/refresh-check.mjs`): 스킬 발동 시 마지막 학습일(`skills/pixellab/references/refresh-state.json`)에서 30일 경과 여부를 판정 — `check`(기본) | `mark [--date]` | `test`. STALE 이면 재학습 프로토콜(가이드 §10)을 세션 마무리에 수행한다. 생성 훅(cache-guard)도 STALE 시 경고를 낸다.
 
 REST API 헬퍼(`scripts/pixellab-api.mjs`): MCP 에 없는 기능(인페인팅·이미지→픽셀아트·배경제거·회전 등)이나 대량 배치가 필요할 때 — `balance` | `call </경로> [--json ...] [--poll] [--save-images dir]` | `job <id>` | `test`(오프라인). 토큰은 `PIXELLAB_SECRET` env → `.mcp.json` 순으로 자동 해석(값 미출력). 판단 규칙은 `skills/pixellab/references/pixellab-mcp-guide.md` §9.
