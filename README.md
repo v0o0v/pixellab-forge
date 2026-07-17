@@ -136,6 +136,7 @@ node scripts/import-existing.mjs --from <기존캐시디렉터리> --scope globa
 ## 문서
 
 - 스킬 지침: `skills/pixellab/SKILL.md`
+- PixelLab MCP 실전 가이드(공식 문서 증류본, 2026-07-17 수집): `skills/pixellab/references/pixellab-mcp-guide.md`
 - 사용 예시: `examples/README.md`
 - 관련 문서: [plugins-reference](https://code.claude.com/docs/en/plugins-reference.md), [skills](https://code.claude.com/docs/en/skills.md), [plugin-marketplaces](https://code.claude.com/docs/en/plugin-marketplaces.md)
 

@@ -20,6 +20,7 @@ node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-cache.mjs" <명령>
 - **검색 인덱스 의존(최초 1회 setup)**: `find`/`add` 는 SQLite FTS5 파생 인덱스(`better-sqlite3`)로 후보를 추린다(판정 점수·0.6 임계값은 기존 `score()` 가 그대로 소유 — 의미 불변). 미설치면 CLI 는 "setup 실행" 에러를 낸다. 최초 1회 `node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-cache.mjs" setup` 으로 설치한다(자동 npm install 은 setup 에서만; find/add/훅은 자동설치 안 함). 파생 인덱스 `<root>/index.sqlite` 는 gitignore·재빌드 가능하며 `index.json`+PNG 원본이 진실의 원천. 부재/손상/`index.json` 변경 시 자동 rebuild, 수동 재구성은 `rebuild`.
 - **PreToolUse 훅은 비차단**: 백엔드/인덱스 미설치여도 생성을 막지 않는다(재사용 경고만 미출력, `exit 0`).
 
+- **도구 선택·파라미터·모드/비용이 불확실하면 먼저 `${CLAUDE_PLUGIN_ROOT}/skills/pixellab/references/pixellab-mcp-guide.md` 를 읽는다** — PixelLab 공식 AI 어시스턴트 가이드를 실제 도구 스키마와 대조해 증류한 것(도구 선택 지도·비차단 큐잉·애니메이션 품질 사다리·타일셋 체이닝·흔한 실수 10). 이 문서와 실제 도구 스키마가 충돌하면 스키마가 이긴다.
 - 플러그인 루트 참조는 `${CLAUDE_PLUGIN_ROOT}` 를 우선 쓴다. 훅/스킬 실행 맥락에서 이 변수가 안 잡히면 `${CLAUDE_SKILL_DIR}/../../scripts/pixellab-cache.mjs` 로 대체한다(이 SKILL.md 기준 스킬 디렉터리의 상위 2단계가 플러그인 루트다). 정확한 변수는 https://code.claude.com/docs/en/skills.md 참고.
 - 캐시는 **하이브리드**다: 전역(global)이 공유 기본 라이브러리, 프로젝트 로컬(project)이 오버라이드. `find` 는 project→global 둘 다 조회한다. 해석된 경로는 `... config` 로 확인.
 
@@ -70,6 +71,10 @@ REUSE_THRESHOLD = **0.6**. 이는 후보 추천이지 정확 매칭이 아니므
 
 - 여러 아이콘이 필요하면 `item_descriptions` 배열에 몰아서 한 번에 뽑는다(개별 호출 반복 금지).
 - size 는 용도에 맞는 **최소 크기**를 고른다. 작을수록 한 팩에 더 많은 프레임이 들어가 단가가 낮아진다.
+- **비차단 큐잉**: 모든 `create_*`/`animate_*` 는 즉시 ID 를 반환한다 — 완성을 기다리지 말고 몰아서 큐잉한 뒤 `get_*` 로 나중에 폴링한다(캐릭터 생성 직후 애니메이션 큐잉 OK).
+- **애니메이션은 싼 것부터**: template(방향당 1 gen) → v3(방향당 1 gen, 커스텀) → pro(방향당 20-40 gen). **pro 는 `confirm_cost` 2단계 필수** — 첫 호출로 비용을 확인해 사용자에게 보여주고, 명시 동의 후에만 true 로 재호출한다.
+- **방향(view/direction)을 임의로 정하지 않는다** — 사용자가 명시하지 않았으면 물어본다(0단계 원칙).
+- 도구별 상세(타일셋 체이닝, 맵 오브젝트 8시간 자동삭제, 키프레임 등)는 `references/pixellab-mcp-guide.md`.
 - 스타일 일관성: 같은 배치는 동일한 앵커(`style_images`)/style prompt/팔레트/뷰를 유지한다(섞이면 재사용성이 떨어진다).
 
 ## 6) 검수 — 히어로 에셋은 사용자 눈으로
