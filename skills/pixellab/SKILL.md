@@ -25,9 +25,18 @@ node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-cache.mjs" <명령>
 - 플러그인 루트 참조는 `${CLAUDE_PLUGIN_ROOT}` 를 우선 쓴다. 훅/스킬 실행 맥락에서 이 변수가 안 잡히면 `${CLAUDE_SKILL_DIR}/../../scripts/pixellab-cache.mjs` 로 대체한다(이 SKILL.md 기준 스킬 디렉터리의 상위 2단계가 플러그인 루트다). 정확한 변수는 https://code.claude.com/docs/en/skills.md 참고.
 - 캐시는 **하이브리드**다: 전역(global)이 공유 기본 라이브러리, 프로젝트 로컬(project)이 오버라이드. `find` 는 project→global 둘 다 조회한다. 해석된 경로는 `... config` 로 확인.
 
-## 1) 전제 — 재학습 게이트 + PixelLab MCP 연결 확인
+## 1) 전제 — 동기화·재학습 게이트 + PixelLab MCP 연결 확인
 
-**재학습 게이트(스킬 발동 시 1회)**: 먼저 문서 학습 신선도를 확인한다:
+**설치 동기화 게이트(스킬 발동 시 1회)**: 설치형 사본이 소스 리포보다 낡았는지 확인한다:
+
+```
+node "${CLAUDE_PLUGIN_ROOT}/scripts/plugin-sync-check.mjs"
+```
+
+- `DEV`/`SYNCED`/`UNKNOWN` → 그대로 진행.
+- `STALE` → 출력된 두 명령(`claude plugin marketplace update pixellab-forge` → `claude plugin update pixellab-forge@pixellab-forge`)을 **즉시 실행**한다(로컬 스냅샷 갱신 — 외부 publish 아님, 사용자 확인 불필요). 적용은 새 세션부터이므로, 사용자에게 "플러그인을 최신으로 갱신했고 다음 세션(또는 `/reload-plugins`)부터 새 스킬이 적용된다"고 알린 뒤 **현재 작업은 그대로 계속**한다.
+
+**재학습 게이트(스킬 발동 시 1회)**: 문서 학습 신선도를 확인한다:
 
 ```
 node "${CLAUDE_PLUGIN_ROOT}/scripts/refresh-check.mjs"
