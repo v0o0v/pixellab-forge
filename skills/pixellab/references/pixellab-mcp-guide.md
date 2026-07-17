@@ -1,8 +1,8 @@
-# PixelLab MCP 실전 가이드 (증류본)
+# PixelLab MCP + REST API 실전 가이드 (증류본)
 
-> **출처**: https://api.pixellab.ai/mcp/docs (PixelLab 공식 AI 어시스턴트 가이드) + 실제 MCP 도구 스키마 대조 검증.
-> **수집일**: 2026-07-17. PixelLab 문서는 자주 갱신된다 — **이 문서와 실제 도구 스키마(description)가 충돌하면 항상 스키마가 이긴다.**
-> **범위**: MCP 로 자동화 가능한 지식만. 수동 보정(브러쉬 인페인팅, init image 스케치, Aseprite 확장)은 웹 에디터(https://www.pixellab.ai) 영역 — 필요하면 사용자에게 웹 에디터를 안내한다.
+> **출처**: https://api.pixellab.ai/mcp/docs (PixelLab 공식 AI 어시스턴트 가이드) + 실제 MCP 도구 스키마 대조 검증 + https://api.pixellab.ai/v2/openapi.json (REST API v2 스펙, 68경로).
+> **수집일**: 2026-07-17. PixelLab 문서는 자주 갱신된다 — **이 문서와 실제 도구 스키마(description)/OpenAPI 스펙이 충돌하면 항상 스키마·스펙이 이긴다.**
+> **범위**: 자동화 가능한 지식만(MCP 도구 + REST API). 수동 보정(브러쉬 인페인팅, init image 스케치, Aseprite 확장)은 웹 에디터(https://www.pixellab.ai) 영역 — 필요하면 사용자에게 웹 에디터를 안내한다.
 
 ## 1) 도구 선택 지도
 
@@ -84,7 +84,7 @@
 
 ## 8) 흔한 실수 체크리스트 (공식 + 스키마 검증)
 
-1. MCP 도구가 있는데 curl/REST API 를 시도 ❌ — MCP 도구 직접 호출.
+1. MCP 도구가 있는 작업에 curl/REST API 를 시도 ❌ — MCP 도구 직접 호출. **단 §9 판단 규칙의 예외 3조건이면 API 가 맞다.**
 2. 기존 **캐릭터** 스프라이트 회전에 `create_8_direction_object` ❌ → `create_character(mode="v3", reference_image_base64=...)`.
 3. template 애니메이션에 `directions` 강제 ❌ — 템플릿은 전 방향 자동.
 4. 큰 이미지를 base64 로 인라인 전달 ❌ — `*_url` 파라미터 선호(base64 잘림 → 이미지 깨짐).
@@ -94,3 +94,42 @@
 8. pro 모드를 비용 고지 없이 실행 ❌ — `confirm_cost` 2단계(위 4절).
 9. `create_map_object` 결과 방치 ❌ — 8시간 자동 삭제, 즉시 다운로드+캐시 add.
 10. `size` 와 `style_images`/`reference_image` 동시 지정 ❌ — 참조 이미지가 출력 크기를 결정한다.
+
+## 9) REST API — MCP 보다 API 가 나은 때 (판단 규칙)
+
+**기본은 MCP** (공식 권장: "MCP 도구를 사용할 수 있으면 직접 사용"). 단 아래 **예외 3조건**이면 REST API v2 를 쓴다:
+
+1. **MCP 도구에 없는 기능** — API 전용 엔드포인트가 필요할 때 (아래 표).
+2. **대량 배치 / 파이프라인 통합** — 수십 건 이상을 프로그램적으로 돌리거나 게임 빌드 스크립트에 통합할 때.
+3. **MCP 클라이언트 제약 회피** — base64 인라인 잘림 등으로 MCP 경유가 깨질 때.
+
+### API 전용 기능 (MCP 에 없음 — 예외 ① 대상)
+
+| 기능 | 엔드포인트 | 핵심 파라미터(★=필수) |
+|---|---|---|
+| 임의 이미지 인페인팅 | `POST /inpaint`, `/inpaint-v3`(Pro) | description★, inpainting_image★, mask_image★(흰=생성/검=보존) |
+| 일반 이미지 → 픽셀아트 | `POST /image-to-pixelart`, `-pro`(Pro) | image★, image_size★, output_size★ |
+| 배경 제거 | `POST /remove-background` | image★, image_size★ |
+| 리사이즈(픽셀아트 보존) | `POST /resize` | description★, reference_image★, target_size★ |
+| 단일 회전(뷰/방향 변경) | `POST /rotate` | from_image★, from/to_view, from/to_direction |
+| 스켈레톤 애니메이션 | `POST /animate-with-skeleton`, `/estimate-skeleton` | reference_image★, skeleton_keypoints |
+| 애니메이션 보간 | `POST /interpolation-v2`(Pro) | start_image★, end_image★, action★ |
+| 의상 이전 | `POST /transfer-outfit-v2`(Pro) | reference_image★, frames★ |
+| 스타일 전이 생성 | `POST /generate-with-style-v2`(Pro), `/create-image-bitforge` | style_images★/style_image, description★ |
+| 원시 이미지 생성 | `POST /create-image-pixflux`, `/generate-image-v2`(Pro) | description★, image_size★ |
+| 이미지 편집(지시문) | `POST /edit-image`, `/edit-images-v2`(Pro) | image★, description★ |
+
+전체 스펙: `https://api.pixellab.ai/v2/openapi.json` (대화형 문서 `/v2/docs`). MCP 와 동일 asset 계열(characters/objects/tilesets/ui)도 REST 로 있다 — 배치(예외 ②)에 사용.
+
+### 호출 방법 — 반드시 헬퍼 경유
+
+```
+node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-api.mjs" balance                # 무비용 스모크(토큰·잔액 확인)
+node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-api.mjs" call /remove-background --json-file req.json --save-images out/
+node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-api.mjs" call <경로> --json '<body>' --poll   # 비동기 job 자동 폴링
+node "${CLAUDE_PLUGIN_ROOT}/scripts/pixellab-api.mjs" job <job_id> --save-images out/
+```
+
+- **토큰**: `PIXELLAB_SECRET` env → `.mcp.json`(`mcpServers.pixellab.headers.Authorization`) 순으로 헬퍼가 알아서 읽는다. **curl 로 직접 조립 금지** — 토큰이 명령줄/로그에 남는다. 헬퍼는 토큰 값을 어떤 출력에도 찍지 않는다.
+- **비용**: MCP 와 같은 계정 크레딧을 쓴다(USD 종량 — 예: 64px 이미지 ≈ $0.008, Pro 256px ≈ $0.095). **Pro 엔드포인트·대량 배치는 실행 전 예상 비용을 사용자에게 고지하고 동의받는다**(MCP `confirm_cost` 와 같은 정신 — API 에는 자동 게이트가 없으므로 스킬 규칙으로 지킨다). 시작 전 `balance` 로 잔액 확인.
+- **산출물 처리**: API 로 만든 이미지도 동일하게 캐시에 `add` 한다(§비용 원칙). 스타일 앵커 규칙(§refs)도 동일 적용.
