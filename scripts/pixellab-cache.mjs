@@ -32,7 +32,7 @@
  */
 import {
   readFileSync, writeFileSync, existsSync, mkdirSync, copyFileSync,
-  readdirSync, statSync, rmSync, mkdtempSync, utimesSync,
+  readdirSync, statSync, rmSync, mkdtempSync, utimesSync, realpathSync,
 } from 'fs';
 import { fileURLToPath, pathToFileURL } from 'url';
 import path from 'path';
@@ -721,5 +721,6 @@ function main() {
   }
 }
 
-const isMain = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+// 정션/심링크 경유 실행 지원: ESM 의 import.meta.url 은 실경로라 argv[1] 도 실경로로 비교해야 한다.
+const isMain = process.argv[1] && (() => { try { return import.meta.url === pathToFileURL(realpathSync(process.argv[1])).href; } catch { return false; } })();
 if (isMain) main();
