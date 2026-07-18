@@ -11908,6 +11908,284 @@
       "contentHash": "ed29e283fdf49fcb3c93f500ccc0f0f08b2cfe917e5adbfdf0a3591d9f6cdba7",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_turret_vulcan",
+      "prompt": "top-down sci-fi vulcan defense turret, planet blitz defense set, teal",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "turret",
+        "defense",
+        "vulcan"
+      ],
+      "assetType": "object",
+      "sprites": [
+        "turret_vulcan"
+      ],
+      "files": [
+        "pb_turret_vulcan.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:rest-bitforge"
+      },
+      "contentHash": "a801e4e560471adf5909ac6ac13f7d1c532b412cdbf67ebbedae50ead2c09aa1",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_turret_sniper",
+      "prompt": "top-down sci-fi sniper defense turret, planet blitz defense set, teal",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "turret",
+        "defense",
+        "sniper"
+      ],
+      "assetType": "object",
+      "sprites": [
+        "turret_sniper"
+      ],
+      "files": [
+        "pb_turret_sniper.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:rest-bitforge"
+      },
+      "contentHash": "a1375bc38b70fe1b85bb25a9cef63e588691fc114bee47e8cca7cb7c322096ad",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_turret_scatter",
+      "prompt": "top-down sci-fi scatter defense turret, planet blitz defense set, teal",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "turret",
+        "defense",
+        "scatter"
+      ],
+      "assetType": "object",
+      "sprites": [
+        "turret_scatter"
+      ],
+      "files": [
+        "pb_turret_scatter.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:rest-bitforge"
+      },
+      "contentHash": "f744fba2c83401dee8d1303a11dc87159e036497763b67031fba22aa99513489",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_turret_slow",
+      "prompt": "top-down sci-fi slow defense turret, planet blitz defense set, teal",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "turret",
+        "defense",
+        "slow"
+      ],
+      "assetType": "object",
+      "sprites": [
+        "turret_slow"
+      ],
+      "files": [
+        "pb_turret_slow.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:rest-bitforge"
+      },
+      "contentHash": "90d740939f1651cb2cfbd5caff77a8396c659552c7c1e77c589a78f822e99a75",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_turret_missile",
+      "prompt": "top-down sci-fi missile defense turret, planet blitz defense set, teal",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "turret",
+        "defense",
+        "missile"
+      ],
+      "assetType": "object",
+      "sprites": [
+        "turret_missile"
+      ],
+      "files": [
+        "pb_turret_missile.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:rest-bitforge"
+      },
+      "contentHash": "c4f7eaae464d81405a93638ed359c4522507c37089297a2ee8bcb52b41333da5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_turret_shock",
+      "prompt": "top-down sci-fi shock defense turret, planet blitz defense set, teal",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "turret",
+        "defense",
+        "shock"
+      ],
+      "assetType": "object",
+      "sprites": [
+        "turret_shock"
+      ],
+      "files": [
+        "pb_turret_shock.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:rest-bitforge"
+      },
+      "contentHash": "899588c6b2cd7b6bd261807e5b03fd2222ec6ce2e6f970a2b07f919e38b67e0e",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_defense_core",
+      "prompt": "top-down hexagonal energy reactor defense core building, planet blitz defense set, teal",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "defense",
+        "core"
+      ],
+      "assetType": "object",
+      "sprites": [
+        "defense_core"
+      ],
+      "files": [
+        "pb_defense_core.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:rest-bitforge"
+      },
+      "contentHash": "5fb893ebf8fbb1c8834f2d312f65cc82775f39430059c6c9908768a509c48666",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_guardian_titan",
+      "prompt": "top-down heavy armored guardian gunship, planet blitz defense set",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "guardian",
+        "ship",
+        "titan"
+      ],
+      "assetType": "object",
+      "sprites": [
+        "guardian_titan"
+      ],
+      "files": [
+        "pb_guardian_titan.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:rest-bitforge"
+      },
+      "contentHash": "2634c3604f37736b6c02e83874d2bb0663d0a62c296c9edbf23de5cb7ca2be7a",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_guardian_interceptor",
+      "prompt": "top-down sleek interceptor fighter drone guardian, planet blitz defense set",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "guardian",
+        "ship",
+        "interceptor"
+      ],
+      "assetType": "object",
+      "sprites": [
+        "guardian_interceptor"
+      ],
+      "files": [
+        "pb_guardian_interceptor.png"
+      ],
+      "license": {
+        "license": "PixelLab",
+        "author": "pixellab-forge",
+        "source": "pixellab:rest-bitforge"
+      },
+      "contentHash": "15681e640f9468148eac5ce8c07b44349d659a7e5532c927101cb3b9f2d67bb7",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
