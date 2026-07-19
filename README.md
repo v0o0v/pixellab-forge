@@ -142,6 +142,7 @@ node scripts/import-existing.mjs --from <기존캐시디렉터리> --scope globa
 ## 문서
 
 - 스킬 지침: `skills/pixellab/SKILL.md`
+- 카툰 우드 UI 킷 적용 플레이북: `skills/cartoon-wood-ui/SKILL.md` (킷 자산 좌표·9-slice 파라미터 + Planet Blitz 격납고 파일럿 교훈)
 - PixelLab MCP + REST API 실전 가이드(공식 문서·OpenAPI 스펙 증류본, 2026-07-17 수집): `skills/pixellab/references/pixellab-mcp-guide.md`
 - 사용 예시: `examples/README.md`
 - 관련 문서: [plugins-reference](https://code.claude.com/docs/en/plugins-reference.md), [skills](https://code.claude.com/docs/en/skills.md), [plugin-marketplaces](https://code.claude.com/docs/en/plugin-marketplaces.md)
