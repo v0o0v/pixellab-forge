@@ -12676,6 +12676,110 @@
       "contentHash": "b03820ddd45b9d3356ed1c369ca67b33c261dbf2bc0d4c421dac59c15e1a4967",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_ui_planet_kargon",
+      "prompt": "cartoon planet globe icon, volcanic lava world, dark basalt sphere with glowing orange-red molten lava cracks, thick dark outline, glossy highlight",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "icon",
+        "planet",
+        "starmap"
+      ],
+      "files": [
+        "pb_ui_planet_kargon.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "071da880e615fa1b2703c5b7accf070a9bd4406bfc5390991d2d208e72fb8ad3",
+      "createdAt": "2026-07-20",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_planet_berdan",
+      "prompt": "cartoon planet globe icon, swarm hive planet, mossy green sphere covered in chitin plating and hive pods, thick dark outline",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "icon",
+        "planet",
+        "starmap"
+      ],
+      "files": [
+        "pb_ui_planet_berdan.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "a7ecba6bdd97ec5f19beb269331db76b97c004461f772a86b29e8abf7fd7c08a",
+      "createdAt": "2026-07-20",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_planet_niflheim",
+      "prompt": "cartoon planet globe icon, frozen tundra world, pale blue sphere with swirling white snow storms, thick dark outline",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "icon",
+        "planet",
+        "starmap"
+      ],
+      "files": [
+        "pb_ui_planet_niflheim.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "df77d42ccf6d9283ddf5ce4626ec9bf1c64f82eee5a3833d2fc857e756972772",
+      "createdAt": "2026-07-20",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_planet_arke",
+      "prompt": "cartoon planet globe icon, ruined precursor world, bronze-grey sphere with geometric relic plating and violet glowing seams, thick dark outline",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "icon",
+        "planet",
+        "starmap"
+      ],
+      "files": [
+        "pb_ui_planet_arke.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "9f56250a32dce60c8a7d7ce9d28409921601d9b578a712440d4ffd71e253a5f0",
+      "createdAt": "2026-07-20",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
