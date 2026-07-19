@@ -17,6 +17,7 @@
  *   removeIds(root, ids)           prune 증분 삭제(§9.7)
  *   getCandidates(root, query, kMax)  매칭-집합 후보(§9.1)
  *   closeAll()                     모든 연결 종료(테스트/정리용)
+ *   verifyBackend()                백엔드를 실제로 로드+FTS5 스모크해 ok|missing|broken 판정
  *   BackendUnavailableError        better-sqlite3 부재/강제비활성 시 throw
  *
  * better-sqlite3 미설치 시 `BackendUnavailableError`. 이 모듈은 절대 자동 npm install 하지 않는다
@@ -39,7 +40,52 @@ export class BackendUnavailableError extends Error {
 }
 
 // ── better-sqlite3 지연 로드 ────────────────────────────────────────────────
+
+/**
+ * 백엔드 상태 3분류. **미설치와 "설치는 됐는데 못 쓰는 상태"는 처방이 다르다.**
+ * - `missing`: 패키지 자체가 없다 → `npm install`.
+ * - `broken` : 패키지는 있는데 네이티브 바인딩(`build/Release/better_sqlite3.node`)이 없거나
+ *              Node ABI 가 안 맞아 로드가 실패한다(Node 메이저 업그레이드·prebuild 미다운로드).
+ *              이때 `npm install` 은 **아무것도 하지 않는다**(패키지 디렉터리가 이미 있어 npm 이 건너뛴다)
+ *              → `npm rebuild better-sqlite3` 로 prebuild 를 다시 받아야 한다.
+ * 둘을 뭉뚱그리면 "setup 실행 필요" → setup 은 "이미 설치됨" 을 반복하는 막다른 루프가 된다(실제 발생).
+ */
+export const BACKEND_OK = 'ok';
+export const BACKEND_MISSING = 'missing';
+export const BACKEND_BROKEN = 'broken';
+
 let _Database = null;
+
+/**
+ * 백엔드를 **실제로 로드하고 FTS5 까지 굴려** 상태를 판정한다(`{ status, detail }`).
+ * `require.resolve` 만으로는 못 잡는다 — 바인딩이 없어도 resolve 는 성공한다.
+ */
+export function verifyBackend() {
+  if (process.env.PIXELLAB_FORCE_NO_BACKEND === '1') {
+    return { status: BACKEND_MISSING, detail: 'PIXELLAB_FORCE_NO_BACKEND=1 (강제 비활성)' };
+  }
+  const require = createRequire(import.meta.url);
+  try {
+    require.resolve('better-sqlite3');
+  } catch (e) {
+    return { status: BACKEND_MISSING, detail: e.message };
+  }
+  try {
+    const Database = require('better-sqlite3');
+    // 인메모리 스모크: 생성자 + FTS5 가상테이블까지 확인한다(FTS5 미포함 빌드도 걸러낸다).
+    const db = new Database(':memory:');
+    try {
+      db.exec("CREATE VIRTUAL TABLE __smoke USING fts5(x)");
+    } finally {
+      db.close();
+    }
+    _Database = Database;
+    return { status: BACKEND_OK, detail: `better-sqlite3 ${require('better-sqlite3/package.json').version}` };
+  } catch (e) {
+    return { status: BACKEND_BROKEN, detail: e.message };
+  }
+}
+
 function loadDatabaseCtor() {
   // 테스트 seam: 백엔드 부재를 결정적으로 모의(셀프테스트 i/훅 degrade 검증).
   if (process.env.PIXELLAB_FORCE_NO_BACKEND === '1') {
@@ -51,7 +97,13 @@ function loadDatabaseCtor() {
     _Database = require('better-sqlite3');
     return _Database;
   } catch (e) {
-    throw new BackendUnavailableError('better-sqlite3 미설치 — CLI `setup` 실행 필요: ' + e.message);
+    // 처방이 갈리므로 미설치와 바인딩 로드 실패를 구분해서 알린다.
+    const v = verifyBackend();
+    const fix =
+      v.status === BACKEND_BROKEN
+        ? 'better-sqlite3 는 설치돼 있으나 네이티브 바인딩 로드 실패(Node ABI 불일치 또는 prebuild 부재) — `npm rebuild better-sqlite3` 또는 CLI `setup` 실행 필요'
+        : 'better-sqlite3 미설치 — CLI `setup` 실행 필요';
+    throw new BackendUnavailableError(`${fix}: ${e.message}`);
   }
 }
 
@@ -65,7 +117,23 @@ export function openDb(root, opts = {}) { // eslint-disable-line no-unused-vars
   if (cached) return cached;
   const Database = loadDatabaseCtor(); // 부재 시 BackendUnavailableError
   mkdirSync(root, { recursive: true });
-  const db = new Database(dbPath(root));
+  // ⚠️ better-sqlite3 는 네이티브 바인딩을 **생성자에서** 로드한다 — `require()` 성공은 사용 가능의
+  // 증거가 아니다. 바인딩이 없거나 ABI 가 어긋나면 여기서 raw 예외가 터져 CLI 가 스택을 토했다
+  // (2026-07-20 실장애). 여기서 분류해 BackendUnavailableError 로 바꿔 상위가 안내로 처리하게 한다.
+  let db;
+  try {
+    db = new Database(dbPath(root));
+  } catch (e) {
+    const v = verifyBackend();
+    if (v.status !== BACKEND_OK) {
+      throw new BackendUnavailableError(
+        v.status === BACKEND_BROKEN
+          ? `better-sqlite3 는 설치돼 있으나 네이티브 바인딩 로드 실패(Node ABI 불일치 또는 prebuild 부재) — \`npm rebuild better-sqlite3\` 또는 CLI \`setup\` 실행 필요: ${v.detail}`
+          : `better-sqlite3 미설치 — CLI \`setup\` 실행 필요: ${v.detail}`,
+      );
+    }
+    throw e; // 백엔드는 멀쩡한데 이 DB 파일만 문제(권한·손상 등) — 원본 예외를 그대로 올린다.
+  }
   db.pragma('journal_mode = WAL');
   db.pragma('busy_timeout = 5000');
   db.exec(`
