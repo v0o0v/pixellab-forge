@@ -12186,6 +12186,496 @@
       "contentHash": "15681e640f9468148eac5ce8c07b44349d659a7e5532c927101cb3b9f2d67bb7",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_ui_wood_kit_sheet",
+      "prompt": "cartoon wooden game UI kit sheet, wood panel frame, red banner title bar, glossy red blue yellow buttons, recessed item slots, tooltip panel",
+      "style": {
+        "size": 512,
+        "tool": "create_ui_asset",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "kit",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_wood_kit_sheet.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "18aaffb786c6780aebe74aa6002bbff7fe6a924aedc2f02768c561e975e8f475",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_wood_blank_buttons",
+      "prompt": "cartoon wooden game UI blank glossy buttons and banner without text, red blue yellow wood pill buttons, wooden chip",
+      "style": {
+        "size": 512,
+        "tool": "create_ui_asset",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "button",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_wood_blank_buttons.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "53f219a576bcb5ef4b5e0af17351cd6c2f896d3eabfebca2dc435a5b06555e4b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ship_showcase_fighter",
+      "prompt": "large detailed cyan sci-fi fighter spaceship top-down hangar showcase illustration, heavy armored teal hull",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "showcase",
+        "topdown"
+      ],
+      "files": [
+        "pb_ship_showcase_fighter.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "0b2ee4268e95ee5099319c96a9eb20a2ce19d5fda774a67d166fde06816f4c49",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_shield",
+      "prompt": "cartoon wooden game UI icon, blue shield emblem icon with gold trim",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_shield.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "3c3fdbf6ec60ab747eedd46a64f05e7dcf53809564cc436b3fed3cfad7f559a3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_crystal",
+      "prompt": "cartoon wooden game UI icon, glowing cyan crystal mineral ore chunk",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_crystal.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "7aff48898baad075e2102e7f3ec216f55b492cfe7ea6c05211f50790fb5990f9",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_arrow_left",
+      "prompt": "cartoon wooden game UI icon, left arrow on wooden round button",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_arrow_left.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "1f8a73990453c6c834c077bf1b7dfb7474eac559f66587b5ebda1b473af31174",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_salvage",
+      "prompt": "cartoon wooden game UI icon, hammer smashing an item into fragments salvage icon",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_salvage.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "0f7b882e965a9eb09ef7f0078e99075c8006be59a7eec82a1ec5bde912d2d10d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_close",
+      "prompt": "cartoon wooden game UI icon, red round close button with white X wooden rim",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_close.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "893a3d3647466632e299f9d91463a0b71764d894d37253db730b1e5d8a680428",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_coin",
+      "prompt": "cartoon wooden game UI icon, shiny gold coin currency icon",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_coin.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "c6790c1e2133ae4070a90f36c72208ee5ca85375448b4f3ae05e2517e50ab3a2",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_rocket",
+      "prompt": "cartoon wooden game UI icon, small cyan rocket ship icon",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_rocket.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "3063dff82a02d3b82e0565316b5bec360b493a8bed6bd1a9b35af7619a6a8492",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_arrow_right",
+      "prompt": "cartoon wooden game UI icon, right arrow on wooden round button",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_arrow_right.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "ffb3a94ac9faa4911c4250aab050077a71ec9ba7416a4764b7b5c4f407d45915",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_check",
+      "prompt": "cartoon wooden game UI icon, green checkmark on wooden round button",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_check.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "6d1820d1ee13090391e3749e3f61e900a4a5a9494d9522220d8fe8efd334ce39",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_gear",
+      "prompt": "cartoon wooden game UI icon, gear cogwheel on wooden round button",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_gear.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "c0df4c34d8a5bfa34aabefecd6209164b9dbc1fb5134d72cd624baff9c1bf4bb",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_star",
+      "prompt": "cartoon wooden game UI icon, gold star with sparkle",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_star.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "752b5eb3121625d8f3c2bc05b7535c605567391e6689c38c0112a755291e523b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_expand",
+      "prompt": "cartoon wooden game UI icon, green plus sign on wooden round button expand icon",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_expand.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "718a0b98b785d8a8435d602c3083c433b641316f94fb5615485bbe1e820fa18b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_search",
+      "prompt": "cartoon wooden game UI icon, magnifying glass search icon on wood",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_search.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "ad8acd8f638dabd73bdc8b23534ae5694e90f37e28242c304d84c8c4f8962f55",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_upgrade",
+      "prompt": "cartoon wooden game UI icon, green upward arrow upgrade icon on wood",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_upgrade.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "8ff1a77b8dd8bc789102387031d26184488368a699cd0a7616ba4bbd79eed925",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_trash",
+      "prompt": "cartoon wooden game UI icon, red trash bin icon with wooden lid",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_trash.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "e1d27d8813036ea29dd1378109c4321cbe44eafa6ae2593b3b4406729609a445",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ui_icon_lock",
+      "prompt": "cartoon wooden game UI icon, wooden padlock lock icon with gold shackle",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-cartoon-wood-ui"
+      },
+      "tags": [
+        "ui",
+        "icon",
+        "wood",
+        "cartoon",
+        "planet-blitz"
+      ],
+      "files": [
+        "pb_ui_icon_lock.png"
+      ],
+      "license": {
+        "license": "CC0"
+      },
+      "contentHash": "b03820ddd45b9d3356ed1c369ca67b33c261dbf2bc0d4c421dac59c15e1a4967",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
