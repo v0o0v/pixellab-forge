@@ -104,9 +104,9 @@ async function run() {
     try {
       ranked = findMatches({ prompt: desc, tags: [] }, roots, { top: 1, allowRebuild: false });
     } catch (e) {
-      // 백엔드(better-sqlite3) 미설치 → 1회만 setup 힌트, 비차단. 그 외 예외도 흡수(생성 미차단).
+      // 백엔드(better-sqlite3) 사용 불가 → 1회만 setup 힌트, 비차단. 그 외 예외도 흡수(생성 미차단).
       if (e instanceof BackendUnavailableError && !backendWarned) {
-        process.stderr.write('⚠️ [pixellab-forge] 재사용 인덱스 백엔드(better-sqlite3) 미설치 — 후보 조회 건너뜀(생성은 계속). setup: node "<plugin>/scripts/pixellab-cache.mjs" setup\n');
+        process.stderr.write('⚠️ [pixellab-forge] 재사용 인덱스 백엔드(better-sqlite3) 사용 불가 — 후보 조회 건너뜀(생성은 계속). setup: node "<plugin>/scripts/pixellab-cache.mjs" setup\n');
         backendWarned = true;
       }
       continue;

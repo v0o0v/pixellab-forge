@@ -52,9 +52,13 @@ claude plugin validate ./
 node scripts/pixellab-cache.mjs setup
 ```
 
-- `setup` 은 `better-sqlite3` 미설치 시에만 플러그인 루트에서 `npm install` 을 실행한다(win32-x64/darwin/linux prebuilt 바이너리, 컴파일 대개 불필요). 자동 설치는 **이 명령에서만** 일어난다 — `find`/`add`/훅은 절대 자동 설치하지 않는다.
-- prebuild 부재 플랫폼이면 빌드 툴체인이 필요할 수 있다(실패 시 수동 안내 출력).
-- **미설치 상태 동작**: CLI `find`/`add` 는 "setup 실행" 명확 에러 + 비정상 종료. **PreToolUse 훅은 1회 경고 후 `exit 0`(생성 비차단)** — 재사용 경고만 미출력되고 생성은 정상 진행된다.
+- `setup` 은 백엔드를 **실제로 로드하고 FTS5 까지 굴려** 판정한다(`require.resolve` 성공은 사용 가능의 증거가 아니다 — better-sqlite3 는 네이티브 바인딩을 **생성자에서** 로드한다). 판정은 세 갈래다:
+  - `ok` — 그대로 진행.
+  - `missing`(패키지 없음) → 플러그인 루트에서 `npm install`(win32-x64/darwin/linux prebuilt 바이너리, 컴파일 대개 불필요).
+  - `broken`(패키지는 있는데 바인딩 부재·Node ABI 불일치 — **Node 메이저 업그레이드 후 전형적**) → `npm rebuild better-sqlite3`. 이 경우 `npm install` 은 패키지 디렉터리가 이미 있어 **아무 일도 하지 않으므로** rebuild 가 유일한 처방이다.
+  자동 실행은 **이 명령에서만** 일어난다 — `find`/`add`/훅은 절대 자동 설치·복구하지 않는다. 마지막에 반드시 재검증하고, 인덱스 rebuild 스모크가 실패하면 **성공으로 위장하지 않고 비정상 종료**한다.
+- prebuild 부재 플랫폼이면 빌드 툴체인이 필요할 수 있다(실패 시 `npm rebuild better-sqlite3 --build-from-source` 안내 출력).
+- **사용 불가 상태 동작**: CLI `find`/`add` 는 "setup 실행" 명확 안내 + 비정상 종료(raw 스택 미노출). **PreToolUse 훅은 1회 경고 후 `exit 0`(생성 비차단)** — 재사용 경고만 미출력되고 생성은 정상 진행된다.
 - 파생 인덱스 `<root>/index.sqlite`(및 `-wal`/`-shm`)는 **gitignore·미커밋**. 부재/손상/`index.json` 변경 시 자동 rebuild. 수동 재구성은 `rebuild`(별칭 `reindex`).
 
 ## 하이브리드 캐시

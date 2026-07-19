@@ -43,6 +43,7 @@ import { createRequire } from 'module';
 import {
   ensureFresh, getCandidates, rebuild as rebuildIndex, upsertOne, removeIds,
   closeAll, BackendUnavailableError, allIds,
+  verifyBackend, BACKEND_OK, BACKEND_MISSING, BACKEND_BROKEN,
 } from './pixellab-index.mjs';
 
 export { BackendUnavailableError } from './pixellab-index.mjs';
@@ -449,35 +450,72 @@ function cmdPrune() {
 function backendHint() {
   const cli = path.join(PLUGIN_ROOT, 'scripts', 'pixellab-cache.mjs');
   return [
-    'better-sqlite3(재사용 인덱스 백엔드)가 설치되어 있지 않습니다.',
+    'better-sqlite3(재사용 인덱스 백엔드)를 쓸 수 없습니다(미설치 또는 네이티브 바인딩 로드 실패).',
     `  setup 실행:  node "${cli}" setup`,
-    `  수동 설치:   cd "${PLUGIN_ROOT}" && npm install`,
+    `  수동 복구:   cd "${PLUGIN_ROOT}" && npm rebuild better-sqlite3   (설치돼 있는데 로드 실패할 때)`,
+    `  수동 설치:   cd "${PLUGIN_ROOT}" && npm install                  (아예 없을 때)`,
   ].join('\n');
 }
 
-// setup — better-sqlite3 설치 보장. 자동 npm install 은 이 명령에서만(find/add/훅 은 절대 자동설치 X, §OQ4).
+function npmRun(args) {
+  return spawnSync('npm', args, { cwd: PLUGIN_ROOT, stdio: 'inherit', shell: process.platform === 'win32' });
+}
+
+const firstLine = (s) => String(s ?? '').split('\n')[0].trim();
+
+/**
+ * setup — 백엔드를 **실제로 쓸 수 있는 상태**로 만든다. 자동 npm 실행은 이 명령에서만(find/add/훅 은 절대 X, §OQ4).
+ *
+ * 예전 구현은 `require.resolve` 성공만 보고 "이미 설치됨" 을 출력한 뒤, 진짜 실패(rebuild 스모크)를
+ * `(인덱스 rebuild 스모크 생략: …)` 로 삼켰다. 그래서 **바인딩이 없는 설치**에서 find/add 는 계속
+ * 죽는데 setup 은 계속 정상이라고 답하는 막다른 루프가 됐다(2026-07-20 Node 24 환경에서 실제 발생).
+ * 지금은 ①로드+FTS5 스모크로 판정하고 ②broken 이면 `npm rebuild` 로 고치며 ③마지막에 반드시 재검증한다.
+ */
 function cmdSetup() {
-  const require = createRequire(import.meta.url);
-  try {
-    require.resolve('better-sqlite3');
-    console.log('better-sqlite3 이미 설치됨.');
-    // FTS5/동작 스모크
-    try {
-      rebuildIndex(resolveRoots().global);
-      console.log('전역 인덱스 rebuild 확인 완료(FTS5 동작).');
-    } catch (e) { console.log(`(인덱스 rebuild 스모크 생략: ${e.message})`); }
-    process.exit(0);
-  } catch { /* 미설치 → 아래에서 설치 시도 */ }
-  console.log(`better-sqlite3 미설치 → npm install 실행 (${PLUGIN_ROOT}) ...`);
-  const r = spawnSync('npm', ['install', '--omit=dev'], { cwd: PLUGIN_ROOT, stdio: 'inherit', shell: process.platform === 'win32' });
-  if (r.status === 0) {
-    console.log('설치 완료. 이제 find/add 가 재사용 인덱스를 사용합니다.');
-    process.exit(0);
+  let v = verifyBackend();
+
+  if (v.status === BACKEND_BROKEN) {
+    // 패키지는 있는데 바인딩이 없거나 ABI 가 안 맞는 상태. npm install 은 패키지가 이미 있어
+    // 아무 일도 하지 않으므로 rebuild(=prebuild 재다운로드/재빌드)가 유일한 처방이다.
+    console.log(`better-sqlite3 로드 실패 → npm rebuild 실행 (${PLUGIN_ROOT}) ...`);
+    // bindings 실패 메시지는 시도 경로 13줄을 달고 온다 — 첫 줄만 보여준다(원문은 실패 시 최종 안내에서).
+    console.log(`  사유: ${firstLine(v.detail)}`);
+    npmRun(['rebuild', 'better-sqlite3']);
+    v = verifyBackend();
   }
-  console.error('자동 설치 실패.');
-  console.error(`수동 설치: cd "${PLUGIN_ROOT}" && npm install`);
-  console.error('(prebuild 부재 플랫폼이면 빌드 툴체인[python/C++ toolchain]이 필요할 수 있습니다.)');
-  process.exit(1);
+
+  if (v.status === BACKEND_MISSING) {
+    console.log(`better-sqlite3 미설치 → npm install 실행 (${PLUGIN_ROOT}) ...`);
+    npmRun(['install', '--omit=dev']);
+    v = verifyBackend();
+    // 설치는 됐는데 바인딩만 빠진 경우(prebuild 다운로드 실패)도 여기서 한 번 더 건진다.
+    if (v.status === BACKEND_BROKEN) {
+      console.log('설치 후에도 바인딩 로드 실패 → npm rebuild 재시도 ...');
+      npmRun(['rebuild', 'better-sqlite3']);
+      v = verifyBackend();
+    }
+  }
+
+  if (v.status !== BACKEND_OK) {
+    console.error(`백엔드 사용 불가(${v.status}): ${v.detail}`);
+    console.error(backendHint());
+    console.error('(prebuild 부재 플랫폼이면 빌드 툴체인[python/C++ toolchain]이 필요할 수 있습니다:');
+    console.error(`   cd "${PLUGIN_ROOT}" && npm rebuild better-sqlite3 --build-from-source)`);
+    process.exit(1);
+  }
+
+  console.log(`better-sqlite3 사용 가능 — ${v.detail}`);
+  // 실제 인덱스로 한 번 더 굴려 본다. 여기서 실패하면 **삼키지 않고 실패로 끝낸다** —
+  // "정상" 이라고 답한 setup 이 가장 비싼 거짓말이다.
+  try {
+    rebuildIndex(resolveRoots().global);
+    console.log('전역 인덱스 rebuild 확인 완료(FTS5 동작). 이제 find/add 가 재사용 인덱스를 사용합니다.');
+  } catch (e) {
+    console.error(`전역 인덱스 rebuild 실패: ${e.message}`);
+    console.error(backendHint());
+    process.exit(1);
+  }
+  process.exit(0);
 }
 
 // rebuild | reindex — 두 root 인덱스를 index.json 전량으로 재구성.
@@ -682,6 +720,19 @@ function selftest() {
     ok('n) 스타일 앵커(왕복+보정+strict 배제+등가)',
       roundTrip && boosted && strictExcluded && cN.setEq && cN.decEq && cN.bestEq,
       `roundTrip=${roundTrip} boosted=${boosted} strict=${strictExcluded} set${cN.setEq}dec${cN.decEq}best${cN.bestEq}`);
+
+    // (o) 백엔드 판정: **로드+FTS5 스모크까지** 해야 한다. resolve 성공만 보면 바인딩 없는 설치를
+    //     "정상" 으로 통과시켜 setup 이 막다른 루프가 된다(2026-07-20 Node 24 실장애).
+    //     셀프테스트가 여기까지 온 시점에서 백엔드는 이미 동작 중이므로 ok 여야 하고,
+    //     강제 비활성 seam 은 missing 으로 분류돼야 한다.
+    const vOk = verifyBackend();
+    process.env.PIXELLAB_FORCE_NO_BACKEND = '1';
+    const vOff = verifyBackend();
+    delete process.env.PIXELLAB_FORCE_NO_BACKEND;
+    const distinct = new Set([BACKEND_OK, BACKEND_MISSING, BACKEND_BROKEN]).size === 3;
+    ok('o) verifyBackend 로드+FTS5 스모크 판정',
+      vOk.status === BACKEND_OK && vOff.status === BACKEND_MISSING && distinct,
+      `ok=${vOk.status}(${vOk.detail}) forced=${vOff.status}`);
   } finally {
     try { closeAll(); } catch { /* ignore */ }
     try { rmSync(tmp, { recursive: true, force: true }); } catch { /* ignore */ }
@@ -698,6 +749,21 @@ function selftest() {
 }
 
 function main() {
+  try {
+    return route();
+  } catch (e) {
+    // 백엔드 사용 불가는 **안내로** 끝낸다. 예전에는 raw 스택(bindings.js "Could not locate the
+    // bindings file" + tries 배열 13줄)이 그대로 쏟아져 무엇을 해야 하는지 알 수 없었다.
+    if (e instanceof BackendUnavailableError) {
+      console.error(e.message);
+      console.error(backendHint());
+      process.exit(1);
+    }
+    throw e;
+  }
+}
+
+function route() {
   const argv = process.argv.slice(2);
   const cmd = argv[0];
   const args = parseArgs(argv.slice(1));
