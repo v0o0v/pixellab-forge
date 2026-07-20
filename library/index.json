@@ -13311,21 +13311,21 @@
     },
     {
       "id": "equip_unique_phase_armor",
-      "prompt": "a shimmering translucent phase-shift armor plate with violet energy ripples, centered in the square frame",
+      "prompt": "a solid opaque dark armor plate with muted deep-violet energy ripple linework etched across its surface, centered and filling the square frame, fully opaque solid form, soft cartoon pixel art style, high detail, cream and gold rim light, thin clean outline, no heavy dark outline, no text labels, no background plate",
       "style": {
+        "size": 48,
         "tool": "create_1_direction_object",
         "anchor": "pb-equip-icon"
       },
       "tags": [
         "equip",
         "icon",
-        "planetblitz",
-        "no-style-ref"
+        "planetblitz"
       ],
       "files": [
         "equip_unique_phase_armor.png"
       ],
-      "contentHash": "9a451a66a0870e35163ebd06abdee29e450cbe968a005deab6e2922751af746f",
+      "contentHash": "91b64cd63717b8b88c5e20fdd60faaf792f0c903e0ec62f994e0f4e078b0b3d8",
       "createdAt": "unknown",
       "scope": "global"
     },
@@ -13428,41 +13428,41 @@
     },
     {
       "id": "equip_unique_phase_membrane",
-      "prompt": "an iridescent phase-shift shield membrane bubble, centered in the square frame",
+      "prompt": "a solid opaque iridescent orb with painted rainbow-sheen surface streaks like a polished opal sphere, centered and filling the square frame, fully opaque solid form, no checkerboard pattern, no transparency grid, no alpha grid background, soft cartoon pixel art style, high detail, cream and gold rim light, thin clean outline, no heavy dark outline, no text labels, no background plate",
       "style": {
+        "size": 48,
         "tool": "create_1_direction_object",
         "anchor": "pb-equip-icon"
       },
       "tags": [
         "equip",
         "icon",
-        "planetblitz",
-        "no-style-ref"
+        "planetblitz"
       ],
       "files": [
         "equip_unique_phase_membrane.png"
       ],
-      "contentHash": "a0348429cf4daa17aecc5d42f70c75faa996d9cbea450bf46976b54c62293113",
+      "contentHash": "008a805913bcb2f877553d0939bfd5dabdb24410196c7eadd26db3cbcfca9aa7",
       "createdAt": "unknown",
       "scope": "global"
     },
     {
       "id": "equip_unique_afterimage_thruster",
-      "prompt": "a thruster engine trailing ghostly cyan afterimage energy streaks, centered in the square frame",
+      "prompt": "a dark metallic thruster engine trailing muted desaturated teal-blue afterimage energy streaks, centered and filling the square frame, soft cartoon pixel art style, high detail, cream and gold rim light, thin clean outline, no heavy dark outline, no text labels, no background plate",
       "style": {
+        "size": 48,
         "tool": "create_1_direction_object",
         "anchor": "pb-equip-icon"
       },
       "tags": [
         "equip",
         "icon",
-        "planetblitz",
-        "no-style-ref"
+        "planetblitz"
       ],
       "files": [
         "equip_unique_afterimage_thruster.png"
       ],
-      "contentHash": "da31867333c7d3695b169ad81ea7d514ff62fec94be374c89556b914878d6622",
+      "contentHash": "f1d71c67b74f854296478f1ac87ec82239eddc78e2b0a187d93daea31721a56b",
       "createdAt": "unknown",
       "scope": "global"
     },
@@ -13775,8 +13775,9 @@
     },
     {
       "id": "skill_max_hp_pct_mid",
-      "prompt": "a glowing green health core encircled by a single pulsing energy ring, centered in the square frame",
+      "prompt": "a glowing green health core wrapped in one thick solid painted green energy ring band, centered and filling the square frame, fully opaque solid form, no checkerboard pattern, no transparency grid, no alpha grid background, soft cartoon pixel art style, high detail, cream and gold rim light, thin clean outline, no heavy dark outline, no text labels, no background plate",
       "style": {
+        "size": 48,
         "tool": "create_1_direction_object",
         "anchor": "pb-equip-icon"
       },
@@ -13788,7 +13789,7 @@
       "files": [
         "skill_max_hp_pct_mid.png"
       ],
-      "contentHash": "4a18fa9897beb0d20a37676e0f223974c3237a720a14ca1ae233a4dee7fa6f93",
+      "contentHash": "b90fb26bd3f7849e63c7b2892e4ab607162a540860ca94036f8adfb347a86639",
       "createdAt": "unknown",
       "scope": "global"
     },
@@ -13927,8 +13928,9 @@
     },
     {
       "id": "skill_magnet_pct_low",
-      "prompt": "a small horseshoe magnet with two faint attraction sparkles orbiting it, centered in the square frame",
+      "prompt": "a bold solid horseshoe magnet with two small bright star sparkles beside it, centered and filling the square frame, fully opaque solid form, no checkerboard pattern, no transparency grid, no alpha grid background, soft cartoon pixel art style, high detail, cream and gold rim light, thin clean outline, no heavy dark outline, no text labels, no background plate",
       "style": {
+        "size": 48,
         "tool": "create_1_direction_object",
         "anchor": "pb-equip-icon"
       },
@@ -13940,7 +13942,7 @@
       "files": [
         "skill_magnet_pct_low.png"
       ],
-      "contentHash": "ef9f0b685491e2327f69eecd80019bc53af2b67b3062c5dca8355d334ef4b56a",
+      "contentHash": "bbbd8d817a1394edbcb1a862384f04502e23bbe282191fb815073af45ef72172",
       "createdAt": "unknown",
       "scope": "global"
     },
@@ -14174,8 +14176,9 @@
     },
     {
       "id": "skill_capstone_mobility",
-      "prompt": "a starfighter afterimage trail dashing through a burst of dissolving enemy bullets, dramatic action icon, centered in the square frame",
+      "prompt": "a single solid starfighter silhouette streaking forward trailing a bold solid speed-trail flame behind it, dramatic action icon, filling the square frame, fully opaque solid form, no checkerboard pattern, no transparency grid, no alpha grid background, soft cartoon pixel art style, high detail, cream and gold rim light, thin clean outline, no heavy dark outline, no text labels, no background plate",
       "style": {
+        "size": 48,
         "tool": "create_1_direction_object",
         "anchor": "pb-equip-icon"
       },
@@ -14187,7 +14190,7 @@
       "files": [
         "skill_capstone_mobility.png"
       ],
-      "contentHash": "81d4495a299c985f7295015dc4e5494ba4c91641ed662ce91cd2684776073e03",
+      "contentHash": "1d1f889193ac0505635639a917cee3c7d3b191e4db4c9c63da6957a1be876e02",
       "createdAt": "unknown",
       "scope": "global"
     },
@@ -14269,8 +14272,9 @@
     },
     {
       "id": "sticker_five_stars",
-      "prompt": "a row of five gold rating stars, playful winner sticker icon, no circular badge ring, no background plate, floating alone, centered and filling the square frame",
+      "prompt": "five gold rating stars clustered tightly together in a compact radiating star-burst arrangement, one large star in the center overlapped by four smaller stars fanned closely around it, near-square silhouette, playful winner sticker icon, no circular badge ring, no background plate, floating alone, centered and filling the square frame, fully opaque solid form, soft cartoon pixel art style, high detail, cream and gold rim light, thin clean outline, no heavy dark outline, no text labels",
       "style": {
+        "size": 48,
         "tool": "create_1_direction_object",
         "anchor": "pb-equip-icon"
       },
@@ -14282,7 +14286,7 @@
       "files": [
         "sticker_five_stars.png"
       ],
-      "contentHash": "e04d0adb7652357fdfe3807f6d0581245236fd4831693dd22684f0ecb86b0f14",
+      "contentHash": "b67955bcbf730547d1a08812c405558e1c1964a65bac28f445e5f350a9bd8f45",
       "createdAt": "unknown",
       "scope": "global"
     },
