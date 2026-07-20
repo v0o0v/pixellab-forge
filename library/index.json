@@ -12780,6 +12780,169 @@
       "contentHash": "9f56250a32dce60c8a7d7ce9d28409921601d9b578a712440d4ffd71e253a5f0",
       "createdAt": "2026-07-20",
       "scope": "global"
+    },
+    {
+      "id": "pb_equip_style_anchor_sheet",
+      "prompt": "three sci-fi equipment item icons in a row, soft cartoon pixel art, high detail, warm cream-gold rim light, transparent background — Planet Blitz equipment icon style anchor",
+      "style": {
+        "size": 512,
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "sheet",
+        "anchor",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_equip_style_anchor_sheet.png"
+      ],
+      "contentHash": "1e5e75eafb0555cedad1965913dd3738453076bec153463543bd7a979aa1d385",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_equip_main_railgun",
+      "prompt": "sci-fi railgun cannon equipment icon, main weapon slot, Planet Blitz equipment icon style",
+      "style": {
+        "size": 64,
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "weapon",
+        "railgun",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_equip_main_railgun.png"
+      ],
+      "contentHash": "578b473fe32114e2378b75cf993cd5ec27be413a37cf6aa85e366803d7946b1b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_equip_slot_shield",
+      "prompt": "energy shield generator equipment icon, shield slot, Planet Blitz equipment icon style",
+      "style": {
+        "size": 64,
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "shield",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_equip_slot_shield.png"
+      ],
+      "contentHash": "f3a5484e010a7840be2c382486db170a6da161799a8c9fd24b1edcd83b0559ab",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_equip_unique_overheat_drum",
+      "prompt": "overheating ammo drum unique item icon, unique main weapon, Planet Blitz equipment icon style",
+      "style": {
+        "size": 64,
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "unique",
+        "drum",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_equip_unique_overheat_drum.png"
+      ],
+      "contentHash": "76d367e0e4eeaa0d6c85fd7ca79cc0e613a4ee5e669d037f1dd3b7a41ea24d33",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_equip_probe_outlined_sheet",
+      "prompt": "REJECTED PROBE - three sci-fi equipment icons with thick dark outlines, low detail",
+      "style": {
+        "size": 512,
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "rejected-probe",
+        "equip",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_equip_probe_outlined_sheet.png"
+      ],
+      "contentHash": "69eae64afa25edb2aaf29b491b50d9d29ec304364c15357d5ec5b9282684480a",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_equip_probe_sf_railgun",
+      "prompt": "REJECTED PROBE - gritty sci-fi world-tone railgun icon",
+      "style": {
+        "size": 64,
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "rejected-probe",
+        "equip",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_equip_probe_sf_railgun.png"
+      ],
+      "contentHash": "c40fc9ffba7264cbcd6d287e15cafaa8d1a8d2fb4baa51b798ccbd88c60bcf78",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_equip_probe_sf_shield",
+      "prompt": "REJECTED PROBE - gritty sci-fi world-tone shield icon",
+      "style": {
+        "size": 64,
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "rejected-probe",
+        "equip",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_equip_probe_sf_shield.png"
+      ],
+      "contentHash": "3597c6f15c01fd3557c7a0e352387639deeef07ea07015c4be10da89effd5852",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_equip_probe_sf_drum",
+      "prompt": "REJECTED PROBE - gritty sci-fi world-tone ammo drum icon",
+      "style": {
+        "size": 64,
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "rejected-probe",
+        "equip",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_equip_probe_sf_drum.png"
+      ],
+      "contentHash": "39dab78e14ce6f6d497b71448aaf8e4f619cb9ffb3e35d8bca7d7f5625052a8c",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
