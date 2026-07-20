@@ -12943,6 +12943,1481 @@
       "contentHash": "39dab78e14ce6f6d497b71448aaf8e4f619cb9ffb3e35d8bca7d7f5625052a8c",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "equip_main_vulcan",
+      "prompt": "a hull-mounted multi-barrel rotary gatling cannon turret with six rotating barrels clustered in a circle, mounted on a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld firearm",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_main_vulcan.png"
+      ],
+      "contentHash": "b273e9005343dba54b236feacca59a5ae2ad3d7de9ff6e4920e6a279f177ac01",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_main_spread",
+      "prompt": "a hull-mounted spread cannon module with several barrels splayed widely apart into a flared trumpet-shaped muzzle, the fanned-out spread clearly readable in silhouette, mounted on a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld shotgun",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_main_spread.png"
+      ],
+      "contentHash": "a3ff6bafaad72962ff1fd5a047d5abe925a16b5c5c69f46803859033d8adaf88",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_main_railgun",
+      "prompt": "a hull-mounted railgun cannon module with parallel conducting rails and a glowing energy coil on a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld firearm",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_main_railgun.png"
+      ],
+      "contentHash": "a56a68c69a61bdd03d4a0ca3b6031000dc4f9c98494f5427816e380a46eb5705",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_main_missile",
+      "prompt": "a hull-mounted missile launcher pod module with a sharply tapered conical warhead tip and small tail fins, fixed to a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld launcher",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_main_missile.png"
+      ],
+      "contentHash": "7f082c7ac669d52f72ba7cfa9d2592166f780c425e83c7dcf903730fbd06e274",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_main_beam",
+      "prompt": "a hull-mounted beam emitter cannon module with a round glowing crystal orb lens at the tip, on a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld weapon",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_main_beam.png"
+      ],
+      "contentHash": "e761dd7649d966e679bcce742595f6135226b0e98b3194922b5c7b2b90c9604d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_sub_sidekick",
+      "prompt": "a small hull-mounted rapid-fire cannon module on a compact weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld sidearm",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_sub_sidekick.png"
+      ],
+      "contentHash": "3fa218b8e60b6a30e15a2bd61bc39209572fcd7d1e2f50a98fc9a6b7b3ba1924",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_sub_scatter",
+      "prompt": "a compact hull-mounted scatter-shot cannon module on a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld firearm",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_sub_scatter.png"
+      ],
+      "contentHash": "637e160f8a585686504a3b9befb5b209e76bca6a0bc97607a71549fd0c6fc820",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_sub_mine",
+      "prompt": "a round deployable proximity mine module with a blinking sensor light, centered in the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld device",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_sub_mine.png"
+      ],
+      "contentHash": "cfc26a123a2434e74913f602a806e3920d8240cd6a54429b18d8a3d58f3bd7f5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_sub_sentry",
+      "prompt": "a small deployable automated sentry turret pod module, centered in the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld device",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_sub_sentry.png"
+      ],
+      "contentHash": "1d7dbf498481be4dea640a033ecb5401155d5246e29428957bb94a4166415c01",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_sub_flare",
+      "prompt": "a hull-mounted homing flare missile pod module with tail fins, fixed to a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld launcher",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_sub_flare.png"
+      ],
+      "contentHash": "6cbbe4eaa4d1d3e37c92060755f6e0a3275fc84741de5eca8ecbb105cf23ac68",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_slot_armor",
+      "prompt": "a layered chest armor plate module, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_slot_armor.png"
+      ],
+      "contentHash": "86ad38df853e49099ed7198a68e2d02c1e30be7c502ccbfa54431772781cb8fb",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_slot_shield",
+      "prompt": "an energy shield generator emitter with a glowing projector dish, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_slot_shield.png"
+      ],
+      "contentHash": "2edd340d866a0c5b07c1c3d560c5b46091ddd455006bdc4c1d0c00d65a4b8bc8",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_slot_engine",
+      "prompt": "a thruster engine module with glowing exhaust vents, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_slot_engine.png"
+      ],
+      "contentHash": "c15b1639965e883794068923f6fc9c816d8796ea1761e690ffdb6495f904e80c",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_slot_core",
+      "prompt": "a reactor core module with a pulsing energy center, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_slot_core.png"
+      ],
+      "contentHash": "09dfb705c7327ba914383475efe757b494d0c7b5ed4adfdae21c8c1b90f13d43",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_slot_module",
+      "prompt": "a generic utility module chip with a circuit-board pattern, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_slot_module.png"
+      ],
+      "contentHash": "bc5bf5704027633f3d16a9cc4fc96b8e0b829d284f16e70e494dbe0df4901c56",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_overheat_drum",
+      "prompt": "a hull-mounted cannon module with an overheating ammunition drum glowing red through heat vents, fixed on a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld firearm",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_unique_overheat_drum.png"
+      ],
+      "contentHash": "f2fdf1bce84b26bd194e6d59e7526b3ed498b66dca0bc4e964d65df6cd9fe616",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_split_core",
+      "prompt": "a hull-mounted weapon module with a twin-split energy core channeling dual crackling bolts, mounted on a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld weapon",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_unique_split_core.png"
+      ],
+      "contentHash": "f31879ceb0ac45b16bcf68c4d664d22d261de01ca566566e58bccbfa28de39cb",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_pierce_gyro",
+      "prompt": "a hull-mounted railgun cannon module with a spinning gyroscopic penetrator core glowing at the barrel tip, fixed on a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld firearm",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_unique_pierce_gyro.png"
+      ],
+      "contentHash": "54c57ec2de67fb8dc6870a6619626ff7ab9dcb5376395e14e76c3309a1bf97e7",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_drone_bay",
+      "prompt": "a small autonomous combat drone hovering beside a compact launch bay, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_unique_drone_bay.png"
+      ],
+      "contentHash": "2a2c14a4e427c2620fc3da4f9e0e5bf7aff09aeffa7af039680d8e53686471f0",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_phase_armor",
+      "prompt": "a shimmering translucent phase-shift armor plate with violet energy ripples, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_unique_phase_armor.png"
+      ],
+      "contentHash": "9a451a66a0870e35163ebd06abdee29e450cbe968a005deab6e2922751af746f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_hive_swarm",
+      "prompt": "a hull-mounted missile launcher pod module shaped like a hive with swarming micro-missiles emerging from its cells, fixed on a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld launcher",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_unique_hive_swarm.png"
+      ],
+      "contentHash": "e50d0e20ba0894ab702667120654121130aabe2baa336e99686e75fac36e49c5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_converge_prism",
+      "prompt": "a hull-mounted beam emitter cannon module with a crystalline prism lens converging multiple beams into one glowing point, mounted on a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld weapon",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_unique_converge_prism.png"
+      ],
+      "contentHash": "4daa23cbbc9414596a6fa8759bcd0f925b67114338a2c2c1e9082386c4200adc",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_twin_star",
+      "prompt": "a hull-mounted twin-barreled spread cannon module with star-shaped muzzles radiating a bright glow, splayed barrels mounted on a weapon mount bracket, angled diagonally from lower-left to upper-right, filling the square frame, no buttstock, no trigger, no hand grip, no handguard, not a handheld weapon",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "equip_unique_twin_star.png"
+      ],
+      "contentHash": "87ee23c1e3d2055e88e0ae9fdb559ca73ab3537fa56ea29ad2b646b4927c76de",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_singularity",
+      "prompt": "a small gravity-well generator orb with swirling dark energy, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_unique_singularity.png"
+      ],
+      "contentHash": "6127365f14342ed3ef621c75a17766313334a34afc407d2256fea271f1b8396a",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_reactive_armor",
+      "prompt": "a spiked reactive armor plate with explosive charge segments, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_unique_reactive_armor.png"
+      ],
+      "contentHash": "0bbeafcdab4dfcf533e5f6dc05f31605a3bdcb4f2564720888d8ece46161d7f9",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_phase_membrane",
+      "prompt": "an iridescent phase-shift shield membrane bubble, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_unique_phase_membrane.png"
+      ],
+      "contentHash": "a0348429cf4daa17aecc5d42f70c75faa996d9cbea450bf46976b54c62293113",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_afterimage_thruster",
+      "prompt": "a thruster engine trailing ghostly cyan afterimage energy streaks, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_unique_afterimage_thruster.png"
+      ],
+      "contentHash": "da31867333c7d3695b169ad81ea7d514ff62fec94be374c89556b914878d6622",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_greed_heart",
+      "prompt": "a golden reactor core shaped like a glowing heart clutching coins, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_unique_greed_heart.png"
+      ],
+      "contentHash": "7a2226841dd2172b4b340f2646d95b42f4b0fb7fbb1b3e2fc939833ff651be54",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_gambler_chip",
+      "prompt": "a holographic casino chip module with a spinning fortune symbol, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_unique_gambler_chip.png"
+      ],
+      "contentHash": "21be0c11eefa94d409bd6337e09fdb15099b723f70f6f74e77b04bf8166872a7",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "equip_unique_relic_amplifier",
+      "prompt": "an ancient relic amplifier module with glowing runic engravings, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "equip",
+        "icon",
+        "planetblitz",
+        "no-style-ref"
+      ],
+      "files": [
+        "equip_unique_relic_amplifier.png"
+      ],
+      "contentHash": "5c5913b9955e05532b81873f86dc32900e6b9e4f7e17fd374cf3f54f094cb922",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_damage_pct_low",
+      "prompt": "a single small bullet round with a faint spark at its tip, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_damage_pct_low.png"
+      ],
+      "contentHash": "ec28c77a2baeb9312a14702fe4339dfe55525c14936a6d2eb0bacfc83f63dc59",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_damage_pct_mid",
+      "prompt": "two crossed serrated warheads cracked open with glowing energy seams, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_damage_pct_mid.png"
+      ],
+      "contentHash": "21cd5f820c5c6e6556dd3c787e856dc4b0f52947b6331aca0b3aad1da2365e99",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_damage_pct_high",
+      "prompt": "a cluster of three spiked explosive warheads bound together, crackling with intense red-orange energy, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_damage_pct_high.png"
+      ],
+      "contentHash": "c60ca0afd6b4e681bc48557e731ba0f039c6a32ee947ab21afd1e384cf63478b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_fire_rate_pct_low",
+      "prompt": "a twin-barrel gun muzzle with two short motion streak lines, angled diagonally from lower-left to upper-right, filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_fire_rate_pct_low.png"
+      ],
+      "contentHash": "131196994bb1804746cc3ed4c3df986db54a4df0e0aad240167564c75351ba9e",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_fire_rate_pct_mid",
+      "prompt": "a triple-barrel gatling cluster with three blurred motion streak lines, angled diagonally from lower-left to upper-right, filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_fire_rate_pct_mid.png"
+      ],
+      "contentHash": "853fe785356c55885231db74476f99cb16b6017ae31643ab28a4c648c4a81c79",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_fire_rate_pct_high",
+      "prompt": "a five-barrel gatling cluster glowing red-hot with intense crossing motion blur streaks, angled diagonally from lower-left to upper-right, filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_fire_rate_pct_high.png"
+      ],
+      "contentHash": "62f166ab3ad701087cb48b945e4d5f31640cc220adcc7cf300db11c3b2842416",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_pierce_low",
+      "prompt": "a sharp spike piercing through one thin metal plate, angled diagonally from lower-left to upper-right, filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_pierce_low.png"
+      ],
+      "contentHash": "0129888eee9f82e397551db949acd2cb241a14542ba88c5c89717f23a9344264",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_pierce_mid",
+      "prompt": "a sharp spike piercing through two stacked metal plates with sparks, angled diagonally from lower-left to upper-right, filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_pierce_mid.png"
+      ],
+      "contentHash": "c48517e8a4bef07537f04b0913e55445247eb46d0a8987f699f30fc4cd7fa8fd",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_pierce_high",
+      "prompt": "a long lance-like spike piercing through three stacked metal plates in a shower of sparks, angled diagonally from lower-left to upper-right, filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_pierce_high.png"
+      ],
+      "contentHash": "cde0af361eb8e9ff9036dbbd6a9d3e02836f3320b7d32d6dbc444321077a75e4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_max_hp_flat_low",
+      "prompt": "a single curved armor plate segment with one rivet, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_max_hp_flat_low.png"
+      ],
+      "contentHash": "e98ddf3511b7fd61a244af143c2dcf1ebacbe46ad2d67d479a2ccf4e314e7989",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_max_hp_flat_mid",
+      "prompt": "three overlapping armor plate segments riveted together in a row, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_max_hp_flat_mid.png"
+      ],
+      "contentHash": "bb5172d0ae87047c686704e384f4bca8a3d897a11a7cbaf0882f7c9886059c32",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_max_hp_flat_high",
+      "prompt": "five riveted armor plates stacked into a thick fortress-block formation with reinforced ridges, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_max_hp_flat_high.png"
+      ],
+      "contentHash": "c024d8520309666b715844d9c9ac335e66823e18371b5410fe9c67e05568a3a3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_max_hp_pct_low",
+      "prompt": "a small glowing green health cross emblem with a thin outline, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_max_hp_pct_low.png"
+      ],
+      "contentHash": "9a263c1f5830e8210b5f7675c6ab0ce7ad39a2e725bcc6425bfb03b6af4ceace",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_max_hp_pct_mid",
+      "prompt": "a glowing green health core encircled by a single pulsing energy ring, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_max_hp_pct_mid.png"
+      ],
+      "contentHash": "4a18fa9897beb0d20a37676e0f223974c3237a720a14ca1ae233a4dee7fa6f93",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_max_hp_pct_high",
+      "prompt": "a glowing green health core wrapped in three overlapping pulsing energy rings with radiating burst spikes, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_max_hp_pct_high.png"
+      ],
+      "contentHash": "d884f4dd6f679f3af5ca3f5f8044a32a710ca385c5394ae2b051137b7f08aa6b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_dash_cd_pct_low",
+      "prompt": "a single thruster nozzle emitting one short burst flame, angled diagonally from lower-left to upper-right, filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_dash_cd_pct_low.png"
+      ],
+      "contentHash": "2649b7ca2630940c8f9618f2a55a1a300306032d1892986a35fc30edbd93f96d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_dash_cd_pct_mid",
+      "prompt": "twin thruster nozzles emitting two burst flames with a motion streak, angled diagonally from lower-left to upper-right, filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_dash_cd_pct_mid.png"
+      ],
+      "contentHash": "d2c0444753ae39e2281cc70b8869670ef1d77b485e5ef5a7feca42b59f57b530",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_dash_cd_pct_high",
+      "prompt": "a four-nozzle thruster array emitting four intense burst flames with long crossing motion streaks, angled diagonally from lower-left to upper-right, filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_dash_cd_pct_high.png"
+      ],
+      "contentHash": "a0c62eea496359dd47c810aac8dc0cf9d44326d88926e59c10917dec63bac9cf",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_move_speed_pct_low",
+      "prompt": "a small compact engine nozzle with a faint exhaust glow, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_move_speed_pct_low.png"
+      ],
+      "contentHash": "6f5a27da2d2aa1f71a1b3ef6c1c7bbd5995e1a6aeef18548435f1c006dd94680",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_move_speed_pct_mid",
+      "prompt": "a medium engine pod with a brighter exhaust glow and a short trail, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_move_speed_pct_mid.png"
+      ],
+      "contentHash": "40538ea19fd56393810a241303ba6c80669c063459e50d13b524e554382e1966",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_move_speed_pct_high",
+      "prompt": "a large twin-nozzle engine array with an intense exhaust glow and a long trail, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_move_speed_pct_high.png"
+      ],
+      "contentHash": "29497582d36d7e97fd6818e085724264c22a99e06d020c08ebfc45c9adb21b84",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_magnet_pct_low",
+      "prompt": "a small horseshoe magnet with two faint attraction sparkles orbiting it, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_magnet_pct_low.png"
+      ],
+      "contentHash": "ef9f0b685491e2327f69eecd80019bc53af2b67b3062c5dca8355d334ef4b56a",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_magnet_pct_mid",
+      "prompt": "a ringed magnet coil with swirling attraction field lines pulling in three small gem shards, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_magnet_pct_mid.png"
+      ],
+      "contentHash": "639972a7c2257fcbb98ab0ffa24c297bf76bc952e4f372438e17f8adfad36806",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_magnet_pct_high",
+      "prompt": "three stacked ringed magnet coils forming a tower with a wide swirling attraction vortex pulling in a cluster of many gem shards, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_magnet_pct_high.png"
+      ],
+      "contentHash": "1a35a117ed6f0c496c061c57941e347fd335422830c65ad4a9a586506fb5dbac",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_xp_pct_low",
+      "prompt": "a single small glowing star, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_xp_pct_low.png"
+      ],
+      "contentHash": "775c85e722bfb4ee497b97685ed78c36bfbf8b56627f1692c32bdc28a784bae5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_xp_pct_mid",
+      "prompt": "a cluster of three glowing stars, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_xp_pct_mid.png"
+      ],
+      "contentHash": "698acdd1994ffdcfe6c4c960c3ece91583b53d4cf76b81c29e34f51fb3221b52",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_xp_pct_high",
+      "prompt": "a radiant burst of many glowing stars around a bright core, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_xp_pct_high.png"
+      ],
+      "contentHash": "e26f5afdefe4210b5e760468d1d57a07ab7b7398796983b99f9dc035e5775c34",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_bullet_count_mid",
+      "prompt": "three parallel bullet tracers fanned out from a single point, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_bullet_count_mid.png"
+      ],
+      "contentHash": "2bb87f2ac870fa3cb51bbf1dce6e06966272ad7523e3a4ffe9d9c343c672c61b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_bullet_count_high",
+      "prompt": "five parallel bullet tracers fanned out wide from a single point, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_bullet_count_high.png"
+      ],
+      "contentHash": "6a406f9e99e2935cc53aa6491d3c52cdf694fdca93322ca43d9800e8bef4000a",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_bullet_speed_pct_low",
+      "prompt": "a single bullet with one short straight speed-streak line trailing behind it, no ring, no glow burst, angled diagonally from lower-left to upper-right, filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_bullet_speed_pct_low.png"
+      ],
+      "contentHash": "f1a817c3c00d8fe091f84d057209e9774b0d3858e8666b5b0f0fe1d2f5935126",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_bullet_speed_pct_mid",
+      "prompt": "a single bullet bursting through a glowing shockwave ring, with its speed-streak forking into two separate lines past the ring, angled diagonally from lower-left to upper-right, filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_bullet_speed_pct_mid.png"
+      ],
+      "contentHash": "e410adca7c8f3396a7911fc0bf5c82ba49ed128d4269f77e67f21bad86797334",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_range_flat_low",
+      "prompt": "a long-range targeting reticle with crosshair lines extending outward to the frame edges, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_range_flat_low.png"
+      ],
+      "contentHash": "e859b95e9c58feba8b703627c3f1b3dc89bd5f10fb32ad1bcb0791a1bd839b06",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_capstone_firepower",
+      "prompt": "a forward-firing energy laser beam intercepting and dissolving a cluster of incoming enemy projectiles, dramatic action icon, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_capstone_firepower.png"
+      ],
+      "contentHash": "624e62d56ec5513a262cb59569ef58ca83dee71bfe78e418ff9a20479a9d78aa",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_capstone_survival",
+      "prompt": "a glowing protective barrier bubble shattering an incoming red critical-strike bolt, dramatic action icon, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_capstone_survival.png"
+      ],
+      "contentHash": "44d95f334942353cbecdd60f72a716f13c5a4cb64737bd626afe5e8b8d7193ea",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_capstone_mobility",
+      "prompt": "a starfighter afterimage trail dashing through a burst of dissolving enemy bullets, dramatic action icon, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "skill_capstone_mobility.png"
+      ],
+      "contentHash": "81d4495a299c985f7295015dc4e5494ba4c91641ed662ce91cd2684776073e03",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_good_game",
+      "prompt": "a handshake emblem, playful winner sticker, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_good_game.png"
+      ],
+      "contentHash": "620a459c9967f6cc1739cd7eb222fd2a41647bee36906ce9ca91887472c11b20",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_nice_try",
+      "prompt": "a cool sunglasses face emblem, playful winner sticker, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_nice_try.png"
+      ],
+      "contentHash": "739b5572a4e31cbdb67dd2b5d50c97ac8010e5af8d51e3c357153809c9325ece",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_galaxy_small",
+      "prompt": "a swirling spiral galaxy emblem, playful winner sticker, centered in the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_galaxy_small.png"
+      ],
+      "contentHash": "b0abfbd008203c43f5ca4c74a9e3d19b7166ba8e80c58aa8a329d701a54a89ba",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_lock_door",
+      "prompt": "a padlock emblem, playful winner sticker icon, no circular badge ring, no background plate, floating alone, centered and filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_lock_door.png"
+      ],
+      "contentHash": "b3c81b282337e2ba62324968925665cd48e409b0a6abdab8ca59043e49443291",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_five_stars",
+      "prompt": "a row of five gold rating stars, playful winner sticker icon, no circular badge ring, no background plate, floating alone, centered and filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_five_stars.png"
+      ],
+      "contentHash": "e04d0adb7652357fdfe3807f6d0581245236fd4831693dd22684f0ecb86b0f14",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_maintenance",
+      "prompt": "a wrench tool emblem, playful winner sticker icon, no circular badge ring, no background plate, floating alone, centered and filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_maintenance.png"
+      ],
+      "contentHash": "b87dbe7cd77a8db58192bf1610c63fe2c09ad4ef8b84010a7b02527c94ca4d0a",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_sightseeing",
+      "prompt": "a rocket ship emblem, playful winner sticker icon, no circular badge ring, no background plate, floating alone, centered and filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_sightseeing.png"
+      ],
+      "contentHash": "d923dbde8936e12435655bef579eaa0657213d63c1ac9b9373ceb508270bd755",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_turret_regards",
+      "prompt": "a parabolic satellite dish antenna emblem, playful winner sticker icon, no circular badge ring, no background plate, floating alone, centered and filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_turret_regards.png"
+      ],
+      "contentHash": "3ce29a31665bd78072e1916390a09a3f56eff7c66dd7b99b08df4dff33419f2f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_take_a_seat",
+      "prompt": "a steaming coffee cup emblem, playful winner sticker icon, no circular badge ring, no background plate, floating alone, centered and filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_take_a_seat.png"
+      ],
+      "contentHash": "5d1c4921cc2c798f8c22c0282fbf6503e506dddab205ca0a7ed07ec03f2828ed",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_rematch_anytime",
+      "prompt": "an hourglass emblem, playful winner sticker icon, no circular badge ring, no background plate, floating alone, centered and filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_rematch_anytime.png"
+      ],
+      "contentHash": "32d24757f957ed14cd6148cc133d334511bbc937cc8e2ca1dd594f4997aac6a4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_core_walk",
+      "prompt": "a faceted diamond gem-core emblem, playful winner sticker icon, no circular badge ring, no background plate, floating alone, centered and filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_core_walk.png"
+      ],
+      "contentHash": "e5171b8ae8afb2e436d8febd32f5c3021461c64c8693e0f902596d184ac45ffb",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "sticker_safe_travels",
+      "prompt": "a boxy space satellite with two solar panel wings emblem, playful winner sticker icon, no circular badge ring, no background plate, floating alone, centered and filling the square frame",
+      "style": {
+        "tool": "create_1_direction_object",
+        "anchor": "pb-equip-icon"
+      },
+      "tags": [
+        "sticker",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "sticker_safe_travels.png"
+      ],
+      "contentHash": "4ae751b983d05ec3102dde92cb3ab9aaba80dd0128b713bba95f503108475c79",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
