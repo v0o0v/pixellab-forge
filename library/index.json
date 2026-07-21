@@ -14755,6 +14755,747 @@
       "contentHash": "9e1551ea623efb35ab0956442d5c1645c3630a7c082e3c22c0013b80650efe3a",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_brawler-ram",
+      "prompt": "top-down sci-fi player starship, heavy armored brawler, thick blunt ram prow, wide shoulder armor plates, teal hull with orange warning stripes, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_brawler-ram.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "cdfa401f0164e0dba656ed1f0e0177c1aae4631b3aa0e3715c2d36d9e5b21725",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_brawler-blocky",
+      "prompt": "top-down sci-fi player starship, heavy armored brawler, blocky reinforced bow, bulky side armor blisters, teal and gunmetal hull, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_brawler-blocky.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "c751737122d91cad0666aa8f446a18239cd5a046710cb3fc4decdd9ff6dcbb47",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_arc-coilbarrel",
+      "prompt": "top-down sci-fi player starship, siege artillery, long central cannon barrel with electromagnetic coil rings, cyan energy glow, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_arc-coilbarrel.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "44116e203474afc0b64631e68c84c9f10bf18df3d96116b3254af43f33873313",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_phantom-needle",
+      "prompt": "top-down sci-fi player starship, stealth assassin, needle-thin fuselage, razor swept wings, matte black-and-teal plating, cyan underglow, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_phantom-needle.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "9c002b4909be4bfcaf16acfe06388616b476825a006e011c0c07414f91698c09",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_bion-chitin",
+      "prompt": "top-down sci-fi player starship, bio swarm carrier, organic chitinous curved hull, side pods releasing spore drones, sickly green and teal, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_bion-chitin.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "8066f9873017e7d88583f5fae5874e3ece7975b2424c66f73253e6f52ac2f565",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_bion-brood",
+      "prompt": "top-down sci-fi player starship, insectoid mothership, bulbous brood chamber, segmented shell, green bioluminescent veins on teal hull, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_bion-brood.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "83cea2bee5ab9085961cec54df405010f9875650cfefac9adb7ecf24707a3a3c",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_brawler-fortress",
+      "prompt": "top-down sci-fi player starship, heavy armored brawler, fortress-like plated front, riveted armor, twin exhaust, teal hull, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_brawler-fortress.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "9d339cf7d3aa7641d57516832b0ada2d7f2310eb30ccc338beee1542b743d005",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_arc-mortar",
+      "prompt": "top-down sci-fi player starship, siege artillery, mortar-style short wide barrel with bracing struts, cyan hull, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_arc-mortar.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "cf9ac335bd81433861fd911655487b2c1e2322161ccd39ad828e6e44e9461e74",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_phantom-arrowhead",
+      "prompt": "top-down sci-fi player starship, stealth assassin, arrowhead silhouette, minimal surface detail, dark teal, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_phantom-arrowhead.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "e8bcd27e64de7748424319f8ae711aed3cd0b9bbfc50560265c34054bad9a1d3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_bion-coral",
+      "prompt": "top-down sci-fi player starship, bio swarm carrier, coral-like growths on hull, spore vents, green-teal, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_bion-coral.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "15ed4d7fc29fa793349947f7fa6d85e7ad0cfe8341dd9ab5d05b54fe93235cc0",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_arc-railgun",
+      "prompt": "top-down sci-fi player starship, siege artillery, rail cannon with rear counterweight, cyan accents, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_arc-railgun.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "b2d82253050d305e798316980786f6bb6f34534cbc02c1ce0aa9692dcc4a510f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_phantom-twinblade",
+      "prompt": "top-down sci-fi player starship, stealth assassin, twin thin blades flanking a slim core, indigo, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_phantom-twinblade.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "ce5caba3ae0e0bed918e222b3a8a726cb11a78f32a8c056015c25d292d6b9e93",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_ships_bion-hivepod",
+      "prompt": "top-down sci-fi player starship, bio swarm carrier, hive pods clustered on spine, green glow, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_ships_bion-hivepod.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "8ffd0f20bdeab12a23c999f26e0f90fc4301bc429388cbecd579277901a8a261",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_nesting-egg",
+      "prompt": "top-down cute mascot sci-fi starship, chubby nesting-egg carrier, cream and mint speckled shell, tiny round drones popping out, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_nesting-egg.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "78783d2124e80e180c4a9bb27bb312406d8767cefca82c6029ddeecc7eb2400e",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_robot-cat",
+      "prompt": "top-down cute mascot sci-fi starship, robot cat, rounded hull with cat ear fins, big friendly visor canopy, whisker antennae, teal and cream, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_robot-cat.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "7b81ed9964fa662f82ae0c0370e0a6ac737c0d87c69b1131d91fdf532d50dae0",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_robot-duck",
+      "prompt": "top-down cute mascot sci-fi starship, robot duckling, plump rounded body, orange beak nose cone, tiny ducklings trailing, pastel yellow and teal, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_robot-duck.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "bad77d5f25caf2b1405b2c718e0e274c3a75410f488b3c50f2de8e29fa60e7f2",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_cloud",
+      "prompt": "top-down cute mascot sci-fi starship, puffy cloud shape, soft rounded lobes, gentle cyan underglow, tiny star drones orbiting, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_cloud.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "a76d8b65b09066d79fec2fa938ba8ccb8965a0923cf1543ed1338cd3395d616b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_toy-block",
+      "prompt": "top-down cute mascot sci-fi starship, toy block ship, chunky rounded plastic-looking segments, primary color accents on teal, tiny cube drones, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_toy-block.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "ee6a1bbe2641ba28c0aeaafb309ac6c31c545704d20e4922d86857c4f0c82c74",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_honeybee",
+      "prompt": "top-down cute mascot sci-fi starship, friendly rounded honeybee, soft yellow and teal stripes, big round eye canopy, tiny bee drones, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_honeybee.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "169cbdc9b84489a86c59432900dcf5961cbc2256a52318258ce6d5c23277abea",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_penguin",
+      "prompt": "top-down cute mascot sci-fi starship, penguin robot, rounded white belly and teal back, small flipper wings, tiny penguin drones, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_penguin.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "f3e1b969c5610d940ff9796d7dd423f46d8a1c7d3337a5a9865f6c27a6e0d863",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_acorn",
+      "prompt": "top-down cute mascot sci-fi starship, acorn-shaped carrier, rounded cap and body, warm tan and teal, tiny seed drones scattering, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_acorn.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "8ed87d515fa7d02a590765a55d2c9de7aa73415121078f20b0f63c8cecb87c05",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_snail-shell",
+      "prompt": "top-down cute mascot sci-fi starship, snail-shell spiral carrier, smooth pastel spiral shell, tiny shell drones, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_snail-shell.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "f9ad88e2a48ac0e582f419ff988c2a31af177874e3c64c86ad4c14c9158aac27",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_frog",
+      "prompt": "top-down cute mascot sci-fi starship, frog robot, plump rounded green-teal body, big round eye bubbles, tiny tadpole drones, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_frog.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "f4f3d1ccdf273ba4178e0447f3838a0db0c5617da130a2bfca5aa5d73eee1637",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_panda",
+      "prompt": "top-down cute mascot sci-fi starship, panda robot, rounded white and dark teal hull, small round ear pods, tiny cub drones, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_panda.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "ecaafb81ef72c4bb2820282c7074d8bea4fb34125032961434103f7ee71940d9",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_mushroom",
+      "prompt": "top-down cute mascot sci-fi starship, mushroom carrier, rounded pastel cap over plump stem hull, soft spore-puff drones, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_mushroom.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "5707e450b345d5ac409f4f6549ce774f1515f9f0c5745acc021978f43887b715",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_probe_cute_star",
+      "prompt": "top-down cute mascot sci-fi starship, plump rounded five-point star carrier, warm cream and teal, tiny sparkle drones, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "rejected-probe"
+      ],
+      "files": [
+        "pb_probe_cute_star.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "001d49b6decf1505b4b71984687625f0e97c842195733ba8b89490b8cc4836db",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
