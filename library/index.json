@@ -14593,6 +14593,168 @@
       "contentHash": "3046993b834394ba1cea2e13be2682d96bcc37f298ce7bfc507495485d6acdfd",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_ship_showcase_hatchling",
+      "prompt": "hangar showcase illustration, cute round egg-shaped carrier starship, pastel teal speckled shell, side hatches, chick drones, nose pointing right",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "showcase",
+        "topdown",
+        "m8"
+      ],
+      "files": [
+        "pb_ship_showcase_hatchling.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "27a80adf38443e316705aaf7837c3e44b5404ef81a52aa80ce90a942d844c592",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ship_showcase_phantom",
+      "prompt": "hangar showcase illustration, stealth assassin starship, swept-back dart shape, faceted stealth plating, dark indigo with cyan edge lights, nose pointing right",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "showcase",
+        "topdown",
+        "m8"
+      ],
+      "files": [
+        "pb_ship_showcase_phantom.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "85c9ff0762adfb94b45dceaf605e620174cb486f9ec1ae15feeb054a3bf7dfa3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ship_showcase_mallow",
+      "prompt": "hangar showcase illustration, cute marshmallow starship, pillowy rounded hull, pastel pink and teal, nose pointing right",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "showcase",
+        "topdown",
+        "m8"
+      ],
+      "files": [
+        "pb_ship_showcase_mallow.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "75d93b4e1589664bf4439ba09aee57eff6f3812709d736a39af0557336297719",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ship_showcase_bruiser",
+      "prompt": "hangar showcase illustration, heavy armored brawler starship, wedge ram bow, armored canopy, teal hull with orange accents, nose pointing right",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "showcase",
+        "topdown",
+        "m8"
+      ],
+      "files": [
+        "pb_ship_showcase_bruiser.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "083c618dbf42a6134aed2e78c3bf4f942fc5abe58c6f590b66936860dda70415",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ship_showcase_bubble",
+      "prompt": "hangar showcase illustration, cute bubble starship, transparent dome canopy over plump teal hull, bubble drones, nose pointing right",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "showcase",
+        "topdown",
+        "m8"
+      ],
+      "files": [
+        "pb_ship_showcase_bubble.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "1954513355fc609af5235e8d1ee2905ec71d1fb40b50064b6c89fe09cd51c7e1",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ship_showcase_arccaster",
+      "prompt": "hangar showcase illustration, siege artillery starship, oversized forward turret with capacitor pods, cyan and violet hull, nose pointing right",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "showcase",
+        "topdown",
+        "m8"
+      ],
+      "files": [
+        "pb_ship_showcase_arccaster.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "9e1551ea623efb35ab0956442d5c1645c3630a7c082e3c22c0013b80650efe3a",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
