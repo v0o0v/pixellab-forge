@@ -14422,6 +14422,177 @@
       "contentHash": "4ae751b983d05ec3102dde92cb3ab9aaba80dd0128b713bba95f503108475c79",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_ship_bruiser",
+      "prompt": "top-down cute-compatible sci-fi player starship, heavy armored brawler, wedge ram bow, armored canopy, teal hull with orange accent, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "bruiser"
+      ],
+      "files": [
+        "pb_ship_bruiser.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "ab6878f6cda558987372c77f0573331f20c07c3bc24dceef889fd0e337f93177",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ship_arccaster",
+      "prompt": "top-down sci-fi player starship, siege artillery caster, oversized forward turret, twin capacitor pods, cyan and violet hull, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "arccaster"
+      ],
+      "files": [
+        "pb_ship_arccaster.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "c9c84af7b83301b7636c4e90ebaa4384468a8593204a6faf413c24ea09136f22",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ship_phantom",
+      "prompt": "top-down sci-fi player starship, stealth assassin, swept-back dart shape, angular faceted stealth plating, dark indigo hull with cyan edge lights, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "phantom"
+      ],
+      "files": [
+        "pb_ship_phantom.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "5c239c3e104ba23e644bd4a4fba4eece23d2e5d93853a64b402071dac212d043",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ship_hatchling",
+      "prompt": "top-down cute mascot sci-fi player starship, round egg-shaped carrier, pastel teal shell, side hatches releasing tiny chick drones, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "hatchling"
+      ],
+      "files": [
+        "pb_ship_hatchling.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "35d8de7da01f14c893783aca53161b23f93dc0f49c204167f065b75ce296c8d3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ship_mallow",
+      "prompt": "top-down cute mascot sci-fi player starship, marshmallow shaped pillowy rounded hull, pastel pink and teal, soft thruster vents, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "mallow"
+      ],
+      "files": [
+        "pb_ship_mallow.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "c0e009df5dc3466952ffdc210ca057b14c34b9be6a8f0b28b8ae34d177b41ef3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_ship_bubble",
+      "prompt": "top-down cute mascot sci-fi player starship, transparent dome canopy over plump teal hull, small bubble drones floating off, nose pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ship",
+        "player",
+        "topdown",
+        "m8",
+        "cute",
+        "bubble"
+      ],
+      "files": [
+        "pb_ship_bubble.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab-mcp"
+      },
+      "contentHash": "3046993b834394ba1cea2e13be2682d96bcc37f298ce7bfc507495485d6acdfd",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
