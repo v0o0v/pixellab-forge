@@ -15940,6 +15940,209 @@
       "contentHash": "8248bad126d0a9ac87387573e610324f05bb91a5a9ee538d6e3635aac37381ac",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_portrait_striker",
+      "prompt": "cartoon pixel art bust portrait of a young rookie starfighter pilot with a plain flight helmet, hopeful nervous grin, bright tone, cream and gold rim light, thin clean outline",
+      "style": {
+        "size": 128,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "portrait",
+        "character",
+        "face",
+        "bust",
+        "planet-blitz",
+        "story"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_portrait_striker.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab.ai"
+      },
+      "contentHash": "b6bf949596d1946633d9cf9e2042dc05ae51255c851be75458a05b5e2aaa346b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_portrait_bruiser",
+      "prompt": "cartoon pixel art bust portrait of a grizzled veteran escort-ship pilot with a scarred jaw and armored collar engraved with names, bright tone, cream and gold rim light, thin clean outline",
+      "style": {
+        "size": 128,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "portrait",
+        "character",
+        "face",
+        "bust",
+        "planet-blitz",
+        "story"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_portrait_bruiser.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab.ai"
+      },
+      "contentHash": "30b4a8e670412b92a98d748a21a3e867ec099cf89767d619c7707fdf4051c10b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_portrait_arccaster",
+      "prompt": "cartoon pixel art bust portrait of an eccentric beam-artist pilot with a paint-smudged cheek and appraising squint, bright tone, cream and gold rim light, thin clean outline",
+      "style": {
+        "size": 128,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "portrait",
+        "character",
+        "face",
+        "bust",
+        "planet-blitz",
+        "story"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_portrait_arccaster.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab.ai"
+      },
+      "contentHash": "8148645dbed20f5ca2097768b7cf0b3abe4ec0c9f0896c436eaba1b0b5c34eb2",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_portrait_phantom",
+      "prompt": "cartoon pixel art bust portrait of a mysterious erased pilot under a translucent hood with features dissolving into static and glowing eyes, bright tone, cream and gold rim light, thin clean outline",
+      "style": {
+        "size": 128,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "portrait",
+        "character",
+        "face",
+        "bust",
+        "planet-blitz",
+        "story"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_portrait_phantom.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab.ai"
+      },
+      "contentHash": "5bd04f64f4e3894696fa596cef8c3d248fb736691d0d6b508c2c591b9631fd1e",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_portrait_hatchling",
+      "prompt": "cartoon pixel art bust portrait of a motherly living creature-ship with a soft round face and a tiny chick peeking out, cute, bright tone, cream and gold rim light, thin clean outline",
+      "style": {
+        "size": 128,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "portrait",
+        "character",
+        "face",
+        "bust",
+        "planet-blitz",
+        "story"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_portrait_hatchling.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab.ai"
+      },
+      "contentHash": "4383aae7712b1d38927a947954d482a3d1e2e9d6266ff57592abe7b2547bc439",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_portrait_mallow",
+      "prompt": "cartoon pixel art bust portrait of a plump round marshmallow-like living ship with a blissful sugar-happy face, pastel, bright tone, cream and gold rim light, thin clean outline",
+      "style": {
+        "size": 128,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "portrait",
+        "character",
+        "face",
+        "bust",
+        "planet-blitz",
+        "story"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_portrait_mallow.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab.ai"
+      },
+      "contentHash": "073860c0a3132b1ee63039e2888d9b3235f8fa5094e56eabf29b14a948502770",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_portrait_bubble",
+      "prompt": "cartoon pixel art bust portrait of a timid round soap-bubble creature with iridescent translucent film skin and brave worried eyes, cute, bright tone, cream and gold rim light, thin clean outline",
+      "style": {
+        "size": 128,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "portrait",
+        "character",
+        "face",
+        "bust",
+        "planet-blitz",
+        "story"
+      ],
+      "assetType": "object",
+      "files": [
+        "pb_portrait_bubble.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "pixellab.ai"
+      },
+      "contentHash": "59fc5be1fd9ae534c4c6265049f88dfbc87a8b8b097c227e51ec884cd63bdaa4",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
