@@ -15886,6 +15886,60 @@
       "contentHash": "2a8ff9eb12e8bea7c05a2269dc445477fa8418ddc774ac6367e1af1d16c897fe",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_tileset_toxar",
+      "prompt": "dark desaturated toxic purple sludge ground transitioning to corrosive glowing violet acid pools, muted magenta-purple, top-down Wang autotile tileset",
+      "style": {
+        "size": 32,
+        "view": "top-down",
+        "tool": "create_topdown_tileset"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "topdown",
+        "tileset"
+      ],
+      "assetType": "tileset",
+      "pixellabObjectId": "b3f37139-b41a-47f5-8335-cf39634dc3af",
+      "files": [
+        "pb_tileset_toxar.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "05f103eda7a0512c65e2b685120fd26ba258b1622580724416b77b8dc190eb46",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_tileset_kras",
+      "prompt": "dark desaturated charred crimson rubble ground transitioning to shattered blackened ruin debris with dull crimson ember glow, muted dark red, top-down Wang autotile tileset",
+      "style": {
+        "size": 32,
+        "view": "top-down",
+        "tool": "create_topdown_tileset"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "topdown",
+        "tileset"
+      ],
+      "assetType": "tileset",
+      "pixellabObjectId": "28e02226-65f8-4411-92da-53ee03fded95",
+      "files": [
+        "pb_tileset_kras.png"
+      ],
+      "license": {
+        "license": "PixelLab generated",
+        "source": "pixellab"
+      },
+      "contentHash": "8248bad126d0a9ac87387573e610324f05bb91a5a9ee538d6e3635aac37381ac",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
