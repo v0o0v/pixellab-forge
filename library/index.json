@@ -15496,6 +15496,396 @@
       "contentHash": "001d49b6decf1505b4b71984687625f0e97c842195733ba8b89490b8cc4836db",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_enemy_toxar_charger",
+      "prompt": "toxic corrosion charging insectoid, deep violet purple chitin carapace, magenta glow, spiky legs, dripping acid, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "toxar",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_toxar_charger.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "3d0ab4eb5616c1c66fbee3bc989a74085dc8b3845f822790cec451d8d7b3dacc",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_toxar_gunner",
+      "prompt": "toxic venom spitter bug, bloated purple acid sac, spitting maw, deep violet carapace, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "toxar",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_toxar_gunner.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "ef9838a42e601cd196e7313e7bd66f2f555d7b114bc059edacc2fe44f0de2dfa",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_toxar_special",
+      "prompt": "rooted blight gland organism, pulsating purple violet sac, acidic tendrils, stationary, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "toxar",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_toxar_special.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "375f4dee7cb699069764d672d97fd6fc98f6812f6e62a52d403ab2da7ac1e40a",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_toxar_support",
+      "prompt": "plague tender healer drone, small purple insectoid medic, glowing violet tendrils, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "toxar",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_toxar_support.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "011cf495afc1c090d39f44211e02b8ce6d71b639eb13bf8c61ec5be48972bdb5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_toxar_elite_gunner",
+      "prompt": "toxin sentinel elite, heavily armored purple insectoid gunner, large bloated violet body, plating, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "toxar",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_toxar_elite_gunner.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "c0abb65e0a0188ae16742210fcfa1be1ccc762f5c4502d8b76101c540b7ee45c",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_toxar_elite_charger",
+      "prompt": "rot behemoth elite, massive purple charging beast, armored violet carapace, huge menacing, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "toxar",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_toxar_elite_charger.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "9182517315866a23be9809b92abbe7388b1df76f1672d361e9e2c368b30b2241",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_kras_charger",
+      "prompt": "crimson breaker war machine, dark red rusted armor plating, heavy spiked charger, iron, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "kras",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_kras_charger.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "4e4c74ebdfff7221d7190e21daf3adf8f69ec13d42099a77667099b7fe7ca5e4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_kras_gunner",
+      "prompt": "crimson piercer artillery machine, rusted red armored body, long penetrating cannon barrel, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "kras",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_kras_gunner.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "d43af30fe3bc66832476d2280e442c39c6689dd460081fe29d118debf47cede4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_kras_special",
+      "prompt": "crusher totem, rooted crimson iron pillar machine, rusted red, stationary emitter, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "kras",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_kras_special.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "f418f12d13ae7163f39442117710ebf1cdf7ae51f8ddefe14b5a778636204f17",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_kras_support",
+      "prompt": "salvage drone, small crimson repair machine, rusted red claws, hovering mechanical, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "kras",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_kras_support.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "415c9b302e004d88b0c97ef8d87c5bdc254c8cb73aefdc6550fb34dc973fad96",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_kras_elite_gunner",
+      "prompt": "siege battery elite, huge crimson artillery war machine, heavy armored, multiple cannons, rust, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "kras",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_kras_elite_gunner.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "9cf173331bc9f43da460a7fb559c3129d5368ef394ee0340fa03a8e55ff1d9a1",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_kras_elite_charger",
+      "prompt": "devastator elite, massive crimson war machine, rusted armor, spiked battering ram, huge, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "kras",
+        "enemy"
+      ],
+      "files": [
+        "pb_enemy_kras_elite_charger.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "816717c8cec35b9128f4d86688d37f40cbd5709e47ca2180848ae5b546a80461",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_boss_toxar",
+      "prompt": "toxic corruption blight matriarch boss, massive purple violet organic monster, pulsating acid sacs, plague growths, top-down game sprite",
+      "style": {
+        "size": 128,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "toxar",
+        "boss"
+      ],
+      "files": [
+        "pb_boss_toxar.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "a929ae18d87c7cc55ffb66fea53ccb77e77cd527b02b62993d67f847fcdc3127",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_boss_kras",
+      "prompt": "crimson siege colossus boss, huge dark red war machine fortress, rusted iron armor, heavy cannons, top-down game sprite",
+      "style": {
+        "size": 128,
+        "view": "topdown",
+        "tool": "create-image-bitforge"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane9",
+        "kras",
+        "boss"
+      ],
+      "files": [
+        "pb_boss_kras.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "1cb9e9d50119901891d14d9ca86b437503cebd53abb1d57562e05eef60c3c74b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_shelter",
+      "prompt": "top-down pixel art fortified bunker dome, teal green glowing safe zone shelter building, cyan energy shield, hexagonal armored base",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create-image-pixflux"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane6",
+        "shelter",
+        "object"
+      ],
+      "files": [
+        "pb_shelter.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "2a8ff9eb12e8bea7c05a2269dc445477fa8418ddc774ac6367e1af1d16c897fe",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
