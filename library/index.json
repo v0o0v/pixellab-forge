@@ -16143,6 +16143,107 @@
       "contentHash": "59fc5be1fd9ae534c4c6265049f88dfbc87a8b8b097c227e51ec884cd63bdaa4",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_encounter_portal",
+      "prompt": "swirling violet warp portal gateway, dark metal ring arch with spiraling energy vortex being sucked inward, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "encounter",
+        "adr0033",
+        "portal",
+        "object"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af61fefd-23e0-42b5-add9-703307d5f09f",
+      "frameIndex": 0,
+      "sprites": [
+        "encounter_portal.png"
+      ],
+      "files": [
+        "pb_encounter_portal.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "108aa501d9370f12b7a182dbd79440b07a33a24c9bf0d4eafbaa79980b485f22",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_encounter_seal",
+      "prompt": "cracked stone seal slab bound by heavy iron chains, angry red glow leaking from the cracks, something imprisoned inside, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "encounter",
+        "adr0033",
+        "seal",
+        "guardian",
+        "object"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "7bd8f405-033e-4c80-adbe-ac30403cf00e",
+      "frameIndex": 1,
+      "sprites": [
+        "encounter_seal.png"
+      ],
+      "files": [
+        "pb_encounter_seal.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "bd0ee3df0158a743a7075a5f7accc34f936a9402b28f6e65df5eadde8f4789ad",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_encounter_altar",
+      "prompt": "ancient stone offering altar pedestal with three glowing golden offering bowls and amber runes, dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "encounter",
+        "adr0033",
+        "altar",
+        "oscar",
+        "object"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "c21a3edd-6402-4a6e-a788-cd2cc2e7c995",
+      "frameIndex": 2,
+      "sprites": [
+        "encounter_altar.png"
+      ],
+      "files": [
+        "pb_encounter_altar.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "c794e8984ad6c0ec80cc898435090129b3770c34ab9773e251bf6d89f7cc5817",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
