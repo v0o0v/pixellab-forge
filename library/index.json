@@ -16244,6 +16244,34 @@
       "contentHash": "c794e8984ad6c0ec80cc898435090129b3770c34ab9773e251bf6d89f7cc5817",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_ui_bld_archive",
+      "prompt": "sci-fi archive tower, obelisk-shaped data vault with glowing amber crystal spire and holographic scroll emblem, dark space-base palette",
+      "style": {
+        "size": 64,
+        "view": "side",
+        "tool": "create_map_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "ui",
+        "building",
+        "base"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "ca68e910-ba47-4f78-a095-96a6f5db76ab",
+      "files": [
+        "pb_ui_bld_archive.png"
+      ],
+      "license": {
+        "license": "PixelLab ToS",
+        "author": "PixelLab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "a36ee956f0392c6cbeb6dfe8094cdce79cb95acddbe8c2c6a6608aa2673dece6",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
