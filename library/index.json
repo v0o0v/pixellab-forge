@@ -16272,6 +16272,164 @@
       "contentHash": "a36ee956f0392c6cbeb6dfe8094cdce79cb95acddbe8c2c6a6608aa2673dece6",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_turret_ally_2026",
+      "prompt": "top-down sci-fi ally auto-turret, round armored base with one thick cannon barrel pointing right, teal armor and steel barrel, glowing amber muzzle",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "turret",
+        "ally",
+        "pickup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f4cd847f-c5b3-45ae-85e6-f7746dd00b22",
+      "sprites": [
+        "turret_pickup.png"
+      ],
+      "files": [
+        "pb_turret_ally_2026.png"
+      ],
+      "contentHash": "c5a0e43f3de644500159ba1214e30fe0f1e818d815e95b4484d1adc16ff01175",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_magnet_pylon_2026",
+      "prompt": "top-down magnet pylon device, horseshoe magnet with red and cyan pole tips, glowing cyan energy arc between the poles",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "magnet",
+        "pickup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "9c67945e-364d-4a0e-acd9-8bfd0f30e9b0",
+      "sprites": [
+        "magnet_emitter.png"
+      ],
+      "files": [
+        "pb_magnet_pylon_2026.png"
+      ],
+      "contentHash": "d229031c024346f9ce907b379a777f65c3f61375cf29835bfba0a8339cd44d3f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_bomb_charge_2026",
+      "prompt": "top-down unstable bomb charge, round dark red sphere with amber warning band and a lit fuse on top",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "bomb",
+        "pickup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "5e2393a5-d2bb-4d5b-8cd0-5aeeeee68e0b",
+      "sprites": [
+        "bomb_device.png"
+      ],
+      "files": [
+        "pb_bomb_charge_2026.png"
+      ],
+      "contentHash": "02f584426b904a184891d0af8de0281f5f1dcd44fe8fd3bc4d37fad91cb15f11",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_supply_crate_2026",
+      "prompt": "top-down military supply crate, khaki armored box with steel straps and an amber lock badge",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "supply",
+        "pickup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "ef8e9128-2f17-4143-8a2e-2581044b4114",
+      "sprites": [
+        "supply.png"
+      ],
+      "files": [
+        "pb_supply_crate_2026.png"
+      ],
+      "contentHash": "0e123f6772dc67627a09173f2bb89a72297e52ba67703705d347733be4d969e3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_loot_chest_2026",
+      "prompt": "top-down loot chest, neutral light grey metal chest with rounded lid and a golden lock",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "loot",
+        "pickup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "969abd67-4902-4cfa-babb-5c4c10fd3f0e",
+      "sprites": [
+        "loot.png"
+      ],
+      "files": [
+        "pb_loot_chest_2026.png"
+      ],
+      "contentHash": "381d5893cba3db44a1c1d5ffa0a25cd375b51b8c29134bb96e775daf7f59228e",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_gem_xp_cyan_2026",
+      "prompt": "top-down glowing faceted experience gem crystal, cyan diamond shaped shard",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "gem",
+        "xp",
+        "pickup"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "2c35039f-14dd-4587-a282-5e673c50c03d",
+      "sprites": [
+        "gem.png"
+      ],
+      "files": [
+        "pb_gem_xp_cyan_2026.png"
+      ],
+      "contentHash": "84d0e8a69bd4def0350a017f3c7bc2dfecd4154eed2b8ffa49c7db2d5e8c5d2e",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
