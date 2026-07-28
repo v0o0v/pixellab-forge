@@ -19174,6 +19174,72 @@
       "contentHash": "c6f8cae21210d6d6d389f14f3f8d34e82bfef752ff81d7ce5ae81fb9af784c6b",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_tile_invasion_l1_sky",
+      "prompt": "deep navy blue high altitude cloud haze with swirling wind streaks and scattered ice crystal speckles, stratosphere sky — Wang fill tile (seamless)",
+      "style": {
+        "size": 32,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "backdrop",
+        "tile",
+        "seamless"
+      ],
+      "files": [
+        "pb_tile_invasion_l1_sky.png"
+      ],
+      "contentHash": "a7036da8a1b88bd5314998632b67441872c837773ed035f5a30199ed11e02d27",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_tile_invasion_l2_bulkhead",
+      "prompt": "heavily worn industrial steel deck plate covered in rivet rows, deep scratches, grime streaks and weld seams — Wang fill tile (seamless)",
+      "style": {
+        "size": 32,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "backdrop",
+        "tile",
+        "seamless"
+      ],
+      "files": [
+        "pb_tile_invasion_l2_bulkhead.png"
+      ],
+      "contentHash": "2b34eefb47de5283a8a6b22898559ceedb7c6001dfc58aa6ecebd61ddfcd2887",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_tile_invasion_l3_core",
+      "prompt": "dark violet reactor chamber floor of etched magenta circuit traces, glowing energy conduits and hexagonal power cells — Wang fill tile (seamless)",
+      "style": {
+        "size": 32,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "backdrop",
+        "tile",
+        "seamless"
+      ],
+      "files": [
+        "pb_tile_invasion_l3_core.png"
+      ],
+      "contentHash": "6208d864bbe41c1ce7b033f72e5b7d1581da45a989fd86962daa4ce462db3c36",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
