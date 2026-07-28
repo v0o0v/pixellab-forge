@@ -17966,6 +17966,650 @@
       "contentHash": "3661e3391c9ae4ca483a31d04e36950268e4844b564f63547767b60c76d9159f",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "skill_damage_pct_lowmid",
+      "prompt": "a single serrated warhead cracked open with one glowing energy seam and a bright spark at its tip, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 0,
+      "files": [
+        "skill_damage_pct_lowmid.png"
+      ],
+      "contentHash": "44c6e2bc669c18be2a2a6ecefe40178bf6efd2d7d16f1bd6aa80e0cccf328fb4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_damage_pct_midhigh",
+      "prompt": "two spiked explosive warheads crossed and bound together, crackling with red-orange energy, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 1,
+      "files": [
+        "skill_damage_pct_midhigh.png"
+      ],
+      "contentHash": "336f1019c720b9162b3667c2678e7b55e814624b2f3cab7975743028d93d1c96",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_fire_rate_pct_lowmid",
+      "prompt": "a twin-barrel gun muzzle glowing warm with three blurred motion streak lines, angled diagonally from lower-left to upper-right, filling the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 2,
+      "files": [
+        "skill_fire_rate_pct_lowmid.png"
+      ],
+      "contentHash": "f3500ca9687fb319f73852c3c365a07af52ee96ddba0f3c6354fe2b0a20402c5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_fire_rate_pct_midhigh",
+      "prompt": "a four-barrel gatling cluster glowing warm orange with four blurred crossing motion streak lines, angled diagonally from lower-left to upper-right, filling the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 3,
+      "files": [
+        "skill_fire_rate_pct_midhigh.png"
+      ],
+      "contentHash": "f4a542fdf3d808743633415737b81f7e3c21307f5647f2601a66cc7712e5f789",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_bullet_count_low",
+      "prompt": "a single bullet tracer streaking forward from one point, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 4,
+      "files": [
+        "skill_bullet_count_low.png"
+      ],
+      "contentHash": "9a0e3e9312e983391af91202e6433bae6e03e49e53eda80c003e8b31169c53e5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_bullet_count_lowmid",
+      "prompt": "two parallel bullet tracers fanned out from a single point, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 5,
+      "files": [
+        "skill_bullet_count_lowmid.png"
+      ],
+      "contentHash": "86305a1dee413e9a6e4d8fff593e2f0cd7b43744fcb8f1ce2d49f2b02036ad35",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_bullet_count_midhigh",
+      "prompt": "four parallel bullet tracers fanned out from a single point, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 6,
+      "files": [
+        "skill_bullet_count_midhigh.png"
+      ],
+      "contentHash": "006408e4f5380f8ca52c9476ce66dcf35d4b6ff8d28f7c850df1faf11154fbca",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_bullet_speed_pct_lowmid",
+      "prompt": "a single bullet with two straight speed-streak lines trailing behind it, no ring, angled diagonally from lower-left to upper-right, filling the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 7,
+      "files": [
+        "skill_bullet_speed_pct_lowmid.png"
+      ],
+      "contentHash": "616a97edb4452b080f2e13a0d42d2598d720cbbea72e884d73e1add37066ae45",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_bullet_speed_pct_midhigh",
+      "prompt": "a single bullet bursting through two glowing shockwave rings with its speed-streak forking into three lines, angled diagonally from lower-left to upper-right, filling the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 8,
+      "files": [
+        "skill_bullet_speed_pct_midhigh.png"
+      ],
+      "contentHash": "e0d476218126f795f862f3de64ec4f978d501327edcf3fc2f23f7f74b071cba2",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_bullet_speed_pct_high",
+      "prompt": "a single bullet tearing through a chain of three glowing shockwave rings with a blazing forked speed-streak trail, angled diagonally from lower-left to upper-right, filling the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 9,
+      "files": [
+        "skill_bullet_speed_pct_high.png"
+      ],
+      "contentHash": "af154a5a5cf9dd3d62fa86d51196eb542dcbcf33b19224d1bb875b6d0a2135e9",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_pierce_lowmid",
+      "prompt": "a sharp spike piercing through one thick metal plate with a few sparks, angled diagonally from lower-left to upper-right, filling the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 10,
+      "files": [
+        "skill_pierce_lowmid.png"
+      ],
+      "contentHash": "27059bf58fb1bb369877e194a72b28f3bda3cc2f52941e8b4723a7a1093f9d6c",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_pierce_midhigh",
+      "prompt": "a long spike piercing through three stacked metal plates with sparks, angled diagonally from lower-left to upper-right, filling the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 11,
+      "files": [
+        "skill_pierce_midhigh.png"
+      ],
+      "contentHash": "0327b33346fe156a0fbc2cc9915803bfeaef26371c92a3790bfd89f112cf7908",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_range_flat_lowmid",
+      "prompt": "a targeting reticle with short crosshair lines and a single thin range ring around it, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 12,
+      "files": [
+        "skill_range_flat_lowmid.png"
+      ],
+      "contentHash": "f438bd92d4b7a4f97031b046c7724de2589232c944ae1830634ca3f64ca55967",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_range_flat_mid",
+      "prompt": "a targeting reticle with crosshair lines and two concentric range rings extending outward, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "af3b03ff-1446-4b1b-b961-32fd2edb38da",
+      "frameIndex": 13,
+      "files": [
+        "skill_range_flat_mid.png"
+      ],
+      "contentHash": "acca0ad95b90d1ac24dde8c21d7d84b0dae9dee7ea963657b1aff76916a76072",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_range_flat_midhigh",
+      "prompt": "a targeting reticle with long crosshair lines and three concentric range rings, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 0,
+      "files": [
+        "skill_range_flat_midhigh.png"
+      ],
+      "contentHash": "cc26c2cf8a1a5a8a2432b8b29d1e2bb2825d67c5a2e0eed0c9ee907a7a9b5a64",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_range_flat_high",
+      "prompt": "a wide long-range targeting reticle with crosshair lines reaching the frame edges and four concentric range rings, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 1,
+      "files": [
+        "skill_range_flat_high.png"
+      ],
+      "contentHash": "6406d897064944e086fa3f264a861c47f1f7310628bc919045b7ac94911e4b67",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_max_hp_flat_lowmid",
+      "prompt": "two overlapping curved armor plate segments riveted together, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 2,
+      "files": [
+        "skill_max_hp_flat_lowmid.png"
+      ],
+      "contentHash": "45d628cee072cc466ddae70b9ebd5effe79881987c9ad18e4d7ac96607d78b0d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_max_hp_flat_midhigh",
+      "prompt": "four riveted armor plates stacked into a thick block with reinforced ridges, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 3,
+      "files": [
+        "skill_max_hp_flat_midhigh.png"
+      ],
+      "contentHash": "736fb69a95e730302ed6fd99e53a7fa1dd27024261bd5e13c9d32e35ceaf74c7",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_max_hp_pct_lowmid",
+      "prompt": "a glowing green health cross emblem wrapped in one thin energy ring, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 4,
+      "files": [
+        "skill_max_hp_pct_lowmid.png"
+      ],
+      "contentHash": "bcd754fda90dd7c244c132223df7ea76537e6c684ba68130d4207cf1dc2dde5e",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_max_hp_pct_midhigh",
+      "prompt": "a glowing green health core wrapped in two overlapping pulsing energy rings, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 5,
+      "files": [
+        "skill_max_hp_pct_midhigh.png"
+      ],
+      "contentHash": "520c7250d4a9c0437bc9e2605a28509055b0f2991975366720e32fc7ef044db4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_dash_cd_pct_lowmid",
+      "prompt": "a single thruster nozzle emitting one long burst flame with a short motion streak, angled diagonally from lower-left to upper-right, filling the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 6,
+      "files": [
+        "skill_dash_cd_pct_lowmid.png"
+      ],
+      "contentHash": "d02c78d7c26ae8e9799f9183b0d8f5c7977ac9322f40e56fc7617e9553b60374",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_dash_cd_pct_midhigh",
+      "prompt": "a triple-nozzle thruster array emitting three burst flames with crossing motion streaks, angled diagonally from lower-left to upper-right, filling the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 7,
+      "files": [
+        "skill_dash_cd_pct_midhigh.png"
+      ],
+      "contentHash": "c2aaa3d433082bbada0f6661b8f2704c670e1f7d3851fef2892a9907dc4f3f0d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_move_speed_pct_lowmid",
+      "prompt": "a compact engine nozzle with a steady exhaust glow and a faint trail, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 8,
+      "files": [
+        "skill_move_speed_pct_lowmid.png"
+      ],
+      "contentHash": "51253e3b402306c9c0212fbb50ba833e5016bf54b7bdb21016fceb46d0738c53",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_move_speed_pct_midhigh",
+      "prompt": "a large engine pod with an intense exhaust glow and a medium trail, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 9,
+      "files": [
+        "skill_move_speed_pct_midhigh.png"
+      ],
+      "contentHash": "15a3c8452107e18face40748792703636ae2036ddafbdb2d9175c802a359db73",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_magnet_pct_lowmid",
+      "prompt": "a horseshoe magnet with curved attraction field lines pulling in one gem shard, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 10,
+      "files": [
+        "skill_magnet_pct_lowmid.png"
+      ],
+      "contentHash": "7b9bebb4335c9daf4a8954fc75d7c5a94fa64fab6d4437fcc695fabad652f349",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_magnet_pct_midhigh",
+      "prompt": "two stacked ringed magnet coils with a swirling attraction vortex pulling in five gem shards, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 11,
+      "files": [
+        "skill_magnet_pct_midhigh.png"
+      ],
+      "contentHash": "1b7c4754feb51dd972d1d37f3bc6db7d8a6ce20925dba461db348d052d6a585c",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_xp_pct_lowmid",
+      "prompt": "a cluster of two glowing stars, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 12,
+      "files": [
+        "skill_xp_pct_lowmid.png"
+      ],
+      "contentHash": "2daeef24d31802d6ac105922098332c5a337a22605d2c13be11431e3c8a2f40d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "skill_xp_pct_midhigh",
+      "prompt": "a burst of six glowing stars around a bright core, centered in the square frame, fully opaque solid form, no transparency grid, no text labels, no background plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "skill",
+        "icon",
+        "planetblitz"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "fc7dccb4-aabb-46bd-8d71-30a7cacf3f50",
+      "frameIndex": 13,
+      "files": [
+        "skill_xp_pct_midhigh.png"
+      ],
+      "contentHash": "95b2d51c00a4504a4927e2f9bfde45dfb888ab4b295afb3c16589f593bc60ed1",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
