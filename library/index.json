@@ -16430,6 +16430,1542 @@
       "contentHash": "84d0e8a69bd4def0350a017f3c7bc2dfecd4154eed2b8ffa49c7db2d5e8c5d2e",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_abundance",
+      "prompt": "bulging brown loot sack overflowing with golden coins, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 0,
+      "sprites": [
+        "catalyst_abundance"
+      ],
+      "files": [
+        "pb_catalyst_abundance.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "d2b36b1c077a050bc95111b015cfdbdacff5b4a71ed0e022fbdb71fe1fb44a9e",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_plunder",
+      "prompt": "crossed pirate cutlasses over a torn treasure map, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 1,
+      "sprites": [
+        "catalyst_plunder"
+      ],
+      "files": [
+        "pb_catalyst_plunder.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "ce9615e14360d2d417a0acc070bda921c53eaa6cb63869d97e7ece1bc8dd25c9",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_harvest",
+      "prompt": "golden sickle cutting a bundle of glowing wheat, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 2,
+      "sprites": [
+        "catalyst_harvest"
+      ],
+      "files": [
+        "pb_catalyst_harvest.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "4969d73887254b55e7ee8819dec63f49d40005c3500063f64aeff0ca0ba6f8f4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_bounty",
+      "prompt": "wanted poster scroll with a gold star seal, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 3,
+      "sprites": [
+        "catalyst_bounty"
+      ],
+      "files": [
+        "pb_catalyst_bounty.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "a60f76421a629a16c2d3c937e8c9f61daf17793e14ae1480a48a767d03cc00d6",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_cornucopia",
+      "prompt": "golden cornucopia horn spilling fruit and gems, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 4,
+      "sprites": [
+        "catalyst_cornucopia"
+      ],
+      "files": [
+        "pb_catalyst_cornucopia.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "0aad2a2a3869298bf8fab4172372e02521b0005ea5b90bfe09b787eae42d13a7",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_refinement",
+      "prompt": "glowing purple gem on a polished silver anvil, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 5,
+      "sprites": [
+        "catalyst_refinement"
+      ],
+      "files": [
+        "pb_catalyst_refinement.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "891f7b6fc65fdae353f4e602c4d04d5bad1df643b639ef785a477cfc097b08b5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_gilding",
+      "prompt": "paint brush coating a gem in liquid gold, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 6,
+      "sprites": [
+        "catalyst_gilding"
+      ],
+      "files": [
+        "pb_catalyst_gilding.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "d19868beb34b60aaa3aff80caa0451d05ecde64a0c012bdfaf69e707f338ff3f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_prospect",
+      "prompt": "magnifying glass inspecting a blue gemstone, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 7,
+      "sprites": [
+        "catalyst_prospect"
+      ],
+      "files": [
+        "pb_catalyst_prospect.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "27153eb927354b3c32491ec1ac95cfbb4b29c89107e1548991aef6f95e033dd4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_alchemy",
+      "prompt": "bubbling green alchemy flask with swirling runes, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 8,
+      "sprites": [
+        "catalyst_alchemy"
+      ],
+      "files": [
+        "pb_catalyst_alchemy.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "3552a5367733a62e5d438c93fb76c86e0c83a547c8c04367996882041c0165e5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_epiphany",
+      "prompt": "radiant eye inside a golden sunburst, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 9,
+      "sprites": [
+        "catalyst_epiphany"
+      ],
+      "files": [
+        "pb_catalyst_epiphany.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "874d010b9600779ccafc3f0795d66e7a81b5dbccc72f4039388afd36bc8aa636",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_insight",
+      "prompt": "open glowing book with a floating blue eye, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 10,
+      "sprites": [
+        "catalyst_insight"
+      ],
+      "files": [
+        "pb_catalyst_insight.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "c238d4bfd3e5416869b624a29992a3e333414ee139eeabe5ca94d4fa847878c2",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_tutelage",
+      "prompt": "rolled scroll with a quill pen and sparkles, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 11,
+      "sprites": [
+        "catalyst_tutelage"
+      ],
+      "files": [
+        "pb_catalyst_tutelage.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "5695c48c01749a127cabba10411a629f3a9367a9fdc725443ba52bc7c946c5e0",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_ascension",
+      "prompt": "upward golden chevron arrow with white wings, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 12,
+      "sprites": [
+        "catalyst_ascension"
+      ],
+      "files": [
+        "pb_catalyst_ascension.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "3d135de426184419232126f9cdd9b28f1c48045e46f7494fecb6077a2f944ac9",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_enlightenment",
+      "prompt": "glowing brain wreathed in cyan light, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 13,
+      "sprites": [
+        "catalyst_enlightenment"
+      ],
+      "files": [
+        "pb_catalyst_enlightenment.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "6661c8036bc32e76380165658e1f9f8e9e6f619facd40554de6932b77900e694",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_mastery",
+      "prompt": "laurel wreath around a glowing sword hilt, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 14,
+      "sprites": [
+        "catalyst_mastery"
+      ],
+      "files": [
+        "pb_catalyst_mastery.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "d323375d22f3eebfd246a4b37f9fa299f11a7a11bc36fbbb98f1934dc991fafd",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_extraction",
+      "prompt": "iron pickaxe striking a cyan crystal vein, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 15,
+      "sprites": [
+        "catalyst_extraction"
+      ],
+      "files": [
+        "pb_catalyst_extraction.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "5290f76f1b82f620a18292e73c4e9c74825dc2fb704989032a3187cfe9454d98",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_foundry",
+      "prompt": "molten metal pouring from a crucible into an ingot mold, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 16,
+      "sprites": [
+        "catalyst_foundry"
+      ],
+      "files": [
+        "pb_catalyst_foundry.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "550eb78d81838a5108f03efc57c1dee13fe45594940813a61963feb163fb628f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_greed",
+      "prompt": "heap of gold coins with a grasping hand, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 17,
+      "sprites": [
+        "catalyst_greed"
+      ],
+      "files": [
+        "pb_catalyst_greed.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "c3694030604df548c22da86e972965175901917c4bf403a4b156ec600f140940",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_mercantile",
+      "prompt": "balance scale holding a coin and a crystal, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 18,
+      "sprites": [
+        "catalyst_mercantile"
+      ],
+      "files": [
+        "pb_catalyst_mercantile.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "08fc2c2b800b6814fd5b7c8e924a7172c86378421c9248f741ef873499fe3d7a",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_motherlode",
+      "prompt": "huge cracked geode full of glowing gold ore, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 19,
+      "sprites": [
+        "catalyst_motherlode"
+      ],
+      "files": [
+        "pb_catalyst_motherlode.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "d02b77e2e55760d4415e452ad1a2277226a0b91f08f600abf02e1c0495e0f411",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_resonance",
+      "prompt": "silver tuning fork emitting concentric cyan rings, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 20,
+      "sprites": [
+        "catalyst_resonance"
+      ],
+      "files": [
+        "pb_catalyst_resonance.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "e083000df7ae799daac5369c1fe3b091a60ab04c6337a23f1b92c7194e647b84",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_catalysis",
+      "prompt": "vial pouring a drop that ignites a purple burst, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 21,
+      "sprites": [
+        "catalyst_catalysis"
+      ],
+      "files": [
+        "pb_catalyst_catalysis.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "746b1bcbb59c617f4f2f4fcd149ea356800f62803f56aa4d10b20a8b68b8c94e",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_cascade",
+      "prompt": "three glowing orbs falling in a chain, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 22,
+      "sprites": [
+        "catalyst_cascade"
+      ],
+      "files": [
+        "pb_catalyst_cascade.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "848fff47d631f0a7f183443b39c2844384cf7316df047de131f224e015585307",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_seeding",
+      "prompt": "hand scattering glowing seeds over dark soil, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 23,
+      "sprites": [
+        "catalyst_seeding"
+      ],
+      "files": [
+        "pb_catalyst_seeding.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "c00f5a9dc7abd9a7ac5198013a07aad93b1e9dbd482902c29334dd393913bfe2",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_chainreaction",
+      "prompt": "chain links exploding into orange sparks, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 24,
+      "sprites": [
+        "catalyst_chainreaction"
+      ],
+      "files": [
+        "pb_catalyst_chainreaction.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "4768743575e924ad4c3717fa8b0a917c4281e08d4d7b11545badcad02ca42530",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_overdrive",
+      "prompt": "red hot reactor core crackling with power bolts, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 25,
+      "sprites": [
+        "catalyst_overdrive"
+      ],
+      "files": [
+        "pb_catalyst_overdrive.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "5653ccd387550599fa488901a6de4a82571ca604fd9b4df5f4f5f946e1eea578",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_rapidcore",
+      "prompt": "spinning yellow gatling barrel with muzzle sparks, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 26,
+      "sprites": [
+        "catalyst_rapidcore"
+      ],
+      "files": [
+        "pb_catalyst_rapidcore.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "5a30a88dd82bea92b4322f396b1d59f10b6cf647588f4913fff4874e6d9d341e",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_afterburner",
+      "prompt": "cyan jet thruster with a trailing flame, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 27,
+      "sprites": [
+        "catalyst_afterburner"
+      ],
+      "files": [
+        "pb_catalyst_afterburner.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "dc6b1c6ede2cba3d801c35610bc85690e29495f6cee61d36621d8a0a07dea6fd",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_bulwark",
+      "prompt": "heavy blue tower shield with iron rivets, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 28,
+      "sprites": [
+        "catalyst_bulwark"
+      ],
+      "files": [
+        "pb_catalyst_bulwark.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "72ab2a35aac30062f4359c1944380cca6df3a67c7345c7febb300c4e84a96971",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_ascendant",
+      "prompt": "prismatic star crystal radiating rainbow beams, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "common"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 29,
+      "sprites": [
+        "catalyst_ascendant"
+      ],
+      "files": [
+        "pb_catalyst_ascendant.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "da1627e134cd6c36c14c6d6a369826b39d0b96fd5313f3bbf934aa327df6fbc9",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_kargon_swarmcall",
+      "prompt": "obsidian war horn calling a swarm of red insects, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 30,
+      "sprites": [
+        "catalyst_kargon_swarmcall"
+      ],
+      "files": [
+        "pb_catalyst_kargon_swarmcall.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "2be7df7df2f0525828b601f07d639e86363628d12589b3d04d0c9f8908fe80db",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_kargon_magma_vein",
+      "prompt": "cracked black rock with a glowing orange magma vein, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 31,
+      "sprites": [
+        "catalyst_kargon_magma_vein"
+      ],
+      "files": [
+        "pb_catalyst_kargon_magma_vein.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "2f85e5e38f67ff6df042de0e4812823e60bc2b7d229e874bee0a2f880f1ce29a",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_kargon_lava_warden",
+      "prompt": "molten lava golem head with burning eyes, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 32,
+      "sprites": [
+        "catalyst_kargon_lava_warden"
+      ],
+      "files": [
+        "pb_catalyst_kargon_lava_warden.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "98daf59578bbd1e03897ee1b10a797b9c5fe8fc036cfa8c03a2c181592a10b10",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_berdan_collapse",
+      "prompt": "purple ring collapsing inward around a dark void, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 33,
+      "sprites": [
+        "catalyst_berdan_collapse"
+      ],
+      "files": [
+        "pb_catalyst_berdan_collapse.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "249f3fd30867bbb4976b6245ec40482a5719f5dc71724f041cbfbb4a4f908d7c",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_berdan_royal_jelly",
+      "prompt": "golden honeycomb jar of glowing royal jelly, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 34,
+      "sprites": [
+        "catalyst_berdan_royal_jelly"
+      ],
+      "files": [
+        "pb_catalyst_berdan_royal_jelly.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "b12bc4f407d3f928bcb0529f1c3cb882b047d24d9e398a4863c31ce91c4806d5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_berdan_hive_queen",
+      "prompt": "crowned insect queen head with amber wings, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 35,
+      "sprites": [
+        "catalyst_berdan_hive_queen"
+      ],
+      "files": [
+        "pb_catalyst_berdan_hive_queen.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "725992114966737eae1b7832a3b7b90d965a17750601d8ca8b517b18e11feccf",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_niflheim_pursuit",
+      "prompt": "icy blue footprint trail with a chasing arrow, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 36,
+      "sprites": [
+        "catalyst_niflheim_pursuit"
+      ],
+      "files": [
+        "pb_catalyst_niflheim_pursuit.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "280da557a1ddc8952ace82d21999f90d55860d9656670609d90af15416d7da3d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_niflheim_rime_crystal",
+      "prompt": "pale blue frost crystal cluster, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 37,
+      "sprites": [
+        "catalyst_niflheim_rime_crystal"
+      ],
+      "files": [
+        "pb_catalyst_niflheim_rime_crystal.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "d45cf880fb264b9f7797f2adba2cb71d45c720ba8ae350865d8f46f9fb28a25d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_niflheim_flagship",
+      "prompt": "sleek icy blue battleship silhouette, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 38,
+      "sprites": [
+        "catalyst_niflheim_flagship"
+      ],
+      "files": [
+        "pb_catalyst_niflheim_flagship.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "1216d8e8303842dd9363821b28aa8f5debd668da404d5f22b5454f5c18aff0a2",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_arke_overclock",
+      "prompt": "ancient gear ring spinning with electric arcs, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 39,
+      "sprites": [
+        "catalyst_arke_overclock"
+      ],
+      "files": [
+        "pb_catalyst_arke_overclock.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "5c18bb0e0dae265cf7144e933c14fb52aa4ea945415799075ea407abc9909f55",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_arke_ancient_core",
+      "prompt": "floating golden geometric core etched with runes, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 40,
+      "sprites": [
+        "catalyst_arke_ancient_core"
+      ],
+      "files": [
+        "pb_catalyst_arke_ancient_core.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "b168b2763842b99b59823ddcb6bdb947f859192fe1fccac2962c5b2e24d9a7a1",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_arke_obelisk",
+      "prompt": "tall stone obelisk glowing with cyan glyphs, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 41,
+      "sprites": [
+        "catalyst_arke_obelisk"
+      ],
+      "files": [
+        "pb_catalyst_arke_obelisk.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "513953267b53e214906eabcd3330e7dcb36c631cad492f8188a020d1ab385098",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_toxar_outbreak",
+      "prompt": "green biohazard spore cloud bursting outward, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 42,
+      "sprites": [
+        "catalyst_toxar_outbreak"
+      ],
+      "files": [
+        "pb_catalyst_toxar_outbreak.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "c5415f0e9f0d1da7b5e91d27b756eacf30e23a862cdb7fcfb32e00e47036408d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_toxar_blightspore",
+      "prompt": "glowing green mushroom spore pod, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 43,
+      "sprites": [
+        "catalyst_toxar_blightspore"
+      ],
+      "files": [
+        "pb_catalyst_toxar_blightspore.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "3782399f4697332f46f254341d87a95d0141e8e9c28f9572fa2df4f5758f1360",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_toxar_blight_mother",
+      "prompt": "monstrous green fungal maw with tendrils, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 44,
+      "sprites": [
+        "catalyst_toxar_blight_mother"
+      ],
+      "files": [
+        "pb_catalyst_toxar_blight_mother.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "a99266c7d20ed5728313768ae13aaf52253ec6aafc829b87d4205c1942b0aad3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_kras_breach",
+      "prompt": "cracked concrete wall punched open with dust, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 45,
+      "sprites": [
+        "catalyst_kras_breach"
+      ],
+      "files": [
+        "pb_catalyst_kras_breach.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "6a49c6f5d310d36985ad44650b195f0196e186acd1893f85f7c8ac56deb51404",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_kras_breachsteel",
+      "prompt": "heavy dark steel ingot with rivets and blue sheen, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 46,
+      "sprites": [
+        "catalyst_kras_breachsteel"
+      ],
+      "files": [
+        "pb_catalyst_kras_breachsteel.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "83ce68cc475d44b461d8d50a7e6d0a541e6e9c1005518639a4a98975d382aa90",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_kras_colossus",
+      "prompt": "massive grey stone colossus fist, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "signature"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "f618e15c-06f5-4b30-b5ed-769f0d01b909",
+      "frameIndex": 47,
+      "sprites": [
+        "catalyst_kras_colossus"
+      ],
+      "files": [
+        "pb_catalyst_kras_colossus.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "3661e3391c9ae4ca483a31d04e36950268e4844b564f63547767b60c76d9159f",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
