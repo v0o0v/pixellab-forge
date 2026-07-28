@@ -18610,6 +18610,507 @@
       "contentHash": "95b2d51c00a4504a4927e2f9bfde45dfb888ab4b295afb3c16589f593bc60ed1",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_rapid",
+      "prompt": "orange-red rapid-fire gatling defense turret on dark armored mount, twin short barrels pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility",
+        "turret"
+      ],
+      "files": [
+        "pb_def3_fac_rapid.png"
+      ],
+      "contentHash": "57597c52c85e8f2b19b05b7ed8274fbfe3ed6b13381eba5e384e2324296b40a2",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_rail",
+      "prompt": "orange-red railgun defense turret on dark armored mount, long thin rail barrel pointing right, glowing charge coil",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_rail.png"
+      ],
+      "contentHash": "3e14845ebeea689f067a9d35a10cdf12ce839a0b61f3839b9266f8befcc357ef",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_mortar",
+      "prompt": "orange-red mortar defense turret on dark armored mount, short wide barrel pointing right, round ammo drum",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_mortar.png"
+      ],
+      "contentHash": "63bd17d39709063b058353784a8da9b5f5f2c8d71167d462dddf0adb769396c1",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_toxinturret",
+      "prompt": "orange-red turret with green toxin tank on dark armored mount, dripping venom nozzle barrel pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_toxinturret.png"
+      ],
+      "contentHash": "9fedc02b853d8b515fe4247de90b95c242820731594d0271f6cffa472b753035",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_heavyrail",
+      "prompt": "heavy orange-red siege railgun turret on dark armored mount, thick armored twin rails pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_heavyrail.png"
+      ],
+      "contentHash": "db404ca0f49a234f7d0add3bb0f1e086e2d73ee00ef835f27636becc35db2690",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_siegecannon",
+      "prompt": "massive orange-red siege cannon turret on dark armored mount, huge thick barrel pointing right, recoil braces",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_siegecannon.png"
+      ],
+      "contentHash": "13b30b584373f83cf429d4d4e4049b2fcc310dbb5b2efd36544e42771be2715b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_breachturret",
+      "prompt": "orange-red breaching turret on dark armored mount, three splayed shotgun barrels pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_breachturret.png"
+      ],
+      "contentHash": "bf8920c18176bd699ec9276caf11b35d4ac21ec56f2690a77bfd1efcaf494f0f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_laser",
+      "prompt": "purple laser grid emitter panel on dark armored mount, glowing violet beam slits",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_laser.png"
+      ],
+      "contentHash": "aac7c0c314eb5c400cd5811cf1620548c652af4fc9206e1d99a7106fd9a32ac4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_flame",
+      "prompt": "purple flame vent emitter on dark armored mount, violet grate spouting orange fire",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_flame.png"
+      ],
+      "contentHash": "8a875f815e37639c8520c56014b305cfe09e2a8ad6f272f20d46810862cd5515",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_gravwell",
+      "prompt": "purple gravity well emitter on dark armored mount, violet swirling vortex ring",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_gravwell.png"
+      ],
+      "contentHash": "f0047ca6602e718535a12cda058b925c44ff65a8840d4953d91b686981383a92",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_shock",
+      "prompt": "purple shock emitter on dark armored mount, violet electric arc prongs crackling",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_shock.png"
+      ],
+      "contentHash": "0cc5df490cdcda6a0618362102bccf5c9ab354cdb0d9886849923ecfd014afda",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_venomvent",
+      "prompt": "purple venom vent emitter on dark armored mount, violet spray nozzle with green droplets",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_venomvent.png"
+      ],
+      "contentHash": "f27bb1fb9d980cf17996a5f56a5fa26a021a7b953abe941ac9f74a43a9a9c248",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_blightpool",
+      "prompt": "purple blight pool emitter on dark armored mount, violet bubbling sludge basin",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_blightpool.png"
+      ],
+      "contentHash": "181f04813ade98a9aacdbcb595f66aa2385b1bd9abdcbe9482b12dffd68c17fe",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_corrosivemist",
+      "prompt": "purple corrosive mist emitter on dark armored mount, tall violet gas diffuser stack venting fog",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_corrosivemist.png"
+      ],
+      "contentHash": "2b978afbfaba2feaf1c3611d1e6918f26fe6d3a1f8d518b2eaecbb2ff6250b91",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_demolisher",
+      "prompt": "purple demolition charge emitter on dark armored mount, violet explosive canister rack",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_demolisher.png"
+      ],
+      "contentHash": "1bab130943817e3b6eceb31405e21974b36d101f564b0e8ff2f1621801804ac2",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_fac_spawner",
+      "prompt": "drone spawner bay, dark armored mount, open bay doors glowing vivid toxic green, small drone emerging",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_fac_spawner.png"
+      ],
+      "contentHash": "d73a63e925866ef2daae2cf7d780a7be71ebde9dc51737e7cf335149d224e304",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_prop_shieldgenerator",
+      "prompt": "cyan energy shield generator dome on dark armored base, glowing blue protective barrier ring",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_prop_shieldgenerator.png"
+      ],
+      "contentHash": "443e11bcb34ee10192f735692b2bba2be024001155a5dbc6c81dc8d45be6e2a6",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_prop_gravityanchor",
+      "prompt": "violet gravity anchor emitter on dark armored base, purple swirling vortex funnel",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_prop_gravityanchor.png"
+      ],
+      "contentHash": "31fc8a76f89b74a764deb9954d5561b888c34a1912e7f9e685e8c45e9654466b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_prop_fixedcannon",
+      "prompt": "amber fixed cannon emplacement on dark armored base, large golden yellow barrel pointing right",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_prop_fixedcannon.png"
+      ],
+      "contentHash": "aeda0f51d2db86b0b814fbe5256a8f00422f65a24696d6ddd3723be7e321c706",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_prop_repairpylon",
+      "prompt": "repair pylon, dark armored base, glowing vivid toxic green cross emblem, emerald green healing rings",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_prop_repairpylon.png"
+      ],
+      "contentHash": "d67875ceb35ad0b387d67938185932d526175311c98645c0e592cb55cb79fb4f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_prop_mineswarm",
+      "prompt": "orange-red mine swarm cluster on dark armored base, ring of scarlet proximity mines with blinking sensor lights",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_prop_mineswarm.png"
+      ],
+      "contentHash": "f6560185a6c92656912f1ec2990d73e59ec4c844c4f691a6b89e6ae7363c105d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_boss_steelgoliath",
+      "prompt": "steel goliath defense boss, huge slow heavily armored fortress war machine, thick grey steel plating, glowing orange-red core vents",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_boss_steelgoliath.png"
+      ],
+      "contentHash": "d6f1f7313d1c81f962c52f43cae409ff055accfe31a9b05f973622ade25b4fb3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_boss_sporequeen",
+      "prompt": "spore queen defense boss, huge bloated organic fungal creature, violet purple spore sacs, drooping mycelium tendrils, glowing toxic green pods",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_boss_sporequeen.png"
+      ],
+      "contentHash": "988d0d319d5ab112c60ef29c8f097dbe5e28c4c05e517ae01c191974ea2419c5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_boss_phasewarden",
+      "prompt": "phase warden defense boss, sleek fast mechanical floating eye sentinel, thin dark armored shell, glowing cyan violet iris lens",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_boss_phasewarden.png"
+      ],
+      "contentHash": "969a27b10b1935a129212a1f0d277307417e596e4bcf8a9199ad08d878854904",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_prop_decoyhologram",
+      "prompt": "holographic fake reactor core, big translucent pale cyan diamond shape, glitching scanline bands, ghostly semi-transparent, dark emitter pedestal",
+      "style": {
+        "size": 128,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility"
+      ],
+      "files": [
+        "pb_def3_prop_decoyhologram.png"
+      ],
+      "contentHash": "981a37a9d6f46f460a45f7d4f981b91b94cdb25b1fe6743bec19eb5b0d76d3de",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
