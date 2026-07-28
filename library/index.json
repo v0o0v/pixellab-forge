@@ -19111,6 +19111,69 @@
       "contentHash": "981a37a9d6f46f460a45f7d4f981b91b94cdb25b1fe6743bec19eb5b0d76d3de",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_def3_formation_leader",
+      "prompt": "top-down scarlet red enemy formation leader gunship, wide angular hull nose pointing right, rear swept wing fins, bright white glowing cockpit core",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility",
+        "formation"
+      ],
+      "files": [
+        "pb_def3_formation_leader.png"
+      ],
+      "contentHash": "ef4c771cf2d90a9373f864faee82cd4d6ee1a5414f4848e8added5a386dd97ba",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_formation_drone",
+      "prompt": "top-down pale orange enemy wingman drone, slim wedge hull nose pointing right, two small engine flames at rear",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility",
+        "formation"
+      ],
+      "files": [
+        "pb_def3_formation_drone.png"
+      ],
+      "contentHash": "63fcd9b05b57310645380de7d48889fab8f7f29695bd84bdd5e89afe7bc810cb",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_def3_spawned_drone",
+      "prompt": "small toxic green drone, insectoid wedge hull nose pointing right, glowing emerald green thruster at rear, bright green plating",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object",
+        "anchor": "pb-invasion-facility"
+      },
+      "tags": [
+        "invasion",
+        "facility",
+        "formation"
+      ],
+      "files": [
+        "pb_def3_spawned_drone.png"
+      ],
+      "contentHash": "c6f8cae21210d6d6d389f14f3f8d34e82bfef752ff81d7ce5ae81fb9af784c6b",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
