@@ -19240,6 +19240,1078 @@
       "contentHash": "6208d864bbe41c1ce7b033f72e5b7d1581da45a989fd86962daa4ce462db3c36",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_tileset_kargon_v2",
+      "prompt": "volcanic basalt Wang autotile tileset: warm charcoal basalt bedrock lower, same basalt with dim ember pockets upper, top-down, tone-passed for low value contrast",
+      "style": {
+        "size": 32,
+        "view": "top-down",
+        "tool": "create_topdown_tileset"
+      },
+      "tags": [
+        "planet-blitz",
+        "topdown",
+        "tileset",
+        "kargon",
+        "volcanic"
+      ],
+      "files": [
+        "pb_tileset_kargon_v2.png"
+      ],
+      "contentHash": "4af0de75b228470ddc96655cf09fab89e90524a2ac282cd8c6d5800543710e38",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_phantom_5",
+      "prompt": "Held cloak: a deep violet hooded cloak shape wrapped around a faint blue eye glyph",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_phantom_5.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "0c08a75a9c9d02c6bbee576f7754ee687ea79f1293442c3baa6957293359b757",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_phantom_4",
+      "prompt": "Abyss step: an indigo-violet portal ring with a receding silhouette stepping through, faint blue horizon light",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_phantom_4.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "99f5f8ade7554fcd078a493e7d9f928122e3a982c3246ec49ddcc7e5609591c5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_phantom_6",
+      "prompt": "Endless first strike: an indigo-violet dagger surrounded by an infinity loop of faint blue light",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_phantom_6.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "7a91be9325514d3316fc86e69cf2134802f1feca388b9f4b04e89bf4df043e4b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_phantom_1",
+      "prompt": "Shadow break: a deep indigo dagger bursting out of a shattering violet smoke veil, faint blue edge light",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_phantom_1.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "76a4ea9c6f6153bf56830bd10b210625c847e581e5bc651da1dcd1047efd4ead",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_phantom_3",
+      "prompt": "Phase glide: an indigo-violet ship silhouette dissolving into drifting violet particles with a blue trail",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_phantom_3.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "413d7af7e711c4fefb4ed0f18d24e8280fb2a2788db860ecd67831a31a646053",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_phantom_2",
+      "prompt": "Flicker assassination: an indigo-violet blade striking through a ghostly translucent silhouette with blue rim glow",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_phantom_2.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "532a28aaf4cbd1a30c06b572eb9133f49acf8f15b1bd65c76210f1d3bb95c2e4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_arccaster_6",
+      "prompt": "Locked overcharge: an electric cyan capacitor gauge pinned at full with a white lock glyph over it",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_arccaster_6.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "a91a6a1dc2fa674d44d065aaed6dd23139532539f54631dddc915fd49b10bbd3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_arccaster_4",
+      "prompt": "Apex leap: an electric cyan arc leaping upward to a white glowing apex marker",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_arccaster_4.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "14380deb229f35d7f7101960733075f44403819729227fb73ac1ae9a3b3b17f4",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_arccaster_5",
+      "prompt": "Kinetic charge: an electric cyan battery gauge filling while white motion streaks pass across it",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_arccaster_5.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "fd12437c5a06a101fee241aa928a287ba96e83ca79b655a75ae7933ce8891079",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_arccaster_2",
+      "prompt": "Full discharge: a jagged electric cyan lightning burst radiating from a white-hot core",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_arccaster_2.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "d855a18ead5c40f69c2c7604c649ec6a419183cc42b0dd6870b7c92e245ed8c6",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_arccaster_3",
+      "prompt": "Phase blink: an electric cyan ship silhouette split into two offset afterimages with white spark dots between",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_arccaster_3.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "c29d9e5717716bcc69deb08a87c4366fe4eeb5f1b92c3d541e487bc20f603b30",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_arccaster_1",
+      "prompt": "Forced charge: a capacitor coil crackling with electric cyan lightning and white arc flashes",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_arccaster_1.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "c802526df738729141cc5ca324e4c26a81bdad3d00de42b57ef365d646902249",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bruiser_6",
+      "prompt": "Rupture plating: gunmetal green armor plates blowing apart in a burnt orange shockwave ring",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bruiser_6.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "66be2cc53994bea7aaa5f45d8ca3b8d8c7596b6016c6d42d4367bb3aba97f571",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bruiser_4",
+      "prompt": "Breaker charge: a gunmetal green drill-shaped prow punching through a broken burnt orange barrier",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bruiser_4.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "c5987b6a93e41091ccf8434f9292304d3b29fa418121241818e0393283ee03be",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bruiser_5",
+      "prompt": "Locked plating: a padlocked stack of gunmetal green armor plates with burnt orange rivets",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bruiser_5.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "615fe090fa635c40b4b8bed522d104d876e99c603c14ceb6cd476eff79eca96d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bruiser_2",
+      "prompt": "Overplate cleave: a heavy gunmetal green cleaver blade with a burnt orange energy edge slashing diagonally",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bruiser_2.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "666393363cd4c12ce704b5cfd2646d7a1c4d3ffceeee7968bb52672ff619eb99",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bruiser_3",
+      "prompt": "Ram charge: a blunt gunmetal green ramming prow with burnt orange impact sparks at the tip",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bruiser_3.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "47a4feaaeb443dab2f3e8804de1eddb45c1579d98cbb0d819901078e6266a3c8",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bruiser_1",
+      "prompt": "Plate shatter: a cracked gunmetal green armor plate exploding into burnt orange shrapnel shards",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bruiser_1.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "0aacc12d4aed58503188550acf44c25e2f1193d32e2a07cdd5115ad921222886",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_striker_6",
+      "prompt": "Double vault: two stacked steel-cyan chevrons leaping upward, twin navy afterimage trails",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_striker_6.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "4c810cbcc20edbfe2936ca22bd0ff8ff66bc5a380d2c46f65ab1ea74b8d55a8c",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_striker_4",
+      "prompt": "Bulwark protocol: a layered double hexagon shield in steel-cyan with a repairing spark at its center",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_striker_4.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "3bd9760acb2f58d828fdeee70387e9d4988e73214817793a6664000ad5f4e686",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_striker_5",
+      "prompt": "Assault thrust: a steel-cyan arrowhead ship silhouette with sharp navy speed streaks trailing behind",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_striker_5.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "c03e33e64ed3ea5b832e814a2b3976f101b554c2de680611cdb7265343ac72fd",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_striker_2",
+      "prompt": "Full salvo: a steel-cyan starburst of radial bolts firing outward in every direction from a small navy core",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_striker_2.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "b3e710c06e845cc9e14806ef90e7d0fcb91e8a8650ff77959cf44df7864a5dd7",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_striker_3",
+      "prompt": "Guard field: a hexagonal steel-cyan energy shield plate with a soft navy rim glow",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_striker_3.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "827536a93106b49071cb2effca3c64bcf85872af77f51ea0ca14d86c33a891ab",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_striker_1",
+      "prompt": "Straight beam volley: a fan of five steel-cyan energy bolts spreading forward from a chevron muzzle, dark navy backing plate",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_striker_1.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "8c578efe3730c3383f7f785b495ababe3c37479ef3a55ac7ef46df68de2c06a3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bubble_6",
+      "prompt": "Everlasting film: nested aqua turquoise bubble layers with a glassy white infinity highlight at the center",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bubble_6.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "063b57791a0744b58cc396e3d1fe646e81fea734ae61c66f72b2a6f0b76ced40",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bubble_4",
+      "prompt": "Updraft leap: an aqua turquoise bubble riding a tall glassy white updraft column",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bubble_4.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "a0224824801beb026c5e3219a19327ccf0c9600bb5287ebd949047f6b0d2075c",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bubble_5",
+      "prompt": "Film recharge: an aqua turquoise bubble shell re-forming with a glassy white refill sweep across it",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bubble_5.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "f39b46b1994ddd789b2e41ef702aa71e07ea65645c734d2468c3140959e73576",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bubble_2",
+      "prompt": "Film conversion: an aqua turquoise membrane dissolving into a spray of small glassy white bubbles",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bubble_2.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "0ca2d372ef563478a07f82696fae64f371be26ed0d4a3406ddbf206b068081a5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bubble_3",
+      "prompt": "Buoyant glide: an aqua turquoise bubble floating upward with glassy white drift streaks",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bubble_3.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "69d948496a780a9e74cafaf685edd2d58522b0f9f2e7e3019a680de3d99b1945",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_bubble_1",
+      "prompt": "Forced pop: an aqua turquoise bubble bursting outward with glassy white shard highlights and a shove ring",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_bubble_1.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "82a9749772ec56c0880b5ed01419c527dea5f1c420dfae18a03abf141a4e7a95",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_hatchling_4",
+      "prompt": "Nest leap: a pale mint green egg arcing high over a soft sage twig nest",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_hatchling_4.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "65360826933b93ad5c1c939788b7a85a16aeb5dd1f3bcd78f0073d0bcb90fb2f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_hatchling_5",
+      "prompt": "Warm brooding: a pale mint green egg nestled in soft sage down feathers with gentle warmth waves",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_hatchling_5.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "6c77809e5a0fe70623ee9ef38c9fde5b488b67f24a14db58b949527bdaea4490",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_hatchling_6",
+      "prompt": "Open nest: a soft sage nest wide open with a pale mint green egg glowing and ready to hatch",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_hatchling_6.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "b6414a4b049c102d7b1b1978e0e34ddb14fbebb12de71cae16fdcfe7acc393fd",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_hatchling_1",
+      "prompt": "Egg scatter: several pale mint green eggs bursting outward from a soft sage nest",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_hatchling_1.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "2af0b442c4c2110963c2301d070f51277b80ec89d835ce6ad20b0e4bdee20da7",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_hatchling_2",
+      "prompt": "Clutch burn: a pale mint green egg cracking open in a large soft sage energy bloom",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_hatchling_2.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "fd04441b75566b67c67fb35438fccf89fca01e0df7c37e642a81d26e97c55ff5",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_hatchling_3",
+      "prompt": "Egg roll: a pale mint green egg rolling with soft sage motion arcs behind it",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_hatchling_3.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "0602325de0c1081a2627cd4b13d1c1363906e308d3dd7b9f235232444f20c4fe",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_mallow_4",
+      "prompt": "Elastic vault: a pastel pink blob stretched into a long springy arc with mint highlight bands",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_mallow_4.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "afcbf77ad4638e6c99aa99b67ece4102a85f22bb689bcaaaffc34f0696efee8a",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_mallow_5",
+      "prompt": "Rapid mend: a pastel pink blob with a mint cross-shaped mend glyph and small healing sparkles",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_mallow_5.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "9c2254c0659466783ea16da9d5257b98f9ed1c8932c694abcf898566a0434b8d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_mallow_6",
+      "prompt": "Total deferral: a pastel pink hourglass filled with soft mint sand about to tip over",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_mallow_6.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "02af49350ef2b0c52e9250ad9e5f148756572a345c32bb3b9f54b7108458c82a",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_mallow_1",
+      "prompt": "Returned ache: a pastel pink marshmallow blob squeezing out mint-tipped projectile puffs",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_mallow_1.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "7271c8525e9114fd4e0e8fab97f9fd854305c7ddb7dcae99e815983836511530",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_mallow_2",
+      "prompt": "Deferred detonation: a pastel pink blob swelling and bursting into a wide mint-edged puff cloud",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_mallow_2.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "c9ff72b849251f25eb137b59f1e97d8d989ce63392279e34e5f944bf43613172",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_active_mallow_3",
+      "prompt": "Bounce recoil: a pastel pink blob squashed against the ground with mint bounce arcs above it",
+      "style": {
+        "size": 64,
+        "view": "top-down",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "active",
+        "icon",
+        "planetblitz"
+      ],
+      "files": [
+        "pb_active_mallow_3.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab-generated",
+        "source": "planet-blitz active-skills-impl lane F"
+      },
+      "contentHash": "32649d6ab7f64d43baac4f5d23c10df5908eac9cfd2acb9051aa7fb124c110ce",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
