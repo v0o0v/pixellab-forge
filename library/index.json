@@ -20312,6 +20312,39 @@
       "contentHash": "32649d6ab7f64d43baac4f5d23c10df5908eac9cfd2acb9051aa7fb124c110ce",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_catalyst_residue",
+      "prompt": "small pile of jagged violet magenta crystallized residue shards on a dark cracked slag lump, leftover from melting a catalyst, faint purple glow, catalyst item icon, cartoon pixel art",
+      "style": {
+        "size": 42,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "catalyst",
+        "icon",
+        "planetblitz",
+        "currency",
+        "residue"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "9fc01fbc-9d9e-423e-a341-f2a76c32986a",
+      "frameIndex": 29,
+      "sprites": [
+        "catalyst_residue"
+      ],
+      "files": [
+        "pb_catalyst_residue.png"
+      ],
+      "license": {
+        "license": "PixelLab-ToS",
+        "author": "PixelLab AI (AI-generated)",
+        "source": "https://pixellab.ai/termsofservice"
+      },
+      "contentHash": "cc3ddabc1abcd671ca96ebf1dbb45a867f01e8cf5277fad2b75f5ae28fda3a0f",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
