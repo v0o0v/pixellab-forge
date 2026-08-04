@@ -20345,6 +20345,116 @@
       "contentHash": "cc3ddabc1abcd671ca96ebf1dbb45a867f01e8cf5277fad2b75f5ae28fda3a0f",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "pb_ui_bld_commission",
+      "prompt": "sci-fi base building icon for a game base menu, commission dispatch office: compact blocky structure with sloped roof and lit doorway, dark navy and deep purple metal plating, glowing warm amber window panels, thin roof antenna, small stepped platform base, thick dark outline, front view slightly from above",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "ui",
+        "building",
+        "bld",
+        "planet-blitz",
+        "scifi",
+        "commission"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "90fe9c98-793b-4024-9a94-e00515558fc2",
+      "frameIndex": 13,
+      "sprites": [
+        "ui_bld_commission"
+      ],
+      "files": [
+        "pb_ui_bld_commission.png"
+      ],
+      "contentHash": "e9c65e65d37db68997365413327da1502d046eddb1d74ab066dab01ce7550986",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_kargon_elite_gunner",
+      "prompt": "siege forge elite, huge dark iron artillery war machine, twin heavy mortar cannons, molten orange lava cracks in the armor plating, volcanic obsidian, thick dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "kargon",
+        "enemy",
+        "elite"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "35e6b717-4fbe-4e9f-9777-f2b51caf439a",
+      "frameIndex": 0,
+      "sprites": [
+        "enemy_kargon_elite_gunner"
+      ],
+      "files": [
+        "pb_enemy_kargon_elite_gunner.png"
+      ],
+      "contentHash": "ec6e5c61147dc62512ae71c423383a8f6ba57797bb2cf2d39fd51c016d820da1",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_enemy_kargon_elite_charger",
+      "prompt": "magma breaker elite, massive hulking charging war machine, glowing molten body and scorched black iron plating, magma veins, thick dark outline, top-down game sprite",
+      "style": {
+        "size": 64,
+        "view": "topdown",
+        "tool": "create_1_direction_object"
+      },
+      "tags": [
+        "planet-blitz",
+        "kargon",
+        "enemy",
+        "elite"
+      ],
+      "assetType": "object",
+      "pixellabObjectId": "6aa28629-bc19-4410-9b6b-b6f26d8ca8a4",
+      "frameIndex": 7,
+      "sprites": [
+        "enemy_kargon_elite_charger"
+      ],
+      "files": [
+        "pb_enemy_kargon_elite_charger.png"
+      ],
+      "contentHash": "4c9b5d3bbe33f88ec5c036c4aba514959b2a10d398494d552bd37a3f8fe4e5e3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "pb_shelter_pad",
+      "prompt": "top-down circular armored evacuation landing pad, dark metal ring with glowing green landing lights, open deck with green safe-zone symbol, safe zone platform",
+      "style": {
+        "size": 320,
+        "view": "topdown",
+        "tool": "create-image-pixflux"
+      },
+      "tags": [
+        "planet-blitz",
+        "lane6",
+        "shelter",
+        "object",
+        "topdown"
+      ],
+      "files": [
+        "pb_shelter_pad.png"
+      ],
+      "license": {
+        "license": "CC0",
+        "author": "pixellab",
+        "source": "https://pixellab.ai"
+      },
+      "contentHash": "0af209dafa3810c64b7e6ba0ae897f1083064fe0e0f4bb559ce899d15d234193",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
