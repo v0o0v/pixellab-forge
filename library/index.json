@@ -25156,6 +25156,30 @@
    "contentHash": "5d34f5f9579a77dbe5fd4fe36627034eb94f8d8d4a8f15b7713dfba3485d5968",
    "createdAt": "unknown",
    "scope": "global"
+  },
+  {
+   "id": "bub_player_sheet",
+   "prompt": "chubby cute baby dinosaur, bright green skin, cream-white belly, three head spikes, big white eye, pink feet — 12프레임 시트(대기1 걷기4 점프7), east 방향",
+   "style": {
+    "size": 24,
+    "view": "side",
+    "tool": "create_1_direction_object",
+    "anchor": "bubble-roguelike"
+   },
+   "tags": [
+    "character",
+    "player",
+    "dinosaur",
+    "sidescroller",
+    "bubble-bobble",
+    "spritesheet"
+   ],
+   "files": [
+    "bub_player_sheet.png"
+   ],
+   "contentHash": "c924ed3701e29a685feb297f49d34d9ada5579f3872b2c83bf6a1e52b869e6cb",
+   "createdAt": "unknown",
+   "scope": "global"
   }
  ],
  "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
