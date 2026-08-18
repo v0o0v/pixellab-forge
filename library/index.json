@@ -25205,6 +25205,161 @@
    "contentHash": "85be181a5d323bf17efd64617b06a09616686a236effbb0c4a2e59e38a4222b6",
    "createdAt": "unknown",
    "scope": "global"
+  },
+  {
+   "id": "foambound_boss_toad",
+   "prompt": "fat toad king boss, side view, crown, wide mouth, 5 animations x 7 frames",
+   "style": {
+    "size": 40,
+    "view": "sidescroller",
+    "tool": "create_1_direction_object",
+    "anchor": "bubble"
+   },
+   "tags": [
+    "boss",
+    "toad",
+    "sidescroller",
+    "sheet"
+   ],
+   "files": [
+    "foambound_boss_toad.png"
+   ],
+   "contentHash": "96d731910eb7bce7834aa5ccfdbdb81b9aa23506837d2d68ef42841465771683",
+   "createdAt": "unknown",
+   "scope": "global"
+  },
+  {
+   "id": "foambound_boss_angler",
+   "prompt": "deep sea anglerfish boss with glowing lure, side view, 5 animations x 7 frames",
+   "style": {
+    "size": 40,
+    "view": "sidescroller",
+    "tool": "create_1_direction_object",
+    "anchor": "bubble"
+   },
+   "tags": [
+    "boss",
+    "anglerfish",
+    "sidescroller",
+    "sheet"
+   ],
+   "files": [
+    "foambound_boss_angler.png"
+   ],
+   "contentHash": "c8120da7cb3e7da9647589927c1d5872ae8cd2d50cdc60b637cd6f42dd5aba44",
+   "createdAt": "unknown",
+   "scope": "global"
+  },
+  {
+   "id": "foambound_boss_abyss",
+   "prompt": "abyssal tentacled horror with single pale eye, side view, 5 animations x 7 frames",
+   "style": {
+    "size": 40,
+    "view": "sidescroller",
+    "tool": "create_1_direction_object",
+    "anchor": "bubble"
+   },
+   "tags": [
+    "boss",
+    "abyss",
+    "sidescroller",
+    "sheet"
+   ],
+   "files": [
+    "foambound_boss_abyss.png"
+   ],
+   "contentHash": "a98fb338b34dad5a9730ad9c6f1065fba0f57f799638342cc20ed3ac784d8e59",
+   "createdAt": "unknown",
+   "scope": "global"
+  },
+  {
+   "id": "foambound_foe_walker",
+   "prompt": "fat river snail, side view, teal spiral shell, crawl animation 7 frames",
+   "style": {
+    "size": 40,
+    "view": "sidescroller",
+    "tool": "create_1_direction_object",
+    "anchor": "bubble"
+   },
+   "tags": [
+    "enemy",
+    "snail",
+    "sidescroller",
+    "sheet"
+   ],
+   "files": [
+    "foambound_foe_walker.png"
+   ],
+   "contentHash": "27f561825d8b6b9b350d91db90850783c6ca1e11fb8c4d58b7122bfb83d27004",
+   "createdAt": "unknown",
+   "scope": "global"
+  },
+  {
+   "id": "foambound_foe_flyer",
+   "prompt": "jewel dragonfly, translucent wings, fly animation 7 frames",
+   "style": {
+    "size": 40,
+    "view": "sidescroller",
+    "tool": "create_1_direction_object",
+    "anchor": "bubble"
+   },
+   "tags": [
+    "enemy",
+    "dragonfly",
+    "sidescroller",
+    "sheet"
+   ],
+   "files": [
+    "foambound_foe_flyer.png"
+   ],
+   "contentHash": "25f0679f74ead64bfa3b637c59b8840e2f11518049bc47a80f06ac1d982afdda",
+   "createdAt": "unknown",
+   "scope": "global"
+  },
+  {
+   "id": "foambound_foe_chaser",
+   "prompt": "hovering knot of dark cold mist with a pale eye, drift animation 7 frames",
+   "style": {
+    "size": 40,
+    "view": "sidescroller",
+    "tool": "create_1_direction_object",
+    "anchor": "bubble"
+   },
+   "tags": [
+    "enemy",
+    "chaser",
+    "mist",
+    "sidescroller",
+    "sheet"
+   ],
+   "files": [
+    "foambound_foe_chaser.png"
+   ],
+   "contentHash": "2eb7d79faef938bc1af74ae723038c43a8ee593f0f6fb7b66059262b170c7559",
+   "createdAt": "unknown",
+   "scope": "global"
+  },
+  {
+   "id": "foambound_player_otter",
+   "prompt": "otter protagonist, side view, idle/walk/jump 12 frames",
+   "style": {
+    "size": 40,
+    "view": "sidescroller",
+    "tool": "create_1_direction_object",
+    "anchor": "bubble"
+   },
+   "tags": [
+    "player",
+    "otter",
+    "sidescroller",
+    "sheet"
+   ],
+   "files": [
+    "foambound_player_otter.png"
+   ],
+   "contentHash": "007321e699baa1461bb1ef67c168093443d5fd0f1d261dd9887e04441eeb3b90",
+   "createdAt": "unknown",
+   "scope": "global"
   }
  ],
  "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
