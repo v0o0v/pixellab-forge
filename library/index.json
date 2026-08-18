@@ -25553,6 +25553,28 @@
       "contentHash": "58523b3dd0bbe96af8f235e8bd468d5cf0830827ad42d3870c939ce6cb57e21a",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "foambound_boss_warden",
+      "prompt": "a huge armoured barnacle-crusted clam guardian sitting closed, thick ridged shell, one heavy eye peering from the slit, chained to the seafloor, muted underwater palette, amber and slate",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "bubble"
+      },
+      "tags": [
+        "foambound",
+        "boss",
+        "warden",
+        "sidescroller"
+      ],
+      "files": [
+        "foambound_boss_warden.png"
+      ],
+      "contentHash": "08631cf8f82ee4e5fa24c335565755d306818ce09a835bd3ec4cae1ab7376700",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
