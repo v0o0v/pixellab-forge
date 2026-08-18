@@ -25754,6 +25754,115 @@
       "contentHash": "cab78d703f5360ac9155693b56c78ee7c0b65135ee8755100f2523abe15a522a",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "foambound_portrait_grinder",
+      "prompt": "dedicated 64px dialogue bust portrait of FOAMBOUND town neighbour (create_portrait_character, character_to_portrait, side view)",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "foambound"
+      },
+      "tags": [
+        "town",
+        "npc",
+        "portrait",
+        "foambound"
+      ],
+      "files": [
+        "foambound_portrait_grinder.png"
+      ],
+      "contentHash": "e95ad8b76ceb8d3f9eb8b4236cb90c1a08c23bf98461c6ce8fd957ed5dd67609",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "foambound_portrait_blower",
+      "prompt": "dedicated 64px dialogue bust portrait of FOAMBOUND town neighbour (create_portrait_character, character_to_portrait, side view)",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "foambound"
+      },
+      "tags": [
+        "town",
+        "npc",
+        "portrait",
+        "foambound"
+      ],
+      "files": [
+        "foambound_portrait_blower.png"
+      ],
+      "contentHash": "5781f96c89aa0340623f545efbd37eb6c809bc4fcc0eb62b70953b04fa058656",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "foambound_portrait_tally",
+      "prompt": "dedicated 64px dialogue bust portrait of FOAMBOUND town neighbour (create_portrait_character, character_to_portrait, side view)",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "foambound"
+      },
+      "tags": [
+        "town",
+        "npc",
+        "portrait",
+        "foambound"
+      ],
+      "files": [
+        "foambound_portrait_tally.png"
+      ],
+      "contentHash": "978dc978d16e44a66320b46d952ef36ded0785d4491f50d98904370bef538af6",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "foambound_portrait_thrower",
+      "prompt": "dedicated 64px dialogue bust portrait of FOAMBOUND town neighbour (create_portrait_character, character_to_portrait, side view)",
+      "style": {
+        "size": 64,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "foambound"
+      },
+      "tags": [
+        "town",
+        "npc",
+        "portrait",
+        "foambound"
+      ],
+      "files": [
+        "foambound_portrait_thrower.png"
+      ],
+      "contentHash": "a0436427998cb1726c0a41be7e4aeaa5dcf3b5e17c2deaf562af834c8822d5de",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "foambound_ui_bar",
+      "prompt": "dark navy selection bar with teal rounded border (crop from ui asset d301a4ce)",
+      "style": {
+        "size": 99,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "foambound"
+      },
+      "tags": [
+        "ui",
+        "bar",
+        "foambound"
+      ],
+      "files": [
+        "foambound_ui_bar.png"
+      ],
+      "contentHash": "e72f0618ac8f88c708b4329941d0188c908a731b9ab51ee7df1dee82de71fdc4",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
