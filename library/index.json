@@ -25575,6 +25575,98 @@
       "contentHash": "08631cf8f82ee4e5fa24c335565755d306818ce09a835bd3ec4cae1ab7376700",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "foambound_town_grinder_idle4",
+      "prompt": "subtle idle loop: breathing, shoulders rising and falling gently, grinding wheel hand trembling slightly (4-frame sheet of town grinder neighbour)",
+      "style": {
+        "size": 32,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "foambound"
+      },
+      "tags": [
+        "town",
+        "npc",
+        "idle",
+        "animation",
+        "foambound"
+      ],
+      "files": [
+        "foambound_town_grinder_idle4.png"
+      ],
+      "contentHash": "65b4b55de6776b1f4d7d7b1dfd0a44ec3d514761db0387209be41e49ab6a4c20",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "foambound_town_blower_idle4",
+      "prompt": "subtle idle loop: breathing, chest rising and falling, glass bubble at end of rod glinting softly (4-frame sheet of town blower neighbour)",
+      "style": {
+        "size": 32,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "foambound"
+      },
+      "tags": [
+        "town",
+        "npc",
+        "idle",
+        "animation",
+        "foambound"
+      ],
+      "files": [
+        "foambound_town_blower_idle4.png"
+      ],
+      "contentHash": "63ae900a4f755d4c1ef005572880094fe24c53df446154d7b50b84e8e75f5189",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "foambound_town_tally_idle4",
+      "prompt": "subtle idle loop: breathing, head nodding slightly while reading ledger, page corner fluttering (4-frame sheet of town tally neighbour)",
+      "style": {
+        "size": 32,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "foambound"
+      },
+      "tags": [
+        "town",
+        "npc",
+        "idle",
+        "animation",
+        "foambound"
+      ],
+      "files": [
+        "foambound_town_tally_idle4.png"
+      ],
+      "contentHash": "8aa081c5a5a9e7d7d915198577c3630eb2805442de0ea76f55ddf61727ca637b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "foambound_town_thrower_idle4",
+      "prompt": "subtle idle loop: breathing, weight shifting from foot to foot, arm swinging slightly ready to throw (4-frame sheet of town thrower neighbour)",
+      "style": {
+        "size": 32,
+        "view": "sidescroller",
+        "tool": "create_1_direction_object",
+        "anchor": "foambound"
+      },
+      "tags": [
+        "town",
+        "npc",
+        "idle",
+        "animation",
+        "foambound"
+      ],
+      "files": [
+        "foambound_town_thrower_idle4.png"
+      ],
+      "contentHash": "31b031edbc91ac4dc74ba0492f65a5c6314519ae387153e10c1d8da9499408cb",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
