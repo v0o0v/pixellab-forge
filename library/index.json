@@ -25863,6 +25863,474 @@
       "contentHash": "e72f0618ac8f88c708b4329941d0188c908a731b9ab51ee7df1dee82de71fdc4",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "heg_anc_melee",
+      "prompt": "ancient spearman soldier, bronze-tipped spear held upright, small round wooden shield, olive linen tunic, leather chest strap, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_anc_melee.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 2e1efb48-a31d-4438-ad78-d41deca5e412"
+      },
+      "contentHash": "df03e98bd7c584c2e312566fd9fc5971a99e0a448dc5e9c19f585a5574ad09d3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_anc_ranged",
+      "prompt": "ancient archer, short curved wooden bow in hand, quiver of arrows on back, beige linen tunic, leather bracers, cloth headband, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_anc_ranged.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 80d77f3d-70a3-4299-b679-8e9281d788da"
+      },
+      "contentHash": "a7cdd33eab046ef91c8a408328ba0100bab59118adecade1856775efe78bffdd",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_anc_mobile",
+      "prompt": "ancient light cavalry: a soldier RIDER MOUNTED ON HORSEBACK, sitting on the saddle of a lean brown horse, rider holds a short lance and wears leather armor, olive cloth, horse and mounted rider together as one unit, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_anc_mobile.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 188bdef4-2958-43d7-8d42-467a0e59bd8a"
+      },
+      "contentHash": "63527d73d2789c3b53d128f17f571b9b2835cce59021aa030bc32368ce3d9367",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_anc_siege",
+      "prompt": "ancient catapult crewman, burly soldier holding a large wooden mallet, leather apron, coil of rope on shoulder, olive tunic, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_anc_siege.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 9ee68ddd-1e64-45e1-9ceb-d722ac3309a4"
+      },
+      "contentHash": "bd39bb274148de82cad4779eb8bf0de2399bfadf791ad91d57fe9ed2a372a9b8",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_anc_special",
+      "prompt": "ancient scout runner, short dagger and small signal horn, hooded light travel cloak, beige and olive cloth, agile lean build, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_anc_special.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character bb389930-b0f6-467f-b1a2-82814d07ad3c"
+      },
+      "contentHash": "d932455e141d15c497bf9e7a0cf22eda004e6613dd130bd6dce7c3b7db35f30f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_anc_uniq_engineer",
+      "prompt": "ancient combat engineer carrying a bundle of wooden palisade stakes and a hammer, grey-brown work armor with bronze fittings, tool belt, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_anc_uniq_engineer.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 64c54cd2-ca21-4a0c-ba34-8e5282fdf3bf"
+      },
+      "contentHash": "fc12478ea5a1865fbb3f59784ab640201ce6b455207c0883705303ddd754533d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_anc_uniq_ashwraith",
+      "prompt": "grim ancient warrior with jagged sword, tattered black and dark purple cloak, ash-grey skin markings, faint ember glow, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_anc_uniq_ashwraith.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 7832f32e-a69a-4d16-8c3c-acb918cca703"
+      },
+      "contentHash": "80aa35f099da72edda1e27614c879da8592368ba6cb508e412be370572ff192f",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_anc_uniq_sundial",
+      "prompt": "ancient temple archer with ornate bow, indigo navy robes with gold trim, small golden sundial disc amulet on chest, hood, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_anc_uniq_sundial.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character d23e4ff0-fc66-4597-8df8-f38e6a5d6127"
+      },
+      "contentHash": "d7ff86c877234220ff8f60fd0a707508fd225a21e709b06de3c872662abf0826",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_anc_uniq_shieldrank",
+      "prompt": "ancient phalanx soldier with tall rectangular shield and short spear, russet reddish-brown armor, disciplined upright stance, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_anc_uniq_shieldrank.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 2a02b9d7-5482-46e3-81cd-52dcf4411628"
+      },
+      "contentHash": "81838e0b493981b19b831f53e71a9d50b2afb439325c8fb11ca0b7fd28cd0d21",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_med_melee",
+      "prompt": "medieval pikeman, long pike held upright, steel kettle helmet, chainmail over dark blue tunic, formation soldier, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_med_melee.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character f29c8480-d642-4fb4-95bc-b9d230a1a553"
+      },
+      "contentHash": "80e7901bfbff70b3983e88601241e9558a219ae10b116c57bc1a7f6a21f23945",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_med_ranged",
+      "prompt": "medieval longbowman, tall longbow in hand, arrow bag at hip, steel cap, grey-blue padded gambeson, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_med_ranged.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character d5233b78-0bbc-403f-befe-732d031c5820"
+      },
+      "contentHash": "65761d77fefd0839ec71ff6d5dcbd9db4f4f7c984b13bf240c0abb116672d109",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_med_mobile",
+      "prompt": "medieval heavy cavalry: an armored knight RIDER MOUNTED ON HORSEBACK, sitting on the saddle of an armored warhorse with dark blue caparison, rider holds a couched lance, steel plate armor, horse and mounted rider together as one unit, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_med_mobile.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 9db06c46-9003-4421-bb2f-05c1e2bf6f0c"
+      },
+      "contentHash": "5594fa1931ae41d44f533e0f7284af589ca535d39f7949af21c1f08d17ab6747",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_med_siege",
+      "prompt": "medieval ballista crewman carrying an oversized crossbow ballista with winch crank, steel helmet, grey-blue tunic, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_med_siege.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 98fac5e9-5119-438f-b6ec-dd2f06f496dc"
+      },
+      "contentHash": "3dde745585d5ad26de5b477f9e8580f426e0b33d1eec990baf1601a1c5d2afbc",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_med_special",
+      "prompt": "medieval supply soldier with a large backpack of crates and pouches, short sword at belt, grey-blue tunic, sturdy boots, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_med_special.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character e4e24a9e-c7f4-48d9-91ef-c095b96ef00e"
+      },
+      "contentHash": "5db9330b142e192b34e808a1a916c7f4b757479851d2870c1efefc13ca2a3af0",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_med_uniq_ram",
+      "prompt": "medieval siege soldier carrying a bronze-headed battering ram beam on his shoulder, grey-brown heavy armor with bronze plates, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_med_uniq_ram.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 1e708425-6b01-4c28-ad85-0a3c89fa2b49"
+      },
+      "contentHash": "bed7d89548d4b8db0f5c326fe9433d2e6adf519445d4a6d0ca2e8f4ae1ed8aee",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_med_uniq_martyr",
+      "prompt": "medieval zealot warrior with a two-handed blade, black and dark purple hooded vestments, pale ember glow, ritual bandages on arms, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_med_uniq_martyr.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character eb876ae2-4484-42a3-af48-1632fb4a137a"
+      },
+      "contentHash": "40fe7e2e10122d1f4af45d25f1a17a6b04803a4ac1befd6d615dbf5979e8a702",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_med_uniq_duskrider",
+      "prompt": "twilight cavalry: a rider MOUNTED ON HORSEBACK, sitting on the saddle of a dark horse, rider in indigo navy and gold armor with a small crescent banner on his back, dusk glow accents, horse and mounted rider together as one unit, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_med_uniq_duskrider.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 9579634b-c3f4-4199-9c36-30b5ece728fd"
+      },
+      "contentHash": "7b89c3ca220bf437805e314d5ab20402f0111fe0f31aa5105fdadc44a0b8a2c7",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_med_uniq_drillarcher",
+      "prompt": "medieval formation archer with longbow, russet reddish-brown uniform armor, standardized kit, disciplined pose, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "assetType": "character",
+      "files": [
+        "heg_med_uniq_drillarcher.png"
+      ],
+      "license": {
+        "license": "proprietary",
+        "author": "pixellab",
+        "source": "pixellab character 25cae840-12a5-466f-b7db-bda00e4e918b"
+      },
+      "contentHash": "e7786044c2443ca2987ee23d4c7c802b9b0f4e1a709f0a58e49faa5a79ea91ae",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
