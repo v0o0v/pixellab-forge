@@ -26331,6 +26331,366 @@
       "contentHash": "e7786044c2443ca2987ee23d4c7c802b9b0f4e1a709f0a58e49faa5a79ea91ae",
       "createdAt": "unknown",
       "scope": "global"
+    },
+    {
+      "id": "heg_ind_uniq_mgsuppress",
+      "prompt": "industrial-era machine-gun suppression squad leader, carrying a heavy machine gun braced on a tripod, russet reddish-brown formation uniform, ammo belt, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_ind_uniq_mgsuppress.png"
+      ],
+      "contentHash": "9c47ebb245841edfe15c8941c9e25ea1a8383e5ddfc221878fcc36ab38f96e43",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_gun_mobile",
+      "prompt": "gunpowder-era dragoon cavalry: a soldier RIDER MOUNTED ON HORSEBACK, sitting on the saddle of a brown horse, rider holds a cavalry saber and carbine, dark blue coat, horse and mounted rider together as one unit, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_gun_mobile.png"
+      ],
+      "contentHash": "ab84e74b8f6861e3d424acfe20a304a0e3666fb451555ee1d045e6efb5782aa3",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_ind_special",
+      "prompt": "industrial-era combat engineer, carrying wire cutters and a satchel of demolition charges, khaki-olive coveralls, tool belt, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_ind_special.png"
+      ],
+      "contentHash": "043f1033139ebe9e3c65abf1153e2e643272c1ec7c3ef96b03511ec8b6136caa",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_ind_ranged",
+      "prompt": "industrial-era machine gunner, carrying a portable machine gun with belt ammunition, khaki-olive uniform, steel Brodie helmet, ammo pouches, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_ind_ranged.png"
+      ],
+      "contentHash": "3201d77eab91b568e21dfba29e81b1d9e92e0a7b5307a9b97e5bdb8031e246be",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_gun_uniq_fusegun",
+      "prompt": "gunpowder-era fuse-timing artillery officer, holding an ornate timing device beside a small mortar, indigo navy coat with gold trim, small golden sundial amulet, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_gun_uniq_fusegun.png"
+      ],
+      "contentHash": "a8ecea652670845b9d2b54bc9647f62a25888140fa0fbf8906cc4cc98e29b024",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_gun_special",
+      "prompt": "gunpowder-era spy scout, concealed dagger and spyglass, dark hooded travel coat, muted grey-brown cloth, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_gun_special.png"
+      ],
+      "contentHash": "bf72144a70b4f15db42fe81885ffefbb008c2d3338cf5d8ccdf033399ab86e27",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_gun_melee",
+      "prompt": "gunpowder-era bayonet infantryman soldier, long musket with fixed bayonet held upright, dark blue wool coat with brass buttons, white cross-belt, black tricorne hat, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_gun_melee.png"
+      ],
+      "contentHash": "9bff7298b8574a46b0fea6b74cfac39ecaf589211c35070ea2862f974f9eb535",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_gun_uniq_grenadier",
+      "prompt": "gunpowder-era grenadier engineer, holding a lit grenade and satchel of explosive charges, grey-brown fortress-engineer coat, leather tool belt, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_gun_uniq_grenadier.png"
+      ],
+      "contentHash": "037ae738c706b5e3733a3cfcffc0ae74d14d00368c555f877edd763654a798ec",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_ind_uniq_railcorps",
+      "prompt": "industrial-era rail supply corpsman, carrying a stretcher and satchel of medical supplies, tattered black and dark purple coat, ash-grey skin markings, faint ember glow, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_ind_uniq_railcorps.png"
+      ],
+      "contentHash": "51b3bc929b500bbbd087d562b57be6f17ecf840c0da0da4ef4d419c28af69286",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_ind_mobile",
+      "prompt": "industrial-era armored scout car with a crewman soldier visible in the open hatch, khaki-olive armor plating, small machine gun mount, vehicle and crewman together as one unit, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_ind_mobile.png"
+      ],
+      "contentHash": "5b790325d0b120230f3d5e34c5f1c2a7605b4dc455a88734fcac391f87d4bf25",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_ind_melee",
+      "prompt": "industrial-era trench soldier, bolt-action rifle with fixed bayonet held upright, khaki-olive uniform with canvas webbing, steel Brodie helmet, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_ind_melee.png"
+      ],
+      "contentHash": "337feec169eaea1a91eca53960f0631bed139579b2a9bc61e710fed991b0309d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_ind_uniq_trenchcmd",
+      "prompt": "industrial-era trench commander engineer, holding a coil of barbed wire and trench periscope, grey-brown fortress-engineer coat, leather tool belt, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_ind_uniq_trenchcmd.png"
+      ],
+      "contentHash": "b5264197b71c068bdc4624b64844d61bd9a4bc2ec8722d87909734ca2c0be630",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_gun_uniq_lancer",
+      "prompt": "gunpowder-era lancer cavalry: a soldier RIDER MOUNTED ON HORSEBACK, sitting on the saddle of a horse, rider holds a cavalry lance, russet reddish-brown formation uniform, horse and mounted rider together as one unit, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_gun_uniq_lancer.png"
+      ],
+      "contentHash": "db4d98ee999bfed57d1e9ae4f0b20fc6d10e56d892dbabe64788a9510d380d83",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_ind_uniq_telegraph",
+      "prompt": "industrial-era telegraph observation officer, holding a portable telegraph key and signal flags, indigo navy coat with gold trim, small golden sundial-style pocket watch, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_ind_uniq_telegraph.png"
+      ],
+      "contentHash": "27fa1033712b2ed179162f84e5c1b698a64afcf4d2355ae3ad7d43ea5bf84cbf",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_gun_siege",
+      "prompt": "gunpowder-era cannon crewman, holding a ramrod beside a bronze field cannon barrel, dark blue artillery coat, leather apron, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_gun_siege.png"
+      ],
+      "contentHash": "42667e852a0deebc2c059a73c538f248eb7c1fb774fb1b43bb9b705c286cd94b",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_gun_uniq_ashrifle",
+      "prompt": "gunpowder-era ember rifleman, flintlock rifle wreathed in faint ember glow, tattered black and dark purple coat, ash-grey skin markings, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_gun_uniq_ashrifle.png"
+      ],
+      "contentHash": "1ecc49c016c806e9bceaf7bbf776af4e0f56b6ddb7f1cab26ad7b47f29ce318d",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_ind_siege",
+      "prompt": "industrial-era self-propelled gun crewman, standing beside a self-propelled gun barrel with loading tools, khaki-olive artillery uniform, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_ind_siege.png"
+      ],
+      "contentHash": "cfcae39b5d766d5dff76785d35bb09fbcf52a293890b7f1f70fe49e50e77e622",
+      "createdAt": "unknown",
+      "scope": "global"
+    },
+    {
+      "id": "heg_gun_ranged",
+      "prompt": "gunpowder-era musketeer marksman, flintlock musket raised to aim, dark blue coat with brass buttons, tricorne hat, cartridge box on belt, clean silhouette",
+      "style": {
+        "size": 48,
+        "view": "low top-down",
+        "tool": "create_character"
+      },
+      "tags": [
+        "hegemony",
+        "unit",
+        "rts"
+      ],
+      "files": [
+        "heg_gun_ranged.png"
+      ],
+      "contentHash": "d85e8cae80f586513aff246d9c0caf69b57ca2860e0f1ea7b7c75efb2bb525f7",
+      "createdAt": "unknown",
+      "scope": "global"
     }
   ],
   "_license": "PixelLab-ToS — PixelLab AI 생성물. 프로젝트 소유·상업/배포 허용, ML 학습 금지(ToS §1.2), Open RAIL-M 참조. 상세: library/NOTICE.md"
